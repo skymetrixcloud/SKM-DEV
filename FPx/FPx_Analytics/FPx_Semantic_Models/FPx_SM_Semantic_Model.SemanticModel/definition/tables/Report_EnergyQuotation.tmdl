@@ -1,0 +1,159 @@
+table Report_EnergyQuotation
+	lineageTag: 2b82c4e7-d3ba-47d3-adc4-9bf7d5bdbc54
+	sourceLineageTag: [fpx].[Report_EnergyQuotation]
+
+	column QuotationId
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 204e2d69-a783-4540-9f94-0d2039a43b77
+		sourceLineageTag: QuotationId
+		summarizeBy: count
+		sourceColumn: QuotationId
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QuotationName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 93ae8dcd-4275-4a0a-869d-5368af50c0f7
+		sourceLineageTag: QuotationName
+		summarizeBy: none
+		sourceColumn: QuotationName
+
+		annotation SummarizationSetBy = Automatic
+
+	column TimeseriesName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 479eb9ea-c9a6-44b7-908e-67693024fd93
+		sourceLineageTag: TimeseriesName
+		summarizeBy: none
+		sourceColumn: TimeseriesName
+
+		annotation SummarizationSetBy = Automatic
+
+	column AverageMethod
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b117eda5-89ff-493a-8463-437123becb9a
+		sourceLineageTag: AverageMethod
+		summarizeBy: none
+		sourceColumn: AverageMethod
+
+		annotation SummarizationSetBy = Automatic
+
+	column Commodity
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e13ff58c-b6b0-4416-953c-876572259d27
+		sourceLineageTag: Commodity
+		summarizeBy: none
+		sourceColumn: Commodity
+
+		annotation SummarizationSetBy = Automatic
+
+	column FinancialSource
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ce45a67d-6a8e-4856-bba9-737c9016dfe2
+		sourceLineageTag: FinancialSource
+		summarizeBy: none
+		sourceColumn: FinancialSource
+
+		annotation SummarizationSetBy = Automatic
+
+	column OriginalCurrency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2e9bcd46-9687-4947-be91-592430b1b613
+		sourceLineageTag: OriginalCurrency
+		summarizeBy: none
+		sourceColumn: OriginalCurrency
+
+		annotation SummarizationSetBy = Automatic
+
+	column OriginalUnit
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4ea612ab-c9b6-4d31-8a21-a7a8f02b760e
+		sourceLineageTag: OriginalUnit
+		summarizeBy: none
+		sourceColumn: OriginalUnit
+
+		annotation SummarizationSetBy = Automatic
+
+	column PeriodFrom
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 3e681440-de1f-4481-8786-34d34f764c40
+		sourceLineageTag: PeriodFrom
+		summarizeBy: none
+		sourceColumn: PeriodFrom
+
+		annotation SummarizationSetBy = Automatic
+
+	column PeriodTo
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: ebcd75b8-e0c0-411b-b3e6-fe6a729234b4
+		sourceLineageTag: PeriodTo
+		summarizeBy: none
+		sourceColumn: PeriodTo
+
+		annotation SummarizationSetBy = Automatic
+
+	column QuotationValue
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1f8ec4d0-2f3b-4e8c-873a-83557ecd287e
+		sourceLineageTag: QuotationValue
+		summarizeBy: sum
+		sourceColumn: QuotationValue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MonthYearFrom
+		dataType: string
+		sourceProviderType: varchar(21)
+		lineageTag: d2e1d44c-d4c2-4aaa-a2ed-c6b3f5e603c9
+		sourceLineageTag: MonthYearFrom
+		summarizeBy: none
+		sourceColumn: MonthYearFrom
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthYearTo
+		dataType: string
+		sourceProviderType: varchar(21)
+		lineageTag: eca00054-0808-4f7c-b080-0928afea16ac
+		sourceLineageTag: MonthYearTo
+		summarizeBy: none
+		sourceColumn: MonthYearTo
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekYearFrom
+		dataType: string
+		sourceProviderType: varchar(7)
+		lineageTag: b2335222-5f3f-4e1a-a637-392e5b64d2f8
+		sourceLineageTag: WeekYearFrom
+		summarizeBy: none
+		sourceColumn: WeekYearFrom
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Report_EnergyQuotation = entity
+		mode: directLake
+		source
+			entityName: Report_EnergyQuotation
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

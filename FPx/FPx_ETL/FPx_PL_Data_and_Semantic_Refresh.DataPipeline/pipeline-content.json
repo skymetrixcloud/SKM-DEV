@@ -1,0 +1,123 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "RunMainStoredProc",
+        "description": "Parent Pipeline for KLM-Old Data models Reload except AFA_Join",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "storedProcedureName": {
+            "value": "@pipeline().libraryVariables.VariablesSet_USPMainName",
+            "type": "Expression"
+          }
+        },
+        "linkedService": {
+          "name": "52e3c940_246a_4d4e_8b1b_78244d754455",
+          "properties": {
+            "annotations": [],
+            "type": "DataWarehouse",
+            "typeProperties": {
+              "endpoint": "@pipeline().libraryVariables.VariablesSet_WareHouseSQLConnection",
+              "artifactId": "@pipeline().libraryVariables.VariablesSet_WareHouseID",
+              "workspaceId": "@pipeline().libraryVariables.VariablesSet_WorkspaceID"
+            }
+          }
+        }
+      },
+      {
+        "name": "Wait10s",
+        "type": "Wait",
+        "dependsOn": [
+          {
+            "activity": "RunMainStoredProc",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "typeProperties": {
+          "waitTimeInSeconds": 10
+        }
+      },
+      {
+        "name": "Semantic model refresh1",
+        "type": "PBISemanticModelRefresh",
+        "dependsOn": [
+          {
+            "activity": "Wait10s",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "method": "POST",
+          "groupId": {
+            "value": "@pipeline().libraryVariables.VariablesSet_WorkspaceID",
+            "type": "Expression"
+          },
+          "operationType": "SemanticModelRefresh",
+          "datasetId": {
+            "value": "@pipeline().libraryVariables.VariablesSet_SemanticModelIDfpx",
+            "type": "Expression"
+          }
+        },
+        "externalReferences": {
+          "connection": "10980060-f009-4e7f-abc2-d59e5d0859b4"
+        }
+      }
+    ],
+    "libraryVariables": {
+      "VariablesSet_WareHouseID": {
+        "type": "String",
+        "variableName": "WareHouseID",
+        "libraryName": "VariablesSet"
+      },
+      "VariablesSet_LakeHouseID": {
+        "type": "String",
+        "variableName": "LakeHouseID",
+        "libraryName": "VariablesSet"
+      },
+      "VariablesSet_WorkspaceID": {
+        "type": "String",
+        "variableName": "WorkspaceID",
+        "libraryName": "VariablesSet"
+      },
+      "VariablesSet_USPMainName": {
+        "type": "String",
+        "variableName": "USPMainName",
+        "libraryName": "VariablesSet"
+      },
+      "VariablesSet_SemanticModelIDfpx": {
+        "type": "String",
+        "variableName": "SemanticModelID-fpx",
+        "libraryName": "VariablesSet"
+      },
+      "VariablesSet_WareHouseSQLConnection": {
+        "type": "String",
+        "variableName": "WareHouseSQLConnection",
+        "libraryName": "VariablesSet"
+      },
+      "VariablesSet_CentralLakeHouseID": {
+        "type": "String",
+        "variableName": "CentralLakeHouseID",
+        "libraryName": "VariablesSet"
+      }
+    }
+  }
+}

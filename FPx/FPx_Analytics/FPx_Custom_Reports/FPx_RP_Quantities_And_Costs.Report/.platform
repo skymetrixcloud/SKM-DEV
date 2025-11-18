@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Quantities_And_Costs"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0f16aade-09ec-83ad-4bc5-db875464a339"
+  }
+}

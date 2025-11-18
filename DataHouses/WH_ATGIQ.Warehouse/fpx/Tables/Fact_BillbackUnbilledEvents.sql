@@ -1,0 +1,27 @@
+CREATE TABLE [fpx].[Fact_BillbackUnbilledEvents] (
+
+	[ObjectType] varchar(8000) NULL, 
+	[ObjectId] decimal(10,0) NULL, 
+	[InvoiceCategory] varchar(8000) NULL, 
+	[IsClosed] varchar(8000) NULL, 
+	[DeliveryDate] datetime2(6) NULL, 
+	[Departure] varchar(8000) NULL, 
+	[Currency] varchar(8000) NULL, 
+	[InvoicedAmount] float NULL, 
+	[CLIENT_ID] decimal(10,0) NULL, 
+	[GlDate] datetime2(6) NULL, 
+	[ReleaseDate] datetime2(6) NULL, 
+	[InvoiceDate] datetime2(6) NULL, 
+	[InvoiceNo] varchar(8000) NULL, 
+	[TicketNo] varchar(8000) NULL, 
+	[Quantity] float NULL, 
+	[Unit] varchar(8000) NULL, 
+	[NetAmount] float NULL, 
+	[VatAmount] float NULL, 
+	[Destination] varchar(8000) NULL, 
+	[Registration] varchar(8000) NULL, 
+	[FlightType] varchar(8000) NULL, 
+	[FinalCustomer] varchar(8000) NULL, 
+	[Reseller] varchar(8000) NULL, 
+	[Supplier] varchar(8000) NULL
+);

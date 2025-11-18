@@ -1,0 +1,141 @@
+{
+  "config": "{\"version\":\"5.50\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU11\",\"version\":{\"visual\":\"2.4.0\",\"report\":\"3.0.0\",\"page\":\"2.3.0\"},\"type\":2}},\"activeSectionIndex\":0,\"modelExtensions\":[{\"name\":\"extension\",\"entities\":[{\"name\":\"Fact_InvoiceItemDiscrepancy\",\"extends\":\"Fact_InvoiceItemDiscrepancy\",\"measures\":[{\"name\":\"Discrepancy\",\"dataType\":3,\"expression\":\"sum(Fact_InvoiceItemDiscrepancy[AmountDiscrepancyCount])+ SUM(Fact_InvoiceItemDiscrepancy[QuantityDiscrepancyCount])+SUM(Fact_InvoiceItemDiscrepancy[VATDiscrepancyCount])\",\"errorMessage\":null,\"hidden\":false,\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"G\",\"format\":\"General\",\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}},{\"name\":\"Amount Discrep/Invoice\",\"dataType\":3,\"expression\":\"SUM(Fact_InvoiceItemDiscrepancy[AmountDifference])/COUNT(Fact_Invoice[InvoiceNo])\",\"errorMessage\":null,\"hidden\":false,\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"G\",\"format\":\"General\",\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}},{\"name\":\"Percent Amount Discrep/Invoice\",\"dataType\":3,\"expression\":\"SUM(Fact_InvoiceItemDiscrepancy[AmountDifference])/COUNT(Fact_Invoice[InvoiceNo])\",\"errorMessage\":null,\"hidden\":false,\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"0.00 %;-0.00 %;0.00 %\",\"format\":\"Percentage\",\"accuracy\":2,\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}},{\"name\":\"Discrepancy/Invoices\",\"dataType\":3,\"expression\":\"Fact_InvoiceItemDiscrepancy[Discrepancy]/COUNT(Fact_Invoice[InvoiceNo])\",\"errorMessage\":null,\"hidden\":false,\"references\":{\"unrecognizedReferences\":false,\"measures\":[{\"schema\":\"extension\",\"entity\":\"Fact_InvoiceItemDiscrepancy\",\"name\":\"Discrepancy\"}]},\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"G\",\"format\":\"General\",\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}}]}]}],\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU11",
+            "path": "BaseThemes/CY25SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "image__1_-removebg-preview12518288374320653975.png",
+            "path": "image__1_-removebg-preview12518288374320653975.png",
+            "type": 100
+          },
+          {
+            "name": "powerbi_layout_(2)98675703072233881341772286555.png",
+            "path": "powerbi_layout_(2)98675703072233881341772286555.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'powerbi_layout_(2)9867570307223056.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"powerbi_layout_(2)98675703072233881341772286555.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Discrepancies Overview",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "c26a41a518cfbc3ae5a1",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1f9fc61e8a6b8f1fc0b3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.06990881458967,\"y\":162.43161094224925,\"z\":2000,\"width\":132.27963525835867,\"height\":70.03039513677813,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_ClientAccessCode.ClientCode\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_ClientAccessCode\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"ClientCode\"},\"Name\":\"Dim_ClientAccessCode.ClientCode\",\"NativeReferenceName\":\"ClientCode\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Client Code'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 70.03,
+          "width": 132.28,
+          "x": 33.07,
+          "y": 162.43,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"24e30eba2bbdf75ea59a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":231.48936170212767,\"y\":35.98784194528876,\"z\":1000,\"width\":990.1519756838907,\"height\":42.796352583586625,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Discrepancies Analysis\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"16pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 42.80,
+          "width": 990.15,
+          "x": 231.49,
+          "y": 35.99,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"36c5235f100a454a5777\",\"layouts\":[{\"id\":0,\"position\":{\"x\":231.48936170212767,\"y\":413.37386018237083,\"z\":6000,\"width\":320,\"height\":260,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact_Invoice.INV_ISSUER_CD\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Fact_InvoiceItemDiscrepancy.AmountDifference)\"}],\"Series\":[{\"queryRef\":\"Dim_Geography.LocationCode\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f1\",\"Entity\":\"Fact_Invoice\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_InvoiceItemDiscrepancy\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Dim_Geography\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"INV_ISSUER_CD\"},\"Name\":\"Fact_Invoice.INV_ISSUER_CD\",\"NativeReferenceName\":\"INV_ISSUER_CD\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"AmountDifference\"}},\"Function\":1},\"Name\":\"Sum(Fact_InvoiceItemDiscrepancy.AmountDifference)\",\"NativeReferenceName\":\"Average of AmountDifference\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"LocationCode\"},\"Name\":\"Dim_Geography.LocationCode\",\"NativeReferenceName\":\"LocationCode\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"AmountDifference\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'AVG AMOUNT Discrepancies per Invoice Issuer'\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 260.00,
+          "width": 320.00,
+          "x": 231.49,
+          "y": 413.37,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"370d6bcc8d1771ad6032\",\"layouts\":[{\"id\":0,\"position\":{\"x\":567.0516717325228,\"y\":413.37386018237083,\"z\":7000,\"width\":320,\"height\":259.69604863221883,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Geography.LocationCode\",\"active\":true}],\"Y\":[{\"queryRef\":\"Fact_InvoiceItemDiscrepancy.Discrepancy\"}],\"Series\":[{\"queryRef\":\"Fact_Invoice.INV_ISSUER_CD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Geography\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_InvoiceItemDiscrepancy\",\"Schema\":\"extension\",\"Type\":0},{\"Name\":\"f1\",\"Entity\":\"Fact_Invoice\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"LocationCode\"},\"Name\":\"Dim_Geography.LocationCode\",\"NativeReferenceName\":\"LocationCode\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discrepancy\"},\"Name\":\"Fact_InvoiceItemDiscrepancy.Discrepancy\",\"NativeReferenceName\":\"Discrepancy\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"INV_ISSUER_CD\"},\"Name\":\"Fact_Invoice.INV_ISSUER_CD\",\"NativeReferenceName\":\"INV_ISSUER_CD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discrepancy\"}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":2,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'COUNT Discrepancies (Quantity & Price & VAT) per Location'\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 259.70,
+          "width": 320.00,
+          "x": 567.05,
+          "y": 413.37,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"7ad2332401fe3f84e8a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":221.76291793313072,\"y\":138.11550151975683,\"z\":0,\"width\":666.2613981762918,\"height\":259.69604863221883,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Geography.LocationIATACode\"},{\"queryRef\":\"Fact_Invoice.InvoiceNo\"},{\"queryRef\":\"CountNonNull(Fact_Invoice.InvoiceNo)\"},{\"queryRef\":\"Fact_InvoiceItemDiscrepancy.Discrepancy\"},{\"queryRef\":\"Fact_InvoiceItemDiscrepancy.Discrepancy/Invoices\"},{\"queryRef\":\"Sum(Fact_Invoice.InvoiceQuantitySys)\"},{\"queryRef\":\"Sum(Fact_InvoiceItemDiscrepancy.AmountDifference)\"},{\"queryRef\":\"Fact_InvoiceItemDiscrepancy.Amount Discrep/Invoice\"},{\"queryRef\":\"Fact_InvoiceItemDiscrepancy.Percent Amount Discrep/Invoice\"},{\"queryRef\":\"Sum(Fact_InvoiceItemDiscrepancy.QuantityExpected)\"},{\"queryRef\":\"Sum(Fact_InvoiceItemDiscrepancy.QuantityInvoiced)\"},{\"queryRef\":\"Sum(Fact_InvoiceItemDiscrepancy.VATExpected)\"},{\"queryRef\":\"Sum(Fact_InvoiceItemDiscrepancy.VATInvoiced)\"},{\"queryRef\":\"Sum(Fact_InvoiceItemDiscrepancy.VATDifference)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Geography\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_Invoice\",\"Type\":0},{\"Name\":\"f1\",\"Entity\":\"Fact_InvoiceItemDiscrepancy\",\"Type\":0},{\"Name\":\"f2\",\"Entity\":\"Fact_InvoiceItemDiscrepancy\",\"Schema\":\"extension\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"LocationIATACode\"},\"Name\":\"Dim_Geography.LocationIATACode\",\"NativeReferenceName\":\"Location\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"InvoiceNo\"},\"Name\":\"Fact_Invoice.InvoiceNo\",\"NativeReferenceName\":\"InvoiceNo\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"InvoiceNo\"}},\"Function\":5},\"Name\":\"CountNonNull(Fact_Invoice.InvoiceNo)\",\"NativeReferenceName\":\"# Invoices\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"InvoiceQuantitySys\"}},\"Function\":0},\"Name\":\"Sum(Fact_Invoice.InvoiceQuantitySys)\",\"NativeReferenceName\":\"Invoice Amount EUR\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"AmountDifference\"}},\"Function\":0},\"Name\":\"Sum(Fact_InvoiceItemDiscrepancy.AmountDifference)\",\"NativeReferenceName\":\"Sum Amount Discrep\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f2\"}},\"Property\":\"Discrepancy\"},\"Name\":\"Fact_InvoiceItemDiscrepancy.Discrepancy\",\"NativeReferenceName\":\"#Discrepancy\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f2\"}},\"Property\":\"Amount Discrep/Invoice\"},\"Name\":\"Fact_InvoiceItemDiscrepancy.Amount Discrep/Invoice\",\"NativeReferenceName\":\"Amount Discrep/Invoice\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"QuantityExpected\"}},\"Function\":0},\"Name\":\"Sum(Fact_InvoiceItemDiscrepancy.QuantityExpected)\",\"NativeReferenceName\":\"Sum of QuantityExpected\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"QuantityInvoiced\"}},\"Function\":0},\"Name\":\"Sum(Fact_InvoiceItemDiscrepancy.QuantityInvoiced)\",\"NativeReferenceName\":\"Sum of QuantityInvoiced\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"VATExpected\"}},\"Function\":0},\"Name\":\"Sum(Fact_InvoiceItemDiscrepancy.VATExpected)\",\"NativeReferenceName\":\"Sum of VATExpected\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"VATInvoiced\"}},\"Function\":0},\"Name\":\"Sum(Fact_InvoiceItemDiscrepancy.VATInvoiced)\",\"NativeReferenceName\":\"Sum of VATInvoiced\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"VATDifference\"}},\"Function\":0},\"Name\":\"Sum(Fact_InvoiceItemDiscrepancy.VATDifference)\",\"NativeReferenceName\":\"Sum of VATDifference\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f2\"}},\"Property\":\"Percent Amount Discrep/Invoice\"},\"Name\":\"Fact_InvoiceItemDiscrepancy.Percent Amount Discrep/Invoice\",\"NativeReferenceName\":\"% Amount Discrep/Invoice\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f2\"}},\"Property\":\"Discrepancy/Invoices\"},\"Name\":\"Fact_InvoiceItemDiscrepancy.Discrepancy/Invoices\",\"NativeReferenceName\":\"#Discrepancy/Invoices\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"InvoiceNo\"}},\"Function\":5}}}]},\"columnProperties\":{\"Dim_Geography.LocationIATACode\":{\"displayName\":\"Location\"},\"CountNonNull(Fact_Invoice.InvoiceNo)\":{\"displayName\":\"# Invoices\"},\"Fact_InvoiceItemDiscrepancy.Discrepancy\":{\"displayName\":\"#Discrepancy\"},\"Fact_InvoiceItemDiscrepancy.Discrepancy/Invoices\":{\"displayName\":\"#Discrepancy/Invoices\"},\"Sum(Fact_Invoice.InvoiceQuantitySys)\":{\"displayName\":\"Invoice Amount EUR\"},\"Sum(Fact_InvoiceItemDiscrepancy.AmountDifference)\":{\"displayName\":\"Sum Amount Discrep\"},\"Fact_InvoiceItemDiscrepancy.Percent Amount Discrep/Invoice\":{\"displayName\":\"% Amount Discrep/Invoice\"}},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Discrepancies Overview'\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 259.70,
+          "width": 666.26,
+          "x": 221.76,
+          "y": 138.12,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"848cc1da53997a1f1740\",\"layouts\":[{\"id\":0,\"position\":{\"x\":901.6413373860182,\"y\":138.11550151975683,\"z\":5000,\"width\":320,\"height\":259.69604863221883,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Fact_InvoiceItemDiscrepancy.Discrepancy\"}],\"Category\":[{\"queryRef\":\"Fact_Invoice.INV_ISSUER_CD\",\"active\":true}],\"Series\":[{\"queryRef\":\"Dim_Geography.LocationCode\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_InvoiceItemDiscrepancy\",\"Schema\":\"extension\",\"Type\":0},{\"Name\":\"f1\",\"Entity\":\"Fact_Invoice\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Dim_Geography\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discrepancy\"},\"Name\":\"Fact_InvoiceItemDiscrepancy.Discrepancy\",\"NativeReferenceName\":\"Discrepancy\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"INV_ISSUER_CD\"},\"Name\":\"Fact_Invoice.INV_ISSUER_CD\",\"NativeReferenceName\":\"INV_ISSUER_CD\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"LocationCode\"},\"Name\":\"Dim_Geography.LocationCode\",\"NativeReferenceName\":\"LocationCode\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discrepancy\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"LocationCode\"}}}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'COUNT Discrepancies Per Invoice Issuer'\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 259.70,
+          "width": 320.00,
+          "x": 901.64,
+          "y": 138.12,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"890e48b09f800c43c088\",\"layouts\":[{\"id\":0,\"position\":{\"x\":901.6413373860182,\"y\":413.37386018237083,\"z\":8000,\"width\":320,\"height\":259.69604863221883,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Dim_Geography.LocationCode\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Fact_InvoiceItemDiscrepancy.AmountDifference)\"}],\"Series\":[{\"queryRef\":\"Fact_Invoice.INV_ISSUER_CD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Geography\",\"Type\":0},{\"Name\":\"f\",\"Entity\":\"Fact_InvoiceItemDiscrepancy\",\"Type\":0},{\"Name\":\"f1\",\"Entity\":\"Fact_Invoice\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"LocationCode\"},\"Name\":\"Dim_Geography.LocationCode\",\"NativeReferenceName\":\"LocationCode\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"AmountDifference\"}},\"Function\":1},\"Name\":\"Sum(Fact_InvoiceItemDiscrepancy.AmountDifference)\",\"NativeReferenceName\":\"Average of AmountDifference\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f1\"}},\"Property\":\"INV_ISSUER_CD\"},\"Name\":\"Fact_Invoice.INV_ISSUER_CD\",\"NativeReferenceName\":\"INV_ISSUER_CD\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"AmountDifference\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":2,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'AVG AMOUNT Discrepancies per Location'\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 259.70,
+          "width": 320.00,
+          "x": 901.64,
+          "y": 413.37,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"abe2f8667cd8e7e739ab\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.06990881458967,\"y\":367.6595744680851,\"z\":4000,\"width\":132.27963525835867,\"height\":71.00303951367782,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Calendar_InvoiceDate.YR\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Calendar_InvoiceDate\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"YR\"},\"Name\":\"Dim_Calendar_InvoiceDate.YR\",\"NativeReferenceName\":\"YR\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Years in Date'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Dim_Calendar_InvoiceDate\"}},\"Property\":\"YR\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Calendar_InvoiceDate\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"YR\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 71.00,
+          "width": 132.28,
+          "x": 33.07,
+          "y": 367.66,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"ad39a323c5931d0ab449\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.06990881458967,\"y\":268.4498480243161,\"z\":3000,\"width\":132.27963525835867,\"height\":70.03039513677813,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Geography.LocationCode\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Geography\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"LocationCode\"},\"Name\":\"Dim_Geography.LocationCode\",\"NativeReferenceName\":\"LocationCode\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Location Code'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 70.03,
+          "width": 132.28,
+          "x": 33.07,
+          "y": 268.45,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"c76b2bdca734af56c7f3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":33.06990881458967,\"y\":0.9726443768996961,\"z\":9000,\"width\":131.30699088145897,\"height\":112.82674772036475,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"image__1_-removebg-preview12518288374320653975.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 112.83,
+          "width": 131.31,
+          "x": 33.07,
+          "y": 0.97,
+          "z": 9000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

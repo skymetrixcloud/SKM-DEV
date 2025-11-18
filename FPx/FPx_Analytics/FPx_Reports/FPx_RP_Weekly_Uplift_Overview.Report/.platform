@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Weekly_Uplift_Overview"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "cea490bd-7d9f-a5fc-47da-fcc36d0bf1a3"
+  }
+}

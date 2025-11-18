@@ -1,0 +1,191 @@
+table Dim_Calendar
+	lineageTag: e2f1a6a7-155b-4f81-8ad5-f77bbd9cb2e0
+	sourceLineageTag: [fpx].[Dim_Calendar]
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: f0b335b5-dd34-4557-a88e-02e38f02efed
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column CRT_DT
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 10870ac7-85a6-4a02-8ef8-29d4f9ef8e87
+		sourceLineageTag: CRT_DT
+		summarizeBy: none
+		sourceColumn: CRT_DT
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOW
+		dataType: double
+		sourceProviderType: float
+		lineageTag: a45975ef-2810-41d9-b1d2-7909fecfcd3c
+		sourceLineageTag: DOW
+		summarizeBy: sum
+		sourceColumn: DOW
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column YR
+		dataType: double
+		sourceProviderType: float
+		lineageTag: d2306e4a-3cba-4e28-8dee-d1e0b0c9ff27
+		sourceLineageTag: YR
+		summarizeBy: sum
+		sourceColumn: YR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QT
+		dataType: double
+		sourceProviderType: float
+		lineageTag: da630d96-4be4-45b7-9f6e-2395b93c229d
+		sourceLineageTag: QT
+		summarizeBy: sum
+		sourceColumn: QT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MTH
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 61b290cf-3343-41c6-b8e7-5eef7ad9eed5
+		sourceLineageTag: MTH
+		summarizeBy: sum
+		sourceColumn: MTH
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SAME_Q2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 05c74a49-177c-4ee5-99be-5287c4f38db0
+		sourceLineageTag: SAME_Q2D
+		summarizeBy: sum
+		sourceColumn: SAME_Q2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ANY_M2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1c80101f-0eec-4759-945c-8258c91bd9da
+		sourceLineageTag: ANY_M2D
+		summarizeBy: sum
+		sourceColumn: ANY_M2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SAME_M2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: ab931212-6eaf-4375-b512-c4d84392a535
+		sourceLineageTag: SAME_M2D
+		summarizeBy: sum
+		sourceColumn: SAME_M2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Y2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: cc2a00cc-39c2-4cba-a671-e25af0a96d2f
+		sourceLineageTag: Y2D
+		summarizeBy: sum
+		sourceColumn: Y2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Q2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 3e824a36-35c5-45e5-8d0d-d412bccad844
+		sourceLineageTag: Q2D
+		summarizeBy: sum
+		sourceColumn: Q2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column M2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: cadfc16b-f8b9-4ec8-8e0a-6691451f64e1
+		sourceLineageTag: M2D
+		summarizeBy: sum
+		sourceColumn: M2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column W2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 40a0acaa-061d-407e-926e-2160e1730f4f
+		sourceLineageTag: W2D
+		summarizeBy: sum
+		sourceColumn: W2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ANY_Y2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 339f359b-ea55-4042-bb35-8cd153f1e20a
+		sourceLineageTag: ANY_Y2D
+		summarizeBy: sum
+		sourceColumn: ANY_Y2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ANY_Q2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: dc1539d7-80b0-46f2-a8ab-cac430e2fdaf
+		sourceLineageTag: ANY_Q2D
+		summarizeBy: sum
+		sourceColumn: ANY_Q2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Dim_Calendar = entity
+		mode: directLake
+		source
+			entityName: Dim_Calendar
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

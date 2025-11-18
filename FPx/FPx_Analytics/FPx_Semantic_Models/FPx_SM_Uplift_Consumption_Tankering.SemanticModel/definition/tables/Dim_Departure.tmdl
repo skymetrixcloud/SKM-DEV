@@ -1,0 +1,145 @@
+table Dim_Departure
+	lineageTag: d4f031c8-d892-45c6-9cf9-db80f52b70bb
+	sourceLineageTag: [fpx].[Dim_Departure]
+
+	column LOC_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: b41efad4-2490-462d-a856-1e745ed4b0d5
+		sourceLineageTag: LOC_ID
+		summarizeBy: none
+		sourceColumn: LOC_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column LocationCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 38509e38-9b34-48e1-b3ce-e4513b9139aa
+		sourceLineageTag: LocationCode
+		summarizeBy: none
+		sourceColumn: LocationCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column LocationName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7e526f4e-34f3-4601-a14a-503738ecca39
+		sourceLineageTag: LocationName
+		summarizeBy: none
+		sourceColumn: LocationName
+
+		annotation SummarizationSetBy = Automatic
+
+	column LocationIATACode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5e8c9734-09eb-4859-80db-4968f794c491
+		sourceLineageTag: LocationIATACode
+		summarizeBy: none
+		sourceColumn: LocationIATACode
+
+		annotation SummarizationSetBy = Automatic
+
+	column LocationICAOCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0b1f652f-1ba6-4da4-96f7-98a8cf36981f
+		sourceLineageTag: LocationICAOCode
+		summarizeBy: none
+		sourceColumn: LocationICAOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsAirport
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9ba7ee17-e57e-495b-9728-357fa8c2920e
+		sourceLineageTag: IsAirport
+		summarizeBy: none
+		sourceColumn: IsAirport
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsMonopolistic
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5edf0860-4218-4ac0-a0ef-7f022509a7b4
+		sourceLineageTag: IsMonopolistic
+		summarizeBy: none
+		sourceColumn: IsMonopolistic
+
+		annotation SummarizationSetBy = Automatic
+
+	column CNTRY_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 0013ee49-9b28-4852-9d17-290ed16eb4fb
+		sourceLineageTag: CNTRY_ID
+		summarizeBy: none
+		sourceColumn: CNTRY_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CountryName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a8460459-50bc-4fb2-9e6e-f130862d2b6f
+		sourceLineageTag: CountryName
+		summarizeBy: none
+		sourceColumn: CountryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CountryISOCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 747f57dd-ce10-4fcb-a0be-cd35ef34c9aa
+		sourceLineageTag: CountryISOCode
+		summarizeBy: none
+		sourceColumn: CountryISOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Continent
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 14de9b18-f8e3-4787-8a37-d21cf4d35533
+		sourceLineageTag: Continent
+		summarizeBy: none
+		sourceColumn: Continent
+
+		annotation SummarizationSetBy = Automatic
+
+	column StateCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4b06f7b9-f2b3-4f8c-934a-1c1f18110428
+		sourceLineageTag: StateCode
+		summarizeBy: none
+		sourceColumn: StateCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column StateName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f1c39ef0-493e-45a2-94c5-a01f8748113e
+		sourceLineageTag: StateName
+		summarizeBy: none
+		sourceColumn: StateName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Departure = entity
+		mode: directLake
+		source
+			entityName: Dim_Departure
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

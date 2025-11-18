@@ -1,0 +1,95 @@
+table Dim_Airline
+	lineageTag: 235a8fe4-45c7-4c46-ae65-cc17fe66c09e
+	sourceLineageTag: [fpx].[Dim_Airline]
+
+	column GroupCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 830c86fc-9f83-4fb5-8fa2-f2d0a607807e
+		sourceLineageTag: GroupCode
+		summarizeBy: none
+		sourceColumn: GroupCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column GroupName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 61f0f5ae-8136-4a64-9975-a00c08fc19a8
+		sourceLineageTag: GroupName
+		summarizeBy: none
+		sourceColumn: GroupName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: bb4a126a-544e-49c7-9a51-92cee8fb8a5f
+		sourceLineageTag: CO_ID
+		summarizeBy: none
+		sourceColumn: CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column AirlineCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 883ea3e8-5f91-4a36-9346-b97c754ca025
+		sourceLineageTag: AirlineCode
+		summarizeBy: none
+		sourceColumn: AirlineCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column AirlineName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 434fc85b-f5bd-4c19-b617-a48ab2e1f495
+		sourceLineageTag: AirlineName
+		summarizeBy: none
+		sourceColumn: AirlineName
+
+		annotation SummarizationSetBy = Automatic
+
+	column AirlineIATACode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5abb0d49-2d4d-4c5b-9b1f-d72c16433674
+		sourceLineageTag: AirlineIATACode
+		summarizeBy: none
+		sourceColumn: AirlineIATACode
+
+		annotation SummarizationSetBy = Automatic
+
+	column AirlineICAOCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3a805e63-c654-441c-a381-1193a0908b91
+		sourceLineageTag: AirlineICAOCode
+		summarizeBy: none
+		sourceColumn: AirlineICAOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column CO_GRP_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 8cb7c103-30c2-4d75-bafb-41e24be219db
+		sourceLineageTag: CO_GRP_ID
+		summarizeBy: none
+		sourceColumn: CO_GRP_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Airline = entity
+		mode: directLake
+		source
+			entityName: Dim_Airline
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

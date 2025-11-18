@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "FPx_SM_Forecast_Flights"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ddb37205-fb90-9964-4e59-c116d6363a80"
+  }
+}

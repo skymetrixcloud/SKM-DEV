@@ -1,0 +1,36 @@
+model Model
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["DatabaseQuery"]
+
+annotation PBI_ProTooling = ["WebModelingEdit"]
+
+annotation __TEdtr = 1
+
+ref table Dim_Geography
+ref table Dim_Airline
+ref table Dim_Calendar
+ref table RPT_Supplier
+ref table RPT_Fueler
+ref table EFF_Supplier
+ref table EFF_Fueler
+ref table Fact_FuelMessage
+ref table Dim_Supplier
+ref table Fact_SupplierVolumes
+ref table Dim_Customer
+ref table Dim_ContractHolder
+ref table vDeparture
+ref table vDestination
+ref table Fact_ActualFlights
+ref table Dim_CustomerAccess
+ref table vOperator
+ref table vOwner
+

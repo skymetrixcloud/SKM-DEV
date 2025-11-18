@@ -1,0 +1,64 @@
+table Dim_CustomerAccess
+	lineageTag: f0fa1013-8fbc-488f-9507-0aca8ce63bbe
+	sourceLineageTag: [fpx].[Dim_CustomerAccess]
+
+	column LoginName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3675454b-6190-4875-a5cc-b921afd5e2f6
+		sourceLineageTag: LoginName
+		summarizeBy: none
+		sourceColumn: LoginName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 2abf57d7-2771-467e-bd93-60f780caed20
+		sourceLineageTag: CO_ID
+		summarizeBy: none
+		sourceColumn: CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 27ff2453-b1f8-416f-b526-bb81357d466d
+		sourceLineageTag: CustomerCode
+		summarizeBy: none
+		sourceColumn: CustomerCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0159c488-523c-4d41-982a-65a1f02b7e4c
+		sourceLineageTag: CustomerName
+		summarizeBy: none
+		sourceColumn: CustomerName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerICAOCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2a9e52c4-b59b-41ee-affa-f0feb005dcc5
+		sourceLineageTag: CustomerICAOCode
+		summarizeBy: none
+		sourceColumn: CustomerICAOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_CustomerAccess = entity
+		mode: directLake
+		source
+			entityName: Dim_CustomerAccess
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

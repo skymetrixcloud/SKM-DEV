@@ -1,0 +1,216 @@
+table Dim_Calendar_DepartureDate
+	lineageTag: 3cb35e8b-7248-40f3-815b-ea6bc309821b
+	sourceLineageTag: [fpx].[Dim_Calendar_DepartureDate]
+
+	column Date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: a92611d1-5326-4a67-ba29-694c5bf18c4d
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column CRT_DT
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 7791f65b-1538-400e-98da-776934902dfd
+		sourceLineageTag: CRT_DT
+		summarizeBy: none
+		sourceColumn: CRT_DT
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOW
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 49777e19-6324-4801-801d-b40041b9284e
+		sourceLineageTag: DOW
+		summarizeBy: none
+		sourceColumn: DOW
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column YR
+		dataType: int64
+		sourceProviderType: float
+		lineageTag: 57e52614-17f4-407b-b12c-171e2446f528
+		sourceLineageTag: YR
+		summarizeBy: none
+		sourceColumn: YR
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QT
+		dataType: double
+		sourceProviderType: float
+		lineageTag: e2664fa3-d777-4dad-9cfc-bfcae5cfddf7
+		sourceLineageTag: QT
+		summarizeBy: none
+		sourceColumn: QT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MTH
+		dataType: int64
+		sourceProviderType: float
+		lineageTag: d30994fb-d1a7-496a-9f12-a55e20574a7b
+		sourceLineageTag: MTH
+		summarizeBy: none
+		sourceColumn: MTH
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column W2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: d47a95fd-bfe7-4d37-b465-1ddb4491cb1a
+		sourceLineageTag: W2D
+		summarizeBy: none
+		sourceColumn: W2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ANY_Y2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: e7d39235-3857-4a46-92a2-4b0e7a0c6572
+		sourceLineageTag: ANY_Y2D
+		summarizeBy: none
+		sourceColumn: ANY_Y2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ANY_Q2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: f27ec774-a704-4627-bba8-b2244d0611ee
+		sourceLineageTag: ANY_Q2D
+		summarizeBy: none
+		sourceColumn: ANY_Q2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MTHYR
+		dataType: string
+		sourceProviderType: varchar(7)
+		lineageTag: 6679f67f-10d7-4152-a4e4-bb6864eb34ba
+		sourceLineageTag: MTHYR
+		summarizeBy: none
+		sourceColumn: MTHYR
+
+		annotation SummarizationSetBy = Automatic
+
+	column SAME_Q2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: d13fa5dd-9599-43fc-88fe-455e42d2f901
+		sourceLineageTag: SAME_Q2D
+		summarizeBy: none
+		sourceColumn: SAME_Q2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ANY_M2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: bc71edca-5251-42e8-bf79-8d3bfe92bb20
+		sourceLineageTag: ANY_M2D
+		summarizeBy: none
+		sourceColumn: ANY_M2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SAME_M2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 42d1cc04-9faf-4036-b01f-2143fd2859a6
+		sourceLineageTag: SAME_M2D
+		summarizeBy: none
+		sourceColumn: SAME_M2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Y2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: e1ba423b-ba99-4170-b333-31496e1af45a
+		sourceLineageTag: Y2D
+		summarizeBy: none
+		sourceColumn: Y2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Q2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 7aa865e6-8571-4606-a5b8-94c2c9427a47
+		sourceLineageTag: Q2D
+		summarizeBy: none
+		sourceColumn: Q2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column M2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 086f6908-ff01-4547-afaa-8f433a06059a
+		sourceLineageTag: M2D
+		summarizeBy: none
+		sourceColumn: M2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column WeekOfYear
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 8ea415fb-4533-40bf-a2fb-78c74af131e6
+		sourceLineageTag: WeekOfYear
+		summarizeBy: none
+		sourceColumn: WeekOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Calendar_DepartureDate = entity
+		mode: directLake
+		source
+			entityName: Dim_Calendar_DepartureDate
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

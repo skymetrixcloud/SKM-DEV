@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Discrepancies Overview_Test_Report_Filter"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f1df5d4c-fdf7-8da1-471f-a33fab2a0abf"
+  }
+}

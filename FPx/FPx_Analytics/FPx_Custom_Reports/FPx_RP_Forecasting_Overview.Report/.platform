@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Forecasting_Overview"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f88a5511-6e2f-b5b1-44bb-5bcc7f2a84ec"
+  }
+}

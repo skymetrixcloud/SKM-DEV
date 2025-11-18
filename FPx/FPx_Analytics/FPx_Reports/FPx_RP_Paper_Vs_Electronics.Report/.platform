@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Paper_Vs_Electronics"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8b370669-f299-b83c-42f1-2a59bd01d8d2"
+  }
+}

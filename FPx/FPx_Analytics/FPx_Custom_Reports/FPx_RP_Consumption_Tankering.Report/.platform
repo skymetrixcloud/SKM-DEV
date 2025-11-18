@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Consumption_Tankering"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e6d22c11-557a-8732-4ef8-a6bc6ef8e6ad"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Flight Consumption_oldmodel"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e7c34a54-3d69-897f-4fb9-1e6b2c332691"
+  }
+}

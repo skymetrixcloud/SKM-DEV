@@ -1,0 +1,760 @@
+table Report_Actual_Flights
+	lineageTag: 46a4fd2f-0fb6-4826-8f05-38451c0443fb
+	sourceLineageTag: [fpx].[Report_Actual_Flights]
+
+	column AF_FlightID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 46cbf379-44a4-439e-8505-cd3c2684f474
+		sourceLineageTag: AF_FlightID
+		summarizeBy: count
+		sourceColumn: AF_FlightID
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_FlightDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: b7d6c366-9c2d-446e-830c-dcb2710bc102
+		sourceLineageTag: AF_FlightDate
+		summarizeBy: none
+		sourceColumn: AF_FlightDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_Registration
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0e06fa96-2dd7-4534-999d-e07cbc2cc56b
+		sourceLineageTag: AF_Registration
+		summarizeBy: none
+		sourceColumn: AF_Registration
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_Departure
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c1168106-881c-42a2-904f-a8004ee5fe64
+		sourceLineageTag: AF_Departure
+		summarizeBy: none
+		sourceColumn: AF_Departure
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_Destination
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3bf01512-b96c-4045-8acf-5e6776d42a7d
+		sourceLineageTag: AF_Destination
+		summarizeBy: none
+		sourceColumn: AF_Destination
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_AirlineDesignator
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 92aed72a-6919-449e-a610-128b4505edfc
+		sourceLineageTag: AF_AirlineDesignator
+		summarizeBy: none
+		sourceColumn: AF_AirlineDesignator
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_FlightNumber
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9d6b68c6-ac02-4796-8065-f65dbb754ec0
+		sourceLineageTag: AF_FlightNumber
+		summarizeBy: none
+		sourceColumn: AF_FlightNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_Suffix
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f0bad1a1-f046-4d29-9db7-a6414f211e6a
+		sourceLineageTag: AF_Suffix
+		summarizeBy: none
+		sourceColumn: AF_Suffix
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_AircraftType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 86043cbd-df13-4f28-8005-b883fbd2b850
+		sourceLineageTag: AF_AircraftType
+		summarizeBy: none
+		sourceColumn: AF_AircraftType
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_Leg
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5fb3653e-803a-44ad-b308-09170710210b
+		sourceLineageTag: AF_Leg
+		summarizeBy: none
+		sourceColumn: AF_Leg
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_LegAircraftType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: cc174367-22b6-43fa-a31b-bb664116db5a
+		sourceLineageTag: AF_LegAircraftType
+		summarizeBy: none
+		sourceColumn: AF_LegAircraftType
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_SpecialEvent
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2887d38c-50f0-4981-9b13-f2d37a944d4a
+		sourceLineageTag: AF_SpecialEvent
+		summarizeBy: none
+		sourceColumn: AF_SpecialEvent
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_DomInt
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ba726b75-7983-4606-8780-46be1eab3081
+		sourceLineageTag: AF_DomInt
+		summarizeBy: none
+		sourceColumn: AF_DomInt
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_DepartureDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: c31ec9cb-8720-42ad-9167-8741533983d4
+		sourceLineageTag: AF_DepartureDate
+		summarizeBy: none
+		sourceColumn: AF_DepartureDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_OffBlockTimeUTC
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: fc1fb88b-3206-414f-8c4e-8f9001178d13
+		sourceLineageTag: AF_OffBlockTimeUTC
+		summarizeBy: none
+		sourceColumn: AF_OffBlockTimeUTC
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_TakeOffTimeUTC
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 66878e7b-63c0-41da-80e5-5d68b7ca6885
+		sourceLineageTag: AF_TakeOffTimeUTC
+		summarizeBy: none
+		sourceColumn: AF_TakeOffTimeUTC
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_TouchDownTimeUTC
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 49214a44-9019-45d9-8ee0-77b698785aae
+		sourceLineageTag: AF_TouchDownTimeUTC
+		summarizeBy: none
+		sourceColumn: AF_TouchDownTimeUTC
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_OnBlockTimeUTC
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 1c87114e-c3e3-45c6-80ec-9a6d6e18198d
+		sourceLineageTag: AF_OnBlockTimeUTC
+		summarizeBy: none
+		sourceColumn: AF_OnBlockTimeUTC
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_BlockTime
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 5321fded-1cbc-471a-8fa2-ba043808ba6f
+		sourceLineageTag: AF_BlockTime
+		summarizeBy: sum
+		sourceColumn: AF_BlockTime
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_FlightTime
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 9be8755b-8a43-416f-9940-87c39c2c6f15
+		sourceLineageTag: AF_FlightTime
+		summarizeBy: sum
+		sourceColumn: AF_FlightTime
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_Operator
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: cf3afa98-5c3f-4d71-bb02-f270b7c06d7c
+		sourceLineageTag: AF_Operator
+		summarizeBy: none
+		sourceColumn: AF_Operator
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_Owner
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: bd1440ce-a5d3-4361-9eaf-529ddf9d2825
+		sourceLineageTag: AF_Owner
+		summarizeBy: none
+		sourceColumn: AF_Owner
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_Customer
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a3c7e30c-69a6-4e8c-becb-8962d53e4328
+		sourceLineageTag: AF_Customer
+		summarizeBy: none
+		sourceColumn: AF_Customer
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_UpliftVol
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 600bebca-dd42-4545-bfcf-e3e9b2fef649
+		sourceLineageTag: AF_UpliftVol
+		summarizeBy: sum
+		sourceColumn: AF_UpliftVol
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_UpliftMass
+		dataType: double
+		sourceProviderType: float
+		lineageTag: a6e1a297-5491-4db1-a2d4-22c26860e76d
+		sourceLineageTag: AF_UpliftMass
+		summarizeBy: sum
+		sourceColumn: AF_UpliftMass
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_UpliftDensity
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 4)
+		lineageTag: 5152fb79-d0b2-4047-bc32-c1ab72a2d866
+		sourceLineageTag: AF_UpliftDensity
+		summarizeBy: sum
+		sourceColumn: AF_UpliftDensity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column AF_UpliftStatus
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0b486cc5-d1ea-4608-85d5-eb355f9c8ee4
+		sourceLineageTag: AF_UpliftStatus
+		summarizeBy: none
+		sourceColumn: AF_UpliftStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_UpliftCost
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(15, 2)
+		lineageTag: 0b9d9e89-9182-45b3-b1eb-3fd1660e0cc6
+		sourceLineageTag: AF_UpliftCost
+		summarizeBy: sum
+		sourceColumn: AF_UpliftCost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column AF_IPStatus
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1bd92c3a-8625-4d3e-bc6e-79837f16f78c
+		sourceLineageTag: AF_IPStatus
+		summarizeBy: none
+		sourceColumn: AF_IPStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_BeforeFuelingVol
+		dataType: double
+		sourceProviderType: float
+		lineageTag: bc092d96-b317-4e7d-aec9-406652004e79
+		sourceLineageTag: AF_BeforeFuelingVol
+		summarizeBy: sum
+		sourceColumn: AF_BeforeFuelingVol
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_BeforeFuelingMass
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 0215ef4a-0fff-4425-acba-f8459ca0d15a
+		sourceLineageTag: AF_BeforeFuelingMass
+		summarizeBy: sum
+		sourceColumn: AF_BeforeFuelingMass
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_OffBlockFuelVol
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 15619fb5-6f8c-4d36-98d8-65f0f8d04820
+		sourceLineageTag: AF_OffBlockFuelVol
+		summarizeBy: sum
+		sourceColumn: AF_OffBlockFuelVol
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_OffBlockFuelMass
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 912bad21-d009-4763-98c1-40db6f5bc714
+		sourceLineageTag: AF_OffBlockFuelMass
+		summarizeBy: sum
+		sourceColumn: AF_OffBlockFuelMass
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_ShutDownFuelVol
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 20943754-8748-4326-81c9-f4b15e6c5d83
+		sourceLineageTag: AF_ShutDownFuelVol
+		summarizeBy: sum
+		sourceColumn: AF_ShutDownFuelVol
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_ShutDownFuelMass
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 59707521-9b11-4731-b0ec-6fc6cf5ab66b
+		sourceLineageTag: AF_ShutDownFuelMass
+		summarizeBy: sum
+		sourceColumn: AF_ShutDownFuelMass
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_FuelDumpVol
+		dataType: double
+		sourceProviderType: float
+		lineageTag: f98356ad-0eed-4dce-9a34-9c6f7b7f5eb0
+		sourceLineageTag: AF_FuelDumpVol
+		summarizeBy: sum
+		sourceColumn: AF_FuelDumpVol
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_FuelDumpMass
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 735d2396-aa66-447b-8ac3-63fb931ce2dd
+		sourceLineageTag: AF_FuelDumpMass
+		summarizeBy: sum
+		sourceColumn: AF_FuelDumpMass
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_BlockConsumptionVol
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 426a2c99-f52f-4546-b2ff-ca22ab277f60
+		sourceLineageTag: AF_BlockConsumptionVol
+		summarizeBy: sum
+		sourceColumn: AF_BlockConsumptionVol
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_BlockConsumptionMass
+		dataType: double
+		sourceProviderType: float
+		lineageTag: f7b57b17-cb9e-409c-869f-9ea565c858be
+		sourceLineageTag: AF_BlockConsumptionMass
+		summarizeBy: sum
+		sourceColumn: AF_BlockConsumptionMass
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_BlockConsumptionStatus
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a563ad3c-ab9a-4fea-a0da-5c8a083bffc1
+		sourceLineageTag: AF_BlockConsumptionStatus
+		summarizeBy: none
+		sourceColumn: AF_BlockConsumptionStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_TotalConsumptionVol
+		dataType: double
+		sourceProviderType: float
+		lineageTag: da8e85a8-0b07-484e-b22c-1eb0656093c5
+		sourceLineageTag: AF_TotalConsumptionVol
+		summarizeBy: sum
+		sourceColumn: AF_TotalConsumptionVol
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_TotalConsumptionMass
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 157ce00b-41a2-4864-9658-9496b8d0e914
+		sourceLineageTag: AF_TotalConsumptionMass
+		summarizeBy: sum
+		sourceColumn: AF_TotalConsumptionMass
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_TotalConsumptionStatus
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 647c2b12-d894-401d-999b-1d1c08b2b0b6
+		sourceLineageTag: AF_TotalConsumptionStatus
+		summarizeBy: none
+		sourceColumn: AF_TotalConsumptionStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_BlockConsumptionCost
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(15, 2)
+		lineageTag: d652f65f-e69e-4160-94ee-9117ef5185d7
+		sourceLineageTag: AF_BlockConsumptionCost
+		summarizeBy: sum
+		sourceColumn: AF_BlockConsumptionCost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column AF_TotalConsumptionCost
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(15, 2)
+		lineageTag: 60bf5c41-c6c2-48ea-bd10-091e1f036aee
+		sourceLineageTag: AF_TotalConsumptionCost
+		summarizeBy: sum
+		sourceColumn: AF_TotalConsumptionCost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column AF_APUConsumptionVol
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 7e0c354b-c372-4f52-95b9-a8916b7940a9
+		sourceLineageTag: AF_APUConsumptionVol
+		summarizeBy: sum
+		sourceColumn: AF_APUConsumptionVol
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_APUConsumptionMass
+		dataType: double
+		sourceProviderType: float
+		lineageTag: b14a3fc4-e2ae-4285-8c4d-59c4615ccd25
+		sourceLineageTag: AF_APUConsumptionMass
+		summarizeBy: sum
+		sourceColumn: AF_APUConsumptionMass
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_APUConsumptionCost
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 47783de8-8ccd-454a-b575-3feaeb9ef61c
+		sourceLineageTag: AF_APUConsumptionCost
+		summarizeBy: sum
+		sourceColumn: AF_APUConsumptionCost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_TankeredFuelVol
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 063f7f7f-acd0-4abc-9b94-73ce4716bf1e
+		sourceLineageTag: AF_TankeredFuelVol
+		summarizeBy: sum
+		sourceColumn: AF_TankeredFuelVol
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_TankeredFuelMass
+		dataType: double
+		sourceProviderType: float
+		lineageTag: d9f1336c-e62e-4309-9a72-352d8723fa84
+		sourceLineageTag: AF_TankeredFuelMass
+		summarizeBy: sum
+		sourceColumn: AF_TankeredFuelMass
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AF_Division
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 85f19d7a-eb34-4ec4-95cf-efbf64c4ccb2
+		sourceLineageTag: AF_Division
+		summarizeBy: none
+		sourceColumn: AF_Division
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_FlightSeqNo
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 56378ac5-4688-47ba-9c7f-6ffae11b04f5
+		sourceLineageTag: AF_FlightSeqNo
+		summarizeBy: sum
+		sourceColumn: AF_FlightSeqNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_FlightType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d3520deb-611a-40ea-a156-9abd2d699451
+		sourceLineageTag: AF_FlightType
+		summarizeBy: none
+		sourceColumn: AF_FlightType
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_ServiceType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8e7f8b00-c691-4b2c-83ba-b7d82cee781e
+		sourceLineageTag: AF_ServiceType
+		summarizeBy: none
+		sourceColumn: AF_ServiceType
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_ReportedCustomer
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 11df9cbf-13ae-4436-b552-9536db9ace32
+		sourceLineageTag: AF_ReportedCustomer
+		summarizeBy: none
+		sourceColumn: AF_ReportedCustomer
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_LegDistance
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(12, 3)
+		lineageTag: 434c546b-ab87-4347-a756-b302d28c4248
+		sourceLineageTag: AF_LegDistance
+		summarizeBy: sum
+		sourceColumn: AF_LegDistance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column GEO_LOC_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 2983cfe8-170d-4b08-b56c-cca46294582d
+		sourceLineageTag: GEO_LOC_ID
+		summarizeBy: count
+		sourceColumn: GEO_LOC_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_LocationCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4e0f8b9b-fa66-4b35-8744-1f807dac27a6
+		sourceLineageTag: GEO_LocationCode
+		summarizeBy: none
+		sourceColumn: GEO_LocationCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_LocationName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 84de8d5c-fbd9-476c-b019-98934fa13c86
+		sourceLineageTag: GEO_LocationName
+		summarizeBy: none
+		sourceColumn: GEO_LocationName
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_LocationIATACode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 13edf091-f376-4397-8924-744402fe95a6
+		sourceLineageTag: GEO_LocationIATACode
+		summarizeBy: none
+		sourceColumn: GEO_LocationIATACode
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_LocationICAOCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b2d59df4-e031-4312-b93b-df31c0ce1f54
+		sourceLineageTag: GEO_LocationICAOCode
+		summarizeBy: none
+		sourceColumn: GEO_LocationICAOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_IsAirport
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a41398dd-8ff5-428c-aadd-52a541d069d6
+		sourceLineageTag: GEO_IsAirport
+		summarizeBy: none
+		sourceColumn: GEO_IsAirport
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_CNTRY_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 96b20626-a8da-42df-9387-c4bdf2aaa8bf
+		sourceLineageTag: GEO_CNTRY_ID
+		summarizeBy: count
+		sourceColumn: GEO_CNTRY_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_CountryName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2f6f66bd-d03e-4d15-b859-f6d757c1fcb4
+		sourceLineageTag: GEO_CountryName
+		summarizeBy: none
+		sourceColumn: GEO_CountryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_CountryISOCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 68010d51-0857-4aa3-b9d5-4c7773d50146
+		sourceLineageTag: GEO_CountryISOCode
+		summarizeBy: none
+		sourceColumn: GEO_CountryISOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_Continent
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 30821f27-c989-4a20-8b88-b3b9d4b545f6
+		sourceLineageTag: GEO_Continent
+		summarizeBy: none
+		sourceColumn: GEO_Continent
+
+		annotation SummarizationSetBy = Automatic
+
+	column Route
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 37b0050c-434e-434a-bd21-f256c89aa33b
+		sourceLineageTag: Route
+		summarizeBy: none
+		sourceColumn: Route
+
+		annotation SummarizationSetBy = Automatic
+
+	column AF_DepartureDate_Month
+		dataType: string
+		sourceProviderType: varchar(17)
+		lineageTag: 4ccb8135-8ea3-4141-bebc-a6df9a088262
+		sourceLineageTag: AF_DepartureDate_Month
+		summarizeBy: none
+		sourceColumn: AF_DepartureDate_Month
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Report_Actual_Flights = entity
+		mode: directLake
+		source
+			entityName: Report_Actual_Flights
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,118 @@
+table Report_EnergyTimeseries
+	lineageTag: d91301a0-7ebb-4158-a99f-28ebf3b2111f
+	sourceLineageTag: [fpx].[Report_EnergyTimeseries]
+
+	column TimeseriesId
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 64d1d396-18e1-4578-922c-82c1872c2b4b
+		sourceLineageTag: TimeseriesId
+		summarizeBy: count
+		sourceColumn: TimeseriesId
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TimeseriesName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e1e9588b-0bcd-45e5-b315-2ec9ae141003
+		sourceLineageTag: TimeseriesName
+		summarizeBy: none
+		sourceColumn: TimeseriesName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Commodity
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: bf692607-9d76-4daa-a560-e64d8dba144f
+		sourceLineageTag: Commodity
+		summarizeBy: none
+		sourceColumn: Commodity
+
+		annotation SummarizationSetBy = Automatic
+
+	column FinancialSource
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 23c7cb17-e90a-49ed-bd34-1607bee63376
+		sourceLineageTag: FinancialSource
+		summarizeBy: none
+		sourceColumn: FinancialSource
+
+		annotation SummarizationSetBy = Automatic
+
+	column OriginalCurrency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: fdbedf11-5ff6-4520-af4a-b75f058ad11f
+		sourceLineageTag: OriginalCurrency
+		summarizeBy: none
+		sourceColumn: OriginalCurrency
+
+		annotation SummarizationSetBy = Automatic
+
+	column OriginalUnit
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ac611501-2023-4266-aadf-d29106a90fd7
+		sourceLineageTag: OriginalUnit
+		summarizeBy: none
+		sourceColumn: OriginalUnit
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sys_ItemDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 9a1ceab6-9f8c-4118-badc-3c2d9e4d2ea3
+		sourceLineageTag: Sys_ItemDate
+		summarizeBy: none
+		sourceColumn: Sys_ItemDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sys_ItemValue
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 82d555eb-8549-434d-9b0f-d0221be481bd
+		sourceLineageTag: Sys_ItemValue
+		summarizeBy: sum
+		sourceColumn: Sys_ItemValue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Sys_IsSubstituted
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 88c291e6-e7b0-4768-bfbe-b409ff8e05cd
+		sourceLineageTag: Sys_IsSubstituted
+		summarizeBy: none
+		sourceColumn: Sys_IsSubstituted
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthYearItemDate
+		dataType: string
+		sourceProviderType: varchar(21)
+		lineageTag: 941e55a5-1d5c-46d5-8592-06a8f340c053
+		sourceLineageTag: MonthYearItemDate
+		summarizeBy: none
+		sourceColumn: MonthYearItemDate
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Report_EnergyTimeseries = entity
+		mode: directLake
+		source
+			entityName: Report_EnergyTimeseries
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

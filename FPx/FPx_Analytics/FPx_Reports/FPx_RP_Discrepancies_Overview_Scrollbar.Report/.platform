@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Discrepancies_Overview_Scrollbar"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "eaea3ad9-3b40-8853-448a-775c2566b2b0"
+  }
+}

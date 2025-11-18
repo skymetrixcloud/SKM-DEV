@@ -1,0 +1,253 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/orgapp/definition/orgAppDefinition/1.0.0/schema.json",
+  "settings": {
+    "logo": "data:image/png;base64,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",
+    "theme": {
+      "background": "#29447d",
+      "foreground": "#ffffff",
+      "backgroundHover": "#213664",
+      "backgroundSelected": "#19294b",
+      "backgroundPressed": "#101b32"
+    }
+  },
+  "elements": [
+    {
+      "elementType": "section",
+      "elementId": "f14cef5f-fc32-4c43-81a7-f45c1040b9f4",
+      "elements": [
+        {
+          "elementType": "item",
+          "elementId": "64466987-9d9e-42be-bae2-aaea95b00dc8",
+          "itemType": "Report",
+          "itemLogicalId": "ebd81150-5f63-9148-4985-d6541d73555c",
+          "displayName": "Discrepancies Overview"
+        },
+        {
+          "elementType": "item",
+          "elementId": "eee6e908-dce5-48c8-a0fe-a3c59062ca9a",
+          "itemType": "Report",
+          "itemLogicalId": "64fd85fb-a16d-a72f-44b1-372bfcb51e1b",
+          "displayName": "Delay (days): Release vs Due Date"
+        },
+        {
+          "elementType": "item",
+          "elementId": "9be596c7-43af-42a1-9c67-a11f3d69874e",
+          "itemType": "Report",
+          "itemLogicalId": "168e6d17-a305-b4d3-4eb9-0e3b64f8d8a0",
+          "displayName": "Variance (days) between Invoice and Input   Date"
+        },
+        {
+          "elementType": "item",
+          "elementId": "89fc5231-14fc-4374-93ab-9dff01f7c9f6",
+          "itemType": "Report",
+          "itemLogicalId": "17678226-0f60-8e3d-4f04-d29bd69c4e32",
+          "displayName": "Delay (days): Due Date vs Payment Date"
+        },
+        {
+          "elementType": "item",
+          "elementId": "afbe87f5-7d09-42a3-8fb6-094a6e941a20",
+          "itemType": "Report",
+          "itemLogicalId": "f1e82303-8164-9294-429a-3fedcef72c1e",
+          "displayName": "Invoice Verification Performance"
+        },
+        {
+          "elementType": "item",
+          "elementId": "1c852d8c-79a4-439e-9de7-bcf1e33a56e0",
+          "itemType": "Report",
+          "itemLogicalId": "527de737-eaad-9d37-44dd-b402e907cd50",
+          "displayName": "Invoices Approaching Due Date"
+        },
+        {
+          "elementType": "item",
+          "elementId": "5ba9c689-7013-42df-8e9a-a78d68aa7c58",
+          "itemType": "Report",
+          "itemLogicalId": "dd44ff39-18e5-a34b-4301-cd21e8beaea2",
+          "displayName": "Invoicing Overview"
+        },
+        {
+          "elementType": "item",
+          "elementId": "659cd8bd-d6b9-4abc-b3a7-e957145ff1a5",
+          "itemType": "Report",
+          "itemLogicalId": "8b370669-f299-b83c-42f1-2a59bd01d8d2",
+          "displayName": "Paper Invoices from total invoices"
+        }
+      ],
+      "displayName": "Accounting"
+    },
+    {
+      "elementType": "section",
+      "elementId": "39b4f40b-1a9d-457a-9804-b7c83da92f58",
+      "elements": [
+        {
+          "elementType": "item",
+          "elementId": "217f6a6f-e3fb-4320-8c65-aa631d120488",
+          "itemType": "Report",
+          "itemLogicalId": "490f9edb-8ff1-a9b3-41b4-d8aebde9a1c5",
+          "displayName": "Contracted Vs Actual"
+        }
+      ],
+      "displayName": "Contract management"
+    },
+    {
+      "elementType": "section",
+      "elementId": "f98151ab-f509-4a4e-a636-4ed4dcbab47d",
+      "elements": [
+        {
+          "elementType": "item",
+          "elementId": "8cf2e4e6-d33f-43a3-874c-f43e4a9af8b0",
+          "itemType": "Report",
+          "itemLogicalId": "0f16aade-09ec-83ad-4bc5-db875464a339",
+          "displayName": "Planned vs Actual: Quantities and Costs"
+        },
+        {
+          "elementType": "item",
+          "elementId": "6d620680-2020-49ef-9443-121327a908f8",
+          "itemType": "Report",
+          "itemLogicalId": "2911ec0f-2879-ad41-48c7-4832ea947563",
+          "displayName": "Planned vs Actual: Prices"
+        },
+        {
+          "elementType": "item",
+          "elementId": "df6158ae-427e-483a-a9e2-9e8de9ef239e",
+          "itemType": "Report",
+          "itemLogicalId": "85491cd9-729b-a94f-4cf4-15bf3e5bc021",
+          "displayName": "Forecast Costs and Volumes"
+        },
+        {
+          "elementType": "item",
+          "elementId": "a20b921e-9ce1-4a33-941c-7593f9c378a7",
+          "itemType": "Report",
+          "itemLogicalId": "f88a5511-6e2f-b5b1-44bb-5bcc7f2a84ec",
+          "displayName": "Forecasting Overview"
+        },
+        {
+          "elementType": "item",
+          "elementId": "e34e0ff8-de55-4790-a2a7-9cc9377f287a",
+          "itemType": "Report",
+          "itemLogicalId": "48055fc0-fb6c-b3e2-4a8c-84bae39ec559",
+          "displayName": "Consumption variance"
+        },
+        {
+          "elementType": "item",
+          "elementId": "faf57b72-9180-4e22-89e4-aec330c655c6",
+          "itemType": "Report",
+          "itemLogicalId": "f0946be5-1a23-9458-4dc8-2e2edbc30cb2",
+          "displayName": "Uplift Variance"
+        },
+        {
+          "elementType": "item",
+          "elementId": "f2737d8d-8dfe-403e-8232-4974f528ad71",
+          "itemType": "Report",
+          "itemLogicalId": "0a7c83c7-11ac-a390-4f63-ff1d2ee7a382",
+          "displayName": "Price Variance"
+        }
+      ],
+      "displayName": "Planning"
+    },
+    {
+      "elementType": "section",
+      "elementId": "dd9b4e2a-bcaf-4ffe-97e5-36bebdeb11a5",
+      "elements": [
+        {
+          "elementType": "item",
+          "elementId": "34c34288-a40e-42f2-8dbb-cc2b343cdee8",
+          "itemType": "Report",
+          "itemLogicalId": "e6d22c11-557a-8732-4ef8-a6bc6ef8e6ad",
+          "displayName": "Consumption, Tankering"
+        },
+        {
+          "elementType": "item",
+          "elementId": "0dcf8b56-4a31-40d8-82c6-41278bf9feeb",
+          "itemType": "Report",
+          "itemLogicalId": "cea490bd-7d9f-a5fc-47da-fcc36d0bf1a3",
+          "displayName": "Weekly Uplift overview"
+        },
+        {
+          "elementType": "item",
+          "elementId": "c4b965f4-c6b6-41e0-9e8b-521366427cd1",
+          "itemType": "Report",
+          "itemLogicalId": "aad8547d-6110-bf91-436f-c868e7be1420",
+          "displayName": "Weekly Tankering overview"
+        },
+        {
+          "elementType": "item",
+          "elementId": "ef76b444-93bb-470e-bba4-edd375bfcd26",
+          "itemType": "Report",
+          "itemLogicalId": "fdb07888-1d8d-9406-4d86-52f83fe673a6",
+          "displayName": "Weekly Consumption overview"
+        },
+        {
+          "elementType": "item",
+          "elementId": "6e511c82-fdaa-4dad-afeb-ca82e9f9d237",
+          "itemType": "Report",
+          "itemLogicalId": "2080867d-5d01-81c3-4f99-b3d96d5e9453",
+          "displayName": "KLM Overall Operations"
+        },
+        {
+          "elementType": "item",
+          "elementId": "0b04f446-0649-4092-9a4e-d00f2453f20c",
+          "itemType": "Report",
+          "itemLogicalId": "054ef37a-c3b4-8357-4158-bbf4d3d96c7d",
+          "displayName": "Fuel tickets: Delivery vs Creation"
+        }
+      ],
+      "displayName": "Operations"
+    },
+    {
+      "elementType": "section",
+      "elementId": "dad91fa3-5241-4a24-9d3a-e603ee46f1de",
+      "elements": [
+        {
+          "elementType": "item",
+          "elementId": "816970bb-d5ef-4706-b542-015bf853dc9d",
+          "itemType": "Report",
+          "itemLogicalId": "19e1da74-0bcb-a7d7-4c3c-5e9fbe5ca285",
+          "displayName": "Index Utilization"
+        }
+      ],
+      "displayName": "Financial"
+    },
+    {
+      "elementType": "item",
+      "elementId": "44f64212-658a-4c50-a591-07aeabf104ee",
+      "itemType": "SemanticModel",
+      "itemLogicalId": "1f120f7b-3707-96ea-4d7f-f585be989787",
+      "displayName": "217f6a6f-e3fb-4320-8c65-aa631d120488"
+    },
+    {
+      "elementType": "item",
+      "elementId": "3f54cfc6-529a-48fa-b584-a18c20685c61",
+      "itemType": "SemanticModel",
+      "itemLogicalId": "c9eb1706-d169-afbe-4229-b6584f9bf192",
+      "displayName": "faf57b72-9180-4e22-89e4-aec330c655c6"
+    },
+    {
+      "elementType": "item",
+      "elementId": "25bd0cd7-43ed-42a5-8b9f-f9c66295bc6a",
+      "itemType": "SemanticModel",
+      "itemLogicalId": "ddb37205-fb90-9964-4e59-c116d6363a80",
+      "displayName": "a20b921e-9ce1-4a33-941c-7593f9c378a7"
+    },
+    {
+      "elementType": "item",
+      "elementId": "35877aa7-b872-4a65-8c6d-bc90b66799ce",
+      "itemType": "SemanticModel",
+      "itemLogicalId": "e2b65b43-6c7a-bb0f-4e21-59f01fe48b25",
+      "displayName": "9be596c7-43af-42a1-9c67-a11f3d69874e"
+    },
+    {
+      "elementType": "item",
+      "elementId": "f494c228-2b87-4c1a-89f5-3eb098eb9580",
+      "itemType": "SemanticModel",
+      "itemLogicalId": "f83ab698-9009-996a-4c3e-bb36283dd149",
+      "displayName": "64466987-9d9e-42be-bae2-aaea95b00dc8"
+    },
+    {
+      "elementType": "item",
+      "elementId": "d325b8cd-eedc-4fdc-b1f5-166a8d58663b",
+      "itemType": "SemanticModel",
+      "itemLogicalId": "5ffd4c45-5a6a-a7ed-4eee-410d628d799b",
+      "displayName": "34c34288-a40e-42f2-8dbb-cc2b343cdee8"
+    }
+  ]
+}

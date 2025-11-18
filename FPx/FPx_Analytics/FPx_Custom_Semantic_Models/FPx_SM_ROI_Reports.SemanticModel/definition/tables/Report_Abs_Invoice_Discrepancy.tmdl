@@ -1,0 +1,245 @@
+table Report_Abs_Invoice_Discrepancy
+	lineageTag: 5bafc40f-e308-417f-a3f4-4d683be75012
+	sourceLineageTag: [fpx].[Report_Abs_Invoice_Discrepancy]
+
+	column ClientCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 645bee37-9d49-4cf5-8c89-9e347231cdfe
+		sourceLineageTag: ClientCode
+		summarizeBy: none
+		sourceColumn: ClientCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceCategory
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5bdaa23f-404a-4572-9796-91f429625836
+		sourceLineageTag: InvoiceCategory
+		summarizeBy: none
+		sourceColumn: InvoiceCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 1dff55bb-e414-459b-8ad2-e6204c0e0549
+		sourceLineageTag: InvoiceDate
+		summarizeBy: none
+		sourceColumn: InvoiceDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 527d6df9-487b-4c2a-887e-b35f9fd4c32b
+		sourceLineageTag: SupplierName
+		summarizeBy: none
+		sourceColumn: SupplierName
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 4db8bbb3-92a1-4ae4-894e-9ff86a165e3f
+		sourceLineageTag: InvoiceCount
+		summarizeBy: sum
+		sourceColumn: InvoiceCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column ItemsCount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: dd709dc0-c7ce-4237-91f7-125650f712ba
+		sourceLineageTag: ItemsCount
+		summarizeBy: sum
+		sourceColumn: ItemsCount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VATExpected
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 8cc141cf-c845-47aa-aa78-5f6ef0d97a9d
+		sourceLineageTag: VATExpected
+		summarizeBy: sum
+		sourceColumn: VATExpected
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VATDifference
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c5b5a535-aef3-43cc-a0e2-d2bf88adfdbc
+		sourceLineageTag: VATDifference
+		summarizeBy: sum
+		sourceColumn: VATDifference
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QuantityDifference
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 3fa1bd91-3a85-4fae-8cdc-12041b1e7ffb
+		sourceLineageTag: QuantityDifference
+		summarizeBy: sum
+		sourceColumn: QuantityDifference
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QuantityDifferenceAsAmount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 08f59f60-a023-4bba-b925-0c9fe317acf0
+		sourceLineageTag: QuantityDifferenceAsAmount
+		summarizeBy: sum
+		sourceColumn: QuantityDifferenceAsAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AmountInvoiced
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c3226474-375b-4de1-9435-e6a2c94a51df
+		sourceLineageTag: AmountInvoiced
+		summarizeBy: sum
+		sourceColumn: AmountInvoiced
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AmountExpected
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 14769cf9-1fab-4198-8230-be0108e54858
+		sourceLineageTag: AmountExpected
+		summarizeBy: sum
+		sourceColumn: AmountExpected
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AmountDifference
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 66b2126e-5248-4a08-a71b-e6e3c2df4161
+		sourceLineageTag: AmountDifference
+		summarizeBy: sum
+		sourceColumn: AmountDifference
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VATInvoiced
+		dataType: double
+		sourceProviderType: float
+		lineageTag: af2fa33d-9764-499d-87ae-652a0477f227
+		sourceLineageTag: VATInvoiced
+		summarizeBy: sum
+		sourceColumn: VATInvoiced
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalAmount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: e0479a97-ddf4-4490-9347-34fc372c8eee
+		sourceLineageTag: TotalAmount
+		summarizeBy: sum
+		sourceColumn: TotalAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QuantityDiscrepancyCount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1e70f91f-8bed-4899-b43f-46a2b657b7ee
+		sourceLineageTag: QuantityDiscrepancyCount
+		summarizeBy: sum
+		sourceColumn: QuantityDiscrepancyCount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AmountDiscrepancyCount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: fe5960ae-e951-4df3-b5bf-4ac51f27bf69
+		sourceLineageTag: AmountDiscrepancyCount
+		summarizeBy: sum
+		sourceColumn: AmountDiscrepancyCount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VATDiscrepancyCount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 3d6b02eb-c278-40e5-9e7b-7622947651a0
+		sourceLineageTag: VATDiscrepancyCount
+		summarizeBy: sum
+		sourceColumn: VATDiscrepancyCount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QuantityInvoiced
+		dataType: double
+		sourceProviderType: float
+		lineageTag: da2a67ef-8146-4680-aa52-9ae7110b21db
+		sourceLineageTag: QuantityInvoiced
+		summarizeBy: sum
+		sourceColumn: QuantityInvoiced
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QuantityExpected
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 41c4dcc6-76a0-432b-8d0d-33909f47f8f8
+		sourceLineageTag: QuantityExpected
+		summarizeBy: sum
+		sourceColumn: QuantityExpected
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Report_Abs_Invoice_Discrepancy = entity
+		mode: directLake
+		source
+			entityName: Report_Abs_Invoice_Discrepancy
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

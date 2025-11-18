@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Release_Date_Vs_Due_Date"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "64fd85fb-a16d-a72f-44b1-372bfcb51e1b"
+  }
+}

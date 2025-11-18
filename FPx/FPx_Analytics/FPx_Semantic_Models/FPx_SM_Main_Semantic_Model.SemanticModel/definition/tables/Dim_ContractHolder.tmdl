@@ -1,0 +1,106 @@
+table Dim_ContractHolder
+	lineageTag: cb51fdb5-bfd8-4c49-bb9f-21fbf01e2e24
+	sourceLineageTag: [fpx].[Dim_ContractHolder]
+
+	column ContractHolderName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a8e350db-22fd-41f9-ab25-7d7874fed8df
+		sourceLineageTag: ContractHolderName
+		summarizeBy: none
+		sourceColumn: ContractHolderName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CO_GRP_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 50212c8b-11d8-47a6-88fc-74e2db4c49bd
+		sourceLineageTag: CO_GRP_ID
+		summarizeBy: none
+		sourceColumn: CO_GRP_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column GroupCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4955aa00-b6d6-4dfc-80bf-583085719be3
+		sourceLineageTag: GroupCode
+		summarizeBy: none
+		sourceColumn: GroupCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column GroupName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2f85c1d0-c906-491b-83d9-860f4db2ac90
+		sourceLineageTag: GroupName
+		summarizeBy: none
+		sourceColumn: GroupName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLIENT_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 4f6add06-b8ae-4897-b8fb-c02374fe3dc3
+		sourceLineageTag: CLIENT_ID
+		summarizeBy: none
+		sourceColumn: CLIENT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 533d8028-76f9-44d2-8a04-28c6884b4acc
+		sourceLineageTag: CO_ID
+		summarizeBy: none
+		sourceColumn: CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ClientCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6c40ba68-7db6-48fe-8b75-3cd0022282b0
+		sourceLineageTag: ClientCode
+		summarizeBy: none
+		sourceColumn: ClientCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column ClientName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 646ab4cc-b738-477f-8c05-5e74712fa838
+		sourceLineageTag: ClientName
+		summarizeBy: none
+		sourceColumn: ClientName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ContractHolderCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 852d3215-6b14-4352-88e4-39b3250c5293
+		sourceLineageTag: ContractHolderCode
+		summarizeBy: none
+		sourceColumn: ContractHolderCode
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_ContractHolder = entity
+		mode: directLake
+		source
+			entityName: Dim_ContractHolder
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

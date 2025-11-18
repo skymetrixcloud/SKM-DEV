@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Planned_Vs_Actual_Prices"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "2911ec0f-2879-ad41-48c7-4832ea947563"
+  }
+}

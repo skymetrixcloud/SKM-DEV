@@ -1,0 +1,64 @@
+table Dim_Supplier
+	lineageTag: 08241a58-bae0-4623-a568-4ed074965174
+	sourceLineageTag: [fpx].[Dim_Supplier]
+
+	column CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 16962710-f727-40ff-b90a-4a83685edde0
+		sourceLineageTag: CO_ID
+		summarizeBy: none
+		sourceColumn: CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a30b7549-3197-4baf-9edf-299c295334c9
+		sourceLineageTag: SupplierCode
+		summarizeBy: none
+		sourceColumn: SupplierCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b76521ff-585b-48c6-b5c5-6dd80efc77cb
+		sourceLineageTag: SupplierName
+		summarizeBy: none
+		sourceColumn: SupplierName
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierCode2
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a01ceabc-28db-4eba-ae49-030a4e78d14b
+		sourceLineageTag: SupplierCode2
+		summarizeBy: none
+		sourceColumn: SupplierCode2
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierCode3
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: fe8dd16c-9e71-440f-a03d-a0b8c114dec7
+		sourceLineageTag: SupplierCode3
+		summarizeBy: none
+		sourceColumn: SupplierCode3
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Supplier = entity
+		mode: directLake
+		source
+			entityName: Dim_Supplier
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

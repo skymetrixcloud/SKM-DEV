@@ -1,0 +1,34 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/variableLibrary/definition/valueSet/1.0.0/schema.json",
+  "name": "Dev",
+  "variableOverrides": [
+    {
+      "name": "WorkspaceID",
+      "value": "9609ea30-dd2f-477a-acec-120bba9bdde3"
+    },
+    {
+      "name": "WareHouseID",
+      "value": "b1870f85-38f2-47c3-9036-d13665880733"
+    },
+    {
+      "name": "WareHouseSQLConnection",
+      "value": "k54es2zgas5ebigksxm2mzngyy-gdvatfrp3v5eplhmcif3vg654m.datawarehouse.fabric.microsoft.com"
+    },
+    {
+      "name": "USPMainName",
+      "value": "[WH_KLM].[fpx].[usp_main_fpx]"
+    },
+    {
+      "name": "LakeHouseID",
+      "value": "8272f7b3-ae48-4339-9e69-58da66f31b6"
+    },
+    {
+      "name": "SemanticModelID-fpx",
+      "value": "7ca95bbc-3fe1-41a1-9338-0e18ce6f9364"
+    },
+    {
+      "name": "CentralLakeHouseID",
+      "value": "8382914a-ebd8-493e-bd5c-50b482c77853"
+    }
+  ]
+}

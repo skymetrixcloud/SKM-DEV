@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Invoice_Verification_Performance"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f1e82303-8164-9294-429a-3fedcef72c1e"
+  }
+}

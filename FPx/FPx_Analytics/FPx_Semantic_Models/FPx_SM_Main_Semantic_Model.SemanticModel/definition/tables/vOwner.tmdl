@@ -1,0 +1,95 @@
+table vOwner
+	lineageTag: 08f2418d-d0d2-4789-a1cb-6693f86cacd7
+	sourceLineageTag: [fpx].[vOwner]
+
+	column CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 4da70299-8724-4116-bcc3-2dfb74935b92
+		sourceLineageTag: CO_ID
+		summarizeBy: none
+		sourceColumn: CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column GroupName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 51af8d81-84a3-46db-a245-61c97907dfe2
+		sourceLineageTag: GroupName
+		summarizeBy: none
+		sourceColumn: GroupName
+
+		annotation SummarizationSetBy = Automatic
+
+	column AirlineCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 63494129-ac64-4db3-87dc-4b2c0e025644
+		sourceLineageTag: AirlineCode
+		summarizeBy: none
+		sourceColumn: AirlineCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column AirlineName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ffc3b412-e7c0-48c4-ae64-526f3b7e1716
+		sourceLineageTag: AirlineName
+		summarizeBy: none
+		sourceColumn: AirlineName
+
+		annotation SummarizationSetBy = Automatic
+
+	column AirlineIATACode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 46c044ba-40cc-4ab6-859a-1bbfe1a8190b
+		sourceLineageTag: AirlineIATACode
+		summarizeBy: none
+		sourceColumn: AirlineIATACode
+
+		annotation SummarizationSetBy = Automatic
+
+	column AirlineICAOCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: fd4bde0e-1ee5-4d5e-a03c-597e66c41c38
+		sourceLineageTag: AirlineICAOCode
+		summarizeBy: none
+		sourceColumn: AirlineICAOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column CO_GRP_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: a95a3b2b-0b0f-41dc-86ce-b9d7317b68cf
+		sourceLineageTag: CO_GRP_ID
+		summarizeBy: none
+		sourceColumn: CO_GRP_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column GroupCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: dc4a0817-2ba7-468b-b602-0ff3ecad0089
+		sourceLineageTag: GroupCode
+		summarizeBy: none
+		sourceColumn: GroupCode
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vOwner = entity
+		mode: directLake
+		source
+			entityName: vOwner
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

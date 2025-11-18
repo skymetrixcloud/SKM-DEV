@@ -1,0 +1,69 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":\"5.59\"}},\"activeSectionIndex\":0,\"modelExtensions\":[{\"name\":\"extension\",\"entities\":[{\"name\":\"Report_Payment_Vs_Due\",\"extends\":\"Report_Payment_Vs_Due\",\"measures\":[{\"name\":\"Count_PH_current_year\",\"dataType\":3,\"expression\":\"CALCULATE(\\n    DISTINCTCOUNT(Report_Payment_Vs_Due[Inv_InvoiceID]),\\n    Report_Payment_Vs_Due[Inv_InvoiceType] = \\\"PH\\\", YEAR( Report_Payment_Vs_Due[Inv_InvoiceDate]) = YEAR(TODAY())\\n)\",\"errorMessage\":null,\"hidden\":false,\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"G\",\"format\":\"General\",\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}},{\"name\":\"Count_PH_last_year\",\"dataType\":3,\"expression\":\"CALCULATE(\\n    DISTINCTCOUNT(Report_Payment_Vs_Due[Inv_InvoiceID]),\\n    Report_Payment_Vs_Due[Inv_InvoiceType] = \\\"PH\\\", YEAR( Report_Payment_Vs_Due[Inv_InvoiceDate]) = YEAR(TODAY())-1\\n)\",\"errorMessage\":null,\"hidden\":false,\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"G\",\"format\":\"General\",\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}},{\"name\":\"Count_PH_currenYear\",\"dataType\":3,\"expression\":\"CALCULATE(\\n    DISTINCTCOUNT(Report_Payment_Vs_Due[Inv_InvoiceID]),\\n    Report_Payment_Vs_Due[Inv_InvoiceType] = \\\"PH\\\",  YEAR(Report_Payment_Vs_Due[Inv_InvoiceDate]) = YEAR(TODAY())\\n)\",\"errorMessage\":null,\"hidden\":false,\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"G\",\"format\":\"General\",\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}},{\"name\":\"PH_percentage_currentYear\",\"dataType\":3,\"expression\":\"\\nDIVIDE(\\n    [Count_PH_currenYear],\\n    CALCULATE(\\n        DISTINCTCOUNT(Report_Payment_Vs_Due[Inv_InvoiceID]),\\n        FILTER(\\n            Report_Payment_Vs_Due,\\n            YEAR(Report_Payment_Vs_Due[Inv_InvoiceDate]) = YEAR(TODAY())\\n        )\\n    )\\n)\",\"errorMessage\":null,\"hidden\":false,\"references\":{\"unrecognizedReferences\":false,\"measures\":[{\"schema\":\"extension\",\"entity\":\"Report_Payment_Vs_Due\",\"name\":\"Count_PH_currenYear\"}]},\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"G\",\"format\":\"General\",\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}},{\"name\":\"PH_percentage_LastYear\",\"dataType\":3,\"expression\":\"\\nDIVIDE(\\n    [Count_PH_LastYear],\\n    CALCULATE(\\n        DISTINCTCOUNT(Report_Payment_Vs_Due[Inv_InvoiceID]),\\n        FILTER(\\n            Report_Payment_Vs_Due,\\n            YEAR(Report_Payment_Vs_Due[Inv_InvoiceDate]) = YEAR(TODAY())-1\\n        )\\n    )\\n)\",\"errorMessage\":null,\"hidden\":false,\"references\":{\"unrecognizedReferences\":false,\"measures\":[{\"schema\":\"extension\",\"entity\":\"Report_Payment_Vs_Due\",\"name\":\"Count_PH_LastYear\"}]},\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"G\",\"format\":\"General\",\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}},{\"name\":\"Count_PH_LastYear\",\"dataType\":3,\"expression\":\"CALCULATE(\\n    DISTINCTCOUNT(Report_Payment_Vs_Due[Inv_InvoiceID]),\\n    Report_Payment_Vs_Due[Inv_InvoiceType] = \\\"PH\\\",  YEAR(Report_Payment_Vs_Due[Inv_InvoiceDate]) = YEAR(TODAY())-1\\n)\",\"errorMessage\":null,\"hidden\":false,\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"G\",\"format\":\"General\",\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}}]}]}],\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "80dbf6ddb851b574120e",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0ff41b280a3771e09279\",\"layouts\":[{\"id\":0,\"position\":{\"x\":69.9309548319064,\"y\":71.98774762108012,\"z\":1005,\"width\":510.08461171508196,\"height\":154.2594591880288,\"tabOrder\":1005}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Report_Payment_Vs_Due.Count_PH_LastYear\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"Report_Payment_Vs_Due\",\"Schema\":\"extension\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Count_PH_LastYear\"},\"Name\":\"Report_Payment_Vs_Due.Count_PH_LastYear\",\"NativeReferenceName\":\"Count_PH_LastYear\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Count_PH_LastYear\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'No. of paper invoices (Last Year)'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}}}],\"visualHeader\":[{\"properties\":{\"border\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 154.26,
+          "width": 510.08,
+          "x": 69.93,
+          "y": 71.99,
+          "z": 1005.00
+        },
+        {
+          "config": "{\"name\":\"685528dee502f5e14bec\",\"layouts\":[{\"id\":0,\"position\":{\"x\":668.4576564814582,\"y\":444.267242461523,\"z\":1003,\"width\":573.8451881794672,\"height\":121.35077456124934,\"tabOrder\":1003}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Report_Payment_Vs_Due.PH_Invoice_Percentage\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"Report_Payment_Vs_Due\",\"Schema\":\"extension\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"PH_percentage_currentYear\"},\"Name\":\"Report_Payment_Vs_Due.PH_Invoice_Percentage\",\"NativeReferenceName\":\"PH_Invoice_Percentage\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"PH_percentage_currentYear\"}}}]},\"columnProperties\":{\"Report_Payment_Vs_Due.PH_Invoice_Percentage\":{\"formatString\":\"0.0%;-0.0%;0.0%\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Paper Invoice Percentage (Current Year)'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 121.35,
+          "width": 573.85,
+          "x": 668.46,
+          "y": 444.27,
+          "z": 1003.00
+        },
+        {
+          "config": "{\"name\":\"f3eb1489cc62960e4689\",\"layouts\":[{\"id\":0,\"position\":{\"x\":102.83963945868588,\"y\":444.267242461523,\"z\":1002,\"width\":477.1759270883025,\"height\":121.35077456124934,\"tabOrder\":1002}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Report_Payment_Vs_Due.Count_PH_total\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"Report_Payment_Vs_Due\",\"Schema\":\"extension\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Count_PH_currenYear\"},\"Name\":\"Report_Payment_Vs_Due.Count_PH_total\",\"NativeReferenceName\":\"Count_PH_currenYear\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Count_PH_currenYear\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'No. of paper invoices (Current Year)'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 121.35,
+          "width": 477.18,
+          "x": 102.84,
+          "y": 444.27,
+          "z": 1002.00
+        },
+        {
+          "config": "{\"name\":\"f4890bbb58314aea662d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":668.4576564814582,\"y\":71.98774762108012,\"z\":1004,\"width\":540.9365035526878,\"height\":154.2594591880288,\"tabOrder\":1004}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Report_Payment_Vs_Due.PH_percentage_LastYear\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"Report_Payment_Vs_Due\",\"Schema\":\"extension\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"PH_percentage_LastYear\"},\"Name\":\"Report_Payment_Vs_Due.PH_percentage_LastYear\",\"NativeReferenceName\":\"PH_percentage_LastYear\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"PH_percentage_LastYear\"}}}]},\"columnProperties\":{\"Report_Payment_Vs_Due.PH_percentage_LastYear\":{\"formatString\":\"0.0%;-0.0%;0.0%\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"24D\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Paper Invoice Percentage (Last Year)'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 154.26,
+          "width": 540.94,
+          "x": 668.46,
+          "y": 71.99,
+          "z": 1004.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

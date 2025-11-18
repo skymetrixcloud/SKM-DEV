@@ -1,0 +1,64 @@
+table EFF_Supplier
+	lineageTag: aab370d6-78d8-4092-ba7e-560dbe8665eb
+	sourceLineageTag: [fpx].[EFF_Supplier]
+
+	column CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 2d4e96b4-636c-47cf-ae05-39bea0a34a5d
+		sourceLineageTag: CO_ID
+		summarizeBy: none
+		sourceColumn: CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8e652c44-cf41-4a5f-8f73-881a93bbbf30
+		sourceLineageTag: SupplierCode
+		summarizeBy: none
+		sourceColumn: SupplierCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4afe462f-d164-4d6c-b59d-bd67b01a5cd4
+		sourceLineageTag: SupplierName
+		summarizeBy: none
+		sourceColumn: SupplierName
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierCode2
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f1accbd8-d227-4571-82e6-93a3ac7b4691
+		sourceLineageTag: SupplierCode2
+		summarizeBy: none
+		sourceColumn: SupplierCode2
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierCode3
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a16033db-c384-4d9d-bc4a-d23ba8a185ec
+		sourceLineageTag: SupplierCode3
+		summarizeBy: none
+		sourceColumn: SupplierCode3
+
+		annotation SummarizationSetBy = Automatic
+
+	partition EFF_Supplier = entity
+		mode: directLake
+		source
+			entityName: EFF_Supplier
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

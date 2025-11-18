@@ -1,0 +1,4 @@
+-- Auto Generated (Do not modify) B0D9BDB6048FA0363865E69407602C7FBEA0F71C7963A17D2EB36766B9F0A80B
+CREATE VIEW [fpx].[vCalendar_DepartureDate]
+AS SELECT *
+FROM [fpx].[Dim_Calendar]

@@ -1,0 +1,16 @@
+relationship 530abc7b-7176-cd6f-3a07-e7de9301fe9d
+	fromColumn: Fact_ForecastFlights.AirlineDesignator
+	toColumn: Dim_Airline.AirlineIATACode
+
+relationship 01127e9d-94d0-f461-37a2-fd3861ae800e
+	fromColumn: Fact_ForecastFlights.FlightDate
+	toColumn: Dim_Calendar.Date
+
+relationship bc841e3f-70fa-be83-00c6-3cbc25f43fb1
+	fromColumn: Fact_ForecastFlights.Departure
+	toColumn: Dim_Departure.LocationCode
+
+relationship 71800f3a-6561-aa17-41ab-cfd8cd697874
+	fromColumn: Fact_ForecastFlights.Destination
+	toColumn: Dim_Destination.LocationCode
+

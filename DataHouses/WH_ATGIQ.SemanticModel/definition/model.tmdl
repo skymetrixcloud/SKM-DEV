@@ -1,0 +1,15 @@
+model c9024cfe-9eef-4cd6-be84-b3a0f1a5aa85
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["vOwner","vDeparture","vDestination","EFF_Supplier","vOperator","EFF_Fueler","RPT_Supplier(1)","RPT_Fueler","Dim_Calendar(1)","Dim_Customer(1)","Report_EnergyQuotPricesEU","Report_Billback_Unbilled","Fact_ActualFlights(1)","Dim_Supplier","Report_Actual_Uplift","Report_ForecastFlights","Report_Billback","Fact_FuelMessage","Report_EnergyQuotPricesUS","Report_ForecastCashFlow_VoP","Dim_ContractHolder","Dim_Owner","Report_EnergyQuotation","Dim_Departure","Report_Payment_Vs_Due","Report_Uplift_Consumption_Tankering","Dim_Airline","Report_Actual_Flights","Report_ForecastCashFlow","Dim_Operator","Dim_Destination","Dim_CustomerAccess(1)","Report_Supplier_Volumes","Report_ForecastVsActual","Dim_Geography","Fact_SupplierVolumes","Report_EnergyTimeseries","Report_Emissions","Report_AFA_Join"]
+
+annotation SourceLineageTagType = DatabaseFullyQualifiedName
+

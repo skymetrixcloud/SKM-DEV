@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "FPx_SM_ROI_Reports"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5d0ac5b1-ceef-a9fe-46a8-efeb2b40c3c7"
+  }
+}

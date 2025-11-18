@@ -1,0 +1,44 @@
+table Dim_Counterparty
+	lineageTag: ad1453bd-77de-476b-a964-b79d8c6031e8
+	sourceLineageTag: [fpx].[Dim_Counterparty]
+
+	column CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 137f4341-498b-4959-a608-61df7ec6e07b
+		sourceLineageTag: CO_ID
+		summarizeBy: none
+		sourceColumn: CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CounterpartyCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b90eb725-3529-47f5-9e88-5e94832e3a0c
+		sourceLineageTag: CounterpartyCode
+		summarizeBy: none
+		sourceColumn: CounterpartyCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column CounterpartyName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b89f39bc-63ab-4cb7-a315-86b58bd75299
+		sourceLineageTag: CounterpartyName
+		summarizeBy: none
+		sourceColumn: CounterpartyName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Counterparty = entity
+		mode: directLake
+		source
+			entityName: Dim_Counterparty
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

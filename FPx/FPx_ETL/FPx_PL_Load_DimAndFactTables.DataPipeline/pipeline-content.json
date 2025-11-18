@@ -1,0 +1,93 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "Dim and Fact load to WH",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "storedProcedureName": "[fpx].[usp_Load_Dim_Fact_tables]"
+        },
+        "linkedService": {
+          "name": "WH_GTI",
+          "properties": {
+            "annotations": [],
+            "type": "DataWarehouse",
+            "typeProperties": {
+              "endpoint": "k54es2zgas5ebigksxm2mzngyy-hyzmym6i6gaebosf3fwepg4vzy.datawarehouse.fabric.microsoft.com",
+              "artifactId": "f933d039-adf3-47e7-acbb-ad9b8c0c85a4",
+              "workspaceId": "33cc323e-f1c8-4080-ba45-d96c479b95ce"
+            }
+          }
+        }
+      },
+      {
+        "name": "ForecastFlights",
+        "type": "PBISemanticModelRefresh",
+        "dependsOn": [
+          {
+            "activity": "Dim and Fact load to WH",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "method": "post",
+          "groupId": "9609ea30-dd2f-477a-acec-120bba9bdde3",
+          "datasetId": "6d628ba1-17ce-4374-9b95-8b9356f35425",
+          "waitOnCompletion": true,
+          "commitMode": "Transactional",
+          "operationType": "SemanticModelRefresh"
+        },
+        "externalReferences": {
+          "connection": "10980060-f009-4e7f-abc2-d59e5d0859b4"
+        }
+      },
+      {
+        "name": "UpliftTankering",
+        "type": "PBISemanticModelRefresh",
+        "dependsOn": [
+          {
+            "activity": "Dim and Fact load to WH",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "method": "post",
+          "waitOnCompletion": true,
+          "commitMode": "Transactional",
+          "operationType": "SemanticModelRefresh",
+          "groupId": "9609ea30-dd2f-477a-acec-120bba9bdde3",
+          "datasetId": "f6374eb8-4193-43b9-9308-664c7d32fd69"
+        },
+        "externalReferences": {
+          "connection": "10980060-f009-4e7f-abc2-d59e5d0859b4"
+        }
+      }
+    ]
+  }
+}

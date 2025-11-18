@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Price_Variance"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0a7c83c7-11ac-a390-4f63-ff1d2ee7a382"
+  }
+}

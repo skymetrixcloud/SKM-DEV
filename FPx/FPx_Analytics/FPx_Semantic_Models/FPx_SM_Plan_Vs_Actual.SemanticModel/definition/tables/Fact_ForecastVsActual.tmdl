@@ -1,0 +1,718 @@
+table Fact_ForecastVsActual
+	lineageTag: fafdf117-f467-423b-9099-242ea30518c5
+	sourceLineageTag: [fpx].[Fact_ForecastVsActual]
+
+	measure ActualVsPlannedPrice(Weighted) =
+			(SUM(Fact_ForecastVsActual[UpliftCostActual])/SUM(Fact_ForecastVsActual[UpliftActual]) )-(SUM(Fact_ForecastVsActual[CostPlanned]) /SUM
+			(Fact_ForecastVsActual[QuantityPlanned]) )
+		lineageTag: 3f092b68-5819-4f41-b9f5-7469298e09f2
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Uplift Price Actual (Weighted Avg)' = SUM(Fact_ForecastVsActual[UpliftCostActual])/SUM(Fact_ForecastVsActual[UpliftActual])
+		lineageTag: 60179a66-cba2-4b8c-bea4-f54e29ea8da4
+
+		changedProperty = Name
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FlightDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: d5afa057-5777-479e-937d-61d30b489e4c
+		sourceLineageTag: FlightDate
+		summarizeBy: none
+		sourceColumn: FlightDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Departure
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 96328082-3895-4230-ba42-9f72d9575c00
+		sourceLineageTag: Departure
+		summarizeBy: none
+		sourceColumn: Departure
+
+		annotation SummarizationSetBy = Automatic
+
+	column Destination
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c0812c81-aa2e-4802-910b-d27ef07927db
+		sourceLineageTag: Destination
+		summarizeBy: none
+		sourceColumn: Destination
+
+		annotation SummarizationSetBy = Automatic
+
+	column AircraftType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b1569f85-bc55-46f1-9037-47740b5c4c1f
+		sourceLineageTag: AircraftType
+		summarizeBy: none
+		sourceColumn: AircraftType
+
+		annotation SummarizationSetBy = Automatic
+
+	column AirlineDesignator
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9db3fb23-fc40-42f6-a7a1-78ce8f86d8f9
+		sourceLineageTag: AirlineDesignator
+		summarizeBy: none
+		sourceColumn: AirlineDesignator
+
+		annotation SummarizationSetBy = Automatic
+
+	column FlightNumber
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 73d0f668-0b73-4a2d-a9ac-629b8de5499a
+		sourceLineageTag: FlightNumber
+		summarizeBy: none
+		sourceColumn: FlightNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column FrequencyVariance
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 3c7ef94a-b309-4a94-878f-d2ca47478e43
+		sourceLineageTag: FrequencyVariance
+		summarizeBy: sum
+		sourceColumn: FrequencyVariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalConsumptionActual
+		dataType: double
+		sourceProviderType: float
+		lineageTag: aa356978-f439-4327-8ea8-ad4a460fd4df
+		sourceLineageTag: TotalConsumptionActual
+		summarizeBy: sum
+		sourceColumn: TotalConsumptionActual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Suffix
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 501e1b9e-20cb-4035-a382-ad826864c9f9
+		sourceLineageTag: Suffix
+		summarizeBy: none
+		sourceColumn: Suffix
+
+		annotation SummarizationSetBy = Automatic
+
+	column Leg
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 00ecd18a-c677-44d7-83be-16a4b3826807
+		sourceLineageTag: Leg
+		summarizeBy: none
+		sourceColumn: Leg
+
+		annotation SummarizationSetBy = Automatic
+
+	column LegAircraftType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b692d380-a93b-47a0-b6c0-22ea28854ca2
+		sourceLineageTag: LegAircraftType
+		summarizeBy: none
+		sourceColumn: LegAircraftType
+
+		annotation SummarizationSetBy = Automatic
+
+	column FrequencyPlanned
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 8e6b1d22-9e32-4b97-a374-a348c40dd821
+		sourceLineageTag: FrequencyPlanned
+		summarizeBy: sum
+		sourceColumn: FrequencyPlanned
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FrequencyActual
+		dataType: double
+		sourceProviderType: float
+		lineageTag: bf1260f7-fe09-476c-a538-914131028ccf
+		sourceLineageTag: FrequencyActual
+		summarizeBy: sum
+		sourceColumn: FrequencyActual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BlockConsumptionCostVariance
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 0a80142d-9131-4c23-9f1b-256f959fd7d3
+		sourceLineageTag: BlockConsumptionCostVariance
+		summarizeBy: sum
+		sourceColumn: BlockConsumptionCostVariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QuantityPlanned
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 39e06903-2459-4f33-b0e5-5f8ad2e13a27
+		sourceLineageTag: QuantityPlanned
+		summarizeBy: sum
+		sourceColumn: QuantityPlanned
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UpliftActual
+		dataType: double
+		sourceProviderType: float
+		lineageTag: a9a6a959-2645-47ed-94ed-1af5e1636a63
+		sourceLineageTag: UpliftActual
+		summarizeBy: sum
+		sourceColumn: UpliftActual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UpliftVariance
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 365e4953-707f-4fbc-a1b2-4e1f1005cb98
+		sourceLineageTag: UpliftVariance
+		summarizeBy: sum
+		sourceColumn: UpliftVariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BlockConsumptionActual
+		dataType: double
+		sourceProviderType: float
+		lineageTag: ebc4e759-9ac4-473e-8d17-22263d55faaa
+		sourceLineageTag: BlockConsumptionActual
+		summarizeBy: sum
+		sourceColumn: BlockConsumptionActual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BlockConsumptionVariance
+		dataType: double
+		sourceProviderType: float
+		lineageTag: b3a0ce4f-e4df-4441-9129-3481d9c08864
+		sourceLineageTag: BlockConsumptionVariance
+		summarizeBy: sum
+		sourceColumn: BlockConsumptionVariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BlockConsumptionPriceActual
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 8889f57e-d793-480a-8465-9c50deece9cd
+		sourceLineageTag: BlockConsumptionPriceActual
+		summarizeBy: sum
+		sourceColumn: BlockConsumptionPriceActual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalConsumptionVariance
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 7321f527-4b58-4a0c-b3de-1e1bb3b219d3
+		sourceLineageTag: TotalConsumptionVariance
+		summarizeBy: sum
+		sourceColumn: TotalConsumptionVariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CostPlanned
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 0cd583e1-d5cc-4e18-965b-eaa49e13b8d4
+		sourceLineageTag: CostPlanned
+		summarizeBy: sum
+		sourceColumn: CostPlanned
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UpliftCostActual
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 574431fc-195b-4861-8884-cf94587c3348
+		sourceLineageTag: UpliftCostActual
+		summarizeBy: sum
+		sourceColumn: UpliftCostActual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UpliftCostVariance
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 651bffac-a6f4-4da9-a0bd-ba2a56565976
+		sourceLineageTag: UpliftCostVariance
+		summarizeBy: sum
+		sourceColumn: UpliftCostVariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BlockConsumptionCostActual
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c2c654dc-7ce3-49ed-a3d6-8cf136c37a35
+		sourceLineageTag: BlockConsumptionCostActual
+		summarizeBy: sum
+		sourceColumn: BlockConsumptionCostActual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CO2EmissionVariance
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 989309a7-ae50-482d-9031-bf83f46fa3ba
+		sourceLineageTag: CO2EmissionVariance
+		summarizeBy: sum
+		sourceColumn: CO2EmissionVariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalConsumptionCostActual
+		dataType: double
+		sourceProviderType: float
+		lineageTag: f0257c83-108a-419c-ad90-bf2806d4a7d0
+		sourceLineageTag: TotalConsumptionCostActual
+		summarizeBy: sum
+		sourceColumn: TotalConsumptionCostActual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalConsumptionCostVariance
+		dataType: double
+		sourceProviderType: float
+		lineageTag: a071f347-d019-42b5-97a7-43784c28d482
+		sourceLineageTag: TotalConsumptionCostVariance
+		summarizeBy: sum
+		sourceColumn: TotalConsumptionCostVariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PricePlanned
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 67f0efe5-e5fe-4ecd-b0e0-ed4cc15a8b19
+		sourceLineageTag: PricePlanned
+		summarizeBy: sum
+		sourceColumn: PricePlanned
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UpliftPriceActual
+		dataType: double
+		sourceProviderType: float
+		lineageTag: a65df489-34b3-4085-8374-bd34a14ab427
+		sourceLineageTag: UpliftPriceActual
+		summarizeBy: sum
+		sourceColumn: UpliftPriceActual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UpliftPriceVariance
+		dataType: double
+		sourceProviderType: float
+		lineageTag: d0ab92e9-2c01-4e16-a5b0-ee450989b181
+		sourceLineageTag: UpliftPriceVariance
+		summarizeBy: sum
+		sourceColumn: UpliftPriceVariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalConsumptionStatusActual
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a90c2d82-acbd-41b9-8d82-74da2086d304
+		sourceLineageTag: TotalConsumptionStatusActual
+		summarizeBy: none
+		sourceColumn: TotalConsumptionStatusActual
+
+		annotation SummarizationSetBy = Automatic
+
+	column BlockConsumptionPriceVariance
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 593e68de-3214-4741-85fa-8bd66a7dc525
+		sourceLineageTag: BlockConsumptionPriceVariance
+		summarizeBy: sum
+		sourceColumn: BlockConsumptionPriceVariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalConsumptionPriceActual
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 4f782ee9-c87e-4fb4-bdfa-cac6d567e925
+		sourceLineageTag: TotalConsumptionPriceActual
+		summarizeBy: sum
+		sourceColumn: TotalConsumptionPriceActual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalConsumptionPriceVariance
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 4f57ae2f-a43c-487a-bc96-2319cabeb3a9
+		sourceLineageTag: TotalConsumptionPriceVariance
+		summarizeBy: sum
+		sourceColumn: TotalConsumptionPriceVariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CO2EmissionPlanned
+		dataType: double
+		sourceProviderType: float
+		lineageTag: ff87c243-da68-4196-842a-7e5f8ab50732
+		sourceLineageTag: CO2EmissionPlanned
+		summarizeBy: sum
+		sourceColumn: CO2EmissionPlanned
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CO2EmissionActual
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c1c74d66-0ec8-413a-ad4c-4508fb5da7f9
+		sourceLineageTag: CO2EmissionActual
+		summarizeBy: sum
+		sourceColumn: CO2EmissionActual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BlockConsumCostVariancePrc
+		dataType: double
+		sourceProviderType: float
+		lineageTag: bb640fd2-589d-4861-800e-5f2f9c75aff1
+		sourceLineageTag: BlockConsumCostVariancePrc
+		summarizeBy: sum
+		sourceColumn: BlockConsumCostVariancePrc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BlockTimePlanned
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 616af1d4-0363-4206-b081-dfe2d170f393
+		sourceLineageTag: BlockTimePlanned
+		summarizeBy: sum
+		sourceColumn: BlockTimePlanned
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BlockTimeActual
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 7fa2d45b-8f72-48e8-a45f-945a500f42be
+		sourceLineageTag: BlockTimeActual
+		summarizeBy: sum
+		sourceColumn: BlockTimeActual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BlockTimevariance
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 55fda394-75d1-4d65-8eb2-cde122d0e5a7
+		sourceLineageTag: BlockTimevariance
+		summarizeBy: sum
+		sourceColumn: BlockTimevariance
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UpliftStatusActual
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4a4ac15a-b8aa-48fd-aebb-e8275bde769e
+		sourceLineageTag: UpliftStatusActual
+		summarizeBy: none
+		sourceColumn: UpliftStatusActual
+
+		annotation SummarizationSetBy = Automatic
+
+	column BlockConsumptionStatusActual
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7b44bf0f-eb68-45e6-a1a9-3413bb62eeb0
+		sourceLineageTag: BlockConsumptionStatusActual
+		summarizeBy: none
+		sourceColumn: BlockConsumptionStatusActual
+
+		annotation SummarizationSetBy = Automatic
+
+	column BlockConsumVariancePrcOT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c062c2fc-5043-49d7-8b64-ff5e89fde4d9
+		sourceLineageTag: BlockConsumVariancePrcOT
+		summarizeBy: none
+		sourceColumn: BlockConsumVariancePrcOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column Matched
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4282ccbe-2caf-4053-b905-fe1342000e32
+		sourceLineageTag: Matched
+		summarizeBy: none
+		sourceColumn: Matched
+
+		annotation SummarizationSetBy = Automatic
+
+	column UpliftVariancePrc
+		dataType: double
+		sourceProviderType: float
+		lineageTag: ead5aaf9-be96-48ae-8126-01bbb35cc109
+		sourceLineageTag: UpliftVariancePrc
+		summarizeBy: sum
+		sourceColumn: UpliftVariancePrc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BlockConsumVariancePrc
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 992dc415-d461-439b-b7ee-6912307d8123
+		sourceLineageTag: BlockConsumVariancePrc
+		summarizeBy: sum
+		sourceColumn: BlockConsumVariancePrc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalConsumVariancePrc
+		dataType: double
+		sourceProviderType: float
+		lineageTag: b3897bad-13fd-463a-b440-d4b374eb2c23
+		sourceLineageTag: TotalConsumVariancePrc
+		summarizeBy: sum
+		sourceColumn: TotalConsumVariancePrc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UpliftCostVariancePrc
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 80924594-dee2-419b-9be4-919ed599a7e7
+		sourceLineageTag: UpliftCostVariancePrc
+		summarizeBy: sum
+		sourceColumn: UpliftCostVariancePrc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BlockConsumPriceVariancePrcOT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3a666feb-7595-495e-a46a-b38e6608180d
+		sourceLineageTag: BlockConsumPriceVariancePrcOT
+		summarizeBy: none
+		sourceColumn: BlockConsumPriceVariancePrcOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalConsumCostVariancePrc
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 4f03c4cf-8ed1-4828-980d-b2382c3a32a8
+		sourceLineageTag: TotalConsumCostVariancePrc
+		summarizeBy: sum
+		sourceColumn: TotalConsumCostVariancePrc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UpliftPriceVariancePrc
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 66e45cfc-942e-47ee-adbd-f1f182050bcd
+		sourceLineageTag: UpliftPriceVariancePrc
+		summarizeBy: sum
+		sourceColumn: UpliftPriceVariancePrc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column BlockConsumPriceVariancePrc
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 27d256dd-2f7f-4020-8415-95aac4be9b3e
+		sourceLineageTag: BlockConsumPriceVariancePrc
+		summarizeBy: sum
+		sourceColumn: BlockConsumPriceVariancePrc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalConsumPriceVariancePrc
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1194286a-e34d-470a-bc86-fa87b9c73273
+		sourceLineageTag: TotalConsumPriceVariancePrc
+		summarizeBy: sum
+		sourceColumn: TotalConsumPriceVariancePrc
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UpliftVariancePrcOT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 349a3f4b-5511-40fc-85e0-162e3ea186d9
+		sourceLineageTag: UpliftVariancePrcOT
+		summarizeBy: none
+		sourceColumn: UpliftVariancePrcOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalConsumPriceVariancePrcOT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ac513fe1-1137-45ac-ab03-1573306f8b58
+		sourceLineageTag: TotalConsumPriceVariancePrcOT
+		summarizeBy: none
+		sourceColumn: TotalConsumPriceVariancePrcOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalConsumVariancePrcOT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 71447337-4b1f-4830-a09d-acb51e5ec922
+		sourceLineageTag: TotalConsumVariancePrcOT
+		summarizeBy: none
+		sourceColumn: TotalConsumVariancePrcOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column UpliftCostVariancePrcOT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 61ad00b1-a2c3-4f50-9d41-c9f658c4d5dc
+		sourceLineageTag: UpliftCostVariancePrcOT
+		summarizeBy: none
+		sourceColumn: UpliftCostVariancePrcOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column BlockConsumCostVariancePrcOT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 070a5695-4f0c-4d89-88e7-903eb106a8c1
+		sourceLineageTag: BlockConsumCostVariancePrcOT
+		summarizeBy: none
+		sourceColumn: BlockConsumCostVariancePrcOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column TotalConsumCostVariancePrcOT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7aacab19-0ca1-40ba-aa1b-795cec22d787
+		sourceLineageTag: TotalConsumCostVariancePrcOT
+		summarizeBy: none
+		sourceColumn: TotalConsumCostVariancePrcOT
+
+		annotation SummarizationSetBy = Automatic
+
+	column UpliftPriceVariancePrcOT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 41dd124d-83ba-4b20-9003-2ec429a0d9b3
+		sourceLineageTag: UpliftPriceVariancePrcOT
+		summarizeBy: none
+		sourceColumn: UpliftPriceVariancePrcOT
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Fact_ForecastVsActual = entity
+		mode: directLake
+		source
+			entityName: Fact_ForecastVsActual
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

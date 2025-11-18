@@ -1,0 +1,242 @@
+table Fact_SupplierVolumes
+	lineageTag: 25a0e265-f867-4c7e-a530-07a27eea51be
+	sourceLineageTag: [fpx].[Fact_SupplierVolumes]
+
+	column ContractID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 029295e4-03fc-460f-95a3-1737efe11904
+		sourceLineageTag: ContractID
+		summarizeBy: count
+		sourceColumn: ContractID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ContractValidTo
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 879d5c0d-d5ac-4112-9be4-4dda3f208aba
+		sourceLineageTag: ContractValidTo
+		summarizeBy: none
+		sourceColumn: ContractValidTo
+
+		annotation SummarizationSetBy = Automatic
+
+	column CO_GRP_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: c24c2df2-c70a-4da5-8306-de149a542659
+		sourceLineageTag: CO_GRP_ID
+		summarizeBy: count
+		sourceColumn: CO_GRP_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column InitialVolume
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 35e2d252-780d-4072-b2e6-0190e637d31f
+		sourceLineageTag: InitialVolume
+		summarizeBy: sum
+		sourceColumn: InitialVolume
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AdjustedVolume
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1953f243-647e-4953-819e-bee21f59d1cc
+		sourceLineageTag: AdjustedVolume
+		summarizeBy: sum
+		sourceColumn: AdjustedVolume
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HLDR_CO_CD
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9d05dc0f-b1e5-40e7-ae6a-3d9f16f7c076
+		sourceLineageTag: HLDR_CO_CD
+		summarizeBy: none
+		sourceColumn: HLDR_CO_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column CNTPRTY_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: b535bba7-832e-4b39-ab1f-a36eb045a934
+		sourceLineageTag: CNTPRTY_CO_ID
+		summarizeBy: none
+		sourceColumn: CNTPRTY_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CP_CO_CD
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6defdd24-6bd7-42ed-9067-bbc511c328f7
+		sourceLineageTag: CP_CO_CD
+		summarizeBy: none
+		sourceColumn: CP_CO_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column ContractValidFrom
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 5507251c-98d1-48e8-8f98-92ed8d243347
+		sourceLineageTag: ContractValidFrom
+		summarizeBy: none
+		sourceColumn: ContractValidFrom
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActualVolume
+		dataType: double
+		sourceProviderType: float
+		lineageTag: dd8b7fe9-2a63-4931-b636-e51f454689f3
+		sourceLineageTag: ActualVolume
+		summarizeBy: sum
+		sourceColumn: ActualVolume
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PeriodIndicator
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 8226abdf-b1dc-434e-b523-1a8ac579d24b
+		sourceLineageTag: PeriodIndicator
+		summarizeBy: sum
+		sourceColumn: PeriodIndicator
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CO_GRP_CD
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 577c5a11-f63a-4387-9fdc-784932b0c8f3
+		sourceLineageTag: CO_GRP_CD
+		summarizeBy: none
+		sourceColumn: CO_GRP_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUST_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: ad15b720-0dd9-48f8-b87a-5e0d66ffa29e
+		sourceLineageTag: CUST_CO_ID
+		summarizeBy: none
+		sourceColumn: CUST_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUST_CO_CD
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6878339d-baa8-4a47-8585-19c17c4364fe
+		sourceLineageTag: CUST_CO_CD
+		summarizeBy: none
+		sourceColumn: CUST_CO_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 82aba2dc-b69f-41e6-8113-0e7873d53e12
+		sourceLineageTag: Month
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column ContractCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 54e8cd2b-8b25-48c1-b2e6-02247de1c165
+		sourceLineageTag: ContractCode
+		summarizeBy: none
+		sourceColumn: ContractCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column LOC_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 1bde79fc-dd12-4a50-b0c9-b185a2a78633
+		sourceLineageTag: LOC_ID
+		summarizeBy: none
+		sourceColumn: LOC_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column LOC_CD
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 567e887c-20fd-4fa3-a520-746565f14d55
+		sourceLineageTag: LOC_CD
+		summarizeBy: none
+		sourceColumn: LOC_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column ContractType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1d5ea854-2acd-4147-b97a-54286a07bd36
+		sourceLineageTag: ContractType
+		summarizeBy: none
+		sourceColumn: ContractType
+
+		annotation SummarizationSetBy = Automatic
+
+	column HLDR_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: dafc4a80-91ac-4fa1-ade0-2aef228beb90
+		sourceLineageTag: HLDR_CO_ID
+		summarizeBy: none
+		sourceColumn: HLDR_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderedVolume
+		dataType: double
+		sourceProviderType: float
+		lineageTag: a5808d1c-e743-46c4-8620-ea1d49a3e28b
+		sourceLineageTag: OrderedVolume
+		summarizeBy: sum
+		sourceColumn: OrderedVolume
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Fact_SupplierVolumes = entity
+		mode: directLake
+		source
+			entityName: Fact_SupplierVolumes
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

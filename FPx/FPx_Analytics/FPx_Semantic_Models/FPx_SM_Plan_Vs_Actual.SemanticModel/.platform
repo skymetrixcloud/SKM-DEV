@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "FPx_SM_Plan_Vs_Actual"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c9eb1706-d169-afbe-4229-b6584f9bf192"
+  }
+}

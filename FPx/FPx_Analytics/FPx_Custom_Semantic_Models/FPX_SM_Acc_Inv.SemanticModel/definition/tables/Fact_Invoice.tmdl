@@ -1,0 +1,558 @@
+table Fact_Invoice
+	lineageTag: 2dcb8b50-f0b3-4dbd-8199-baf1b5758451
+	sourceLineageTag: [fpx].[Fact_Invoice]
+
+	column InvoiceID
+		dataType: int64
+		sourceProviderType: float
+		lineageTag: 23071b7a-c514-42d1-814e-6a11dd4e8fba
+		sourceLineageTag: InvoiceID
+		summarizeBy: none
+		sourceColumn: InvoiceID
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CLIENT_ID
+		dataType: int64
+		sourceProviderType: float
+		lineageTag: e04069de-b103-45e8-89f6-5acbdbe25833
+		sourceLineageTag: CLIENT_ID
+		summarizeBy: none
+		sourceColumn: CLIENT_ID
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column RCV_CO_ID
+		dataType: int64
+		sourceProviderType: float
+		lineageTag: 9d951154-bd51-44ae-9d94-1b97ccd85d84
+		sourceLineageTag: RCV_CO_ID
+		summarizeBy: none
+		sourceColumn: RCV_CO_ID
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column RCV_CO_CD
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 239bda3e-40a0-43b7-8dbc-b0a091f32503
+		sourceLineageTag: RCV_CO_CD
+		summarizeBy: none
+		sourceColumn: RCV_CO_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column LOC_ID
+		dataType: int64
+		sourceProviderType: float
+		lineageTag: b77eea3a-2787-417f-8cc9-7bda45336272
+		sourceLineageTag: LOC_ID
+		summarizeBy: none
+		sourceColumn: LOC_ID
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LOC_CD
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4c9556ae-f0f4-491d-b545-59ebb6cf9a9c
+		sourceLineageTag: LOC_CD
+		summarizeBy: none
+		sourceColumn: LOC_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column CP_CO_ID
+		dataType: int64
+		sourceProviderType: float
+		lineageTag: f7aa4428-d947-4ef1-a126-4a3e13a645d5
+		sourceLineageTag: CP_CO_ID
+		summarizeBy: none
+		sourceColumn: CP_CO_ID
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CP_CO_CD
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 657dda2c-bf57-4bbd-b87d-c35accfa1c81
+		sourceLineageTag: CP_CO_CD
+		summarizeBy: none
+		sourceColumn: CP_CO_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column INV_ISSUER_ID
+		dataType: int64
+		sourceProviderType: float
+		lineageTag: 5d1cb9d9-1f38-43ba-b774-159d8113f58d
+		sourceLineageTag: INV_ISSUER_ID
+		summarizeBy: none
+		sourceColumn: INV_ISSUER_ID
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column INV_ISSUER_CD
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f8bbf481-59f8-4194-a08f-d1aa3f6bd59a
+		sourceLineageTag: INV_ISSUER_CD
+		summarizeBy: none
+		sourceColumn: INV_ISSUER_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceNo
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 14970147-b941-4dd1-9726-5e45070b5784
+		sourceLineageTag: InvoiceNo
+		summarizeBy: none
+		sourceColumn: InvoiceNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: ce137286-19fa-453f-83a6-a5eebf606a6d
+		sourceLineageTag: InvoiceDate
+		summarizeBy: none
+		sourceColumn: InvoiceDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsIPL
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: bb91a4b1-fc5c-4553-b86e-0b6ad9077934
+		sourceLineageTag: IsIPL
+		summarizeBy: none
+		sourceColumn: IsIPL
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceCategory
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: abc558ce-ef45-4df6-b407-4288b3ee2f96
+		sourceLineageTag: InvoiceCategory
+		summarizeBy: none
+		sourceColumn: InvoiceCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a9e2b926-12af-4671-8162-5be52d3f25ca
+		sourceLineageTag: InvoiceType
+		summarizeBy: none
+		sourceColumn: InvoiceType
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceStandard
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 09aae8a3-9112-482e-8a6c-1c60e26d6b42
+		sourceLineageTag: InvoiceStandard
+		summarizeBy: none
+		sourceColumn: InvoiceStandard
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceStandardVersion
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 481b8833-938e-4aeb-b76f-1cf19472be20
+		sourceLineageTag: InvoiceStandardVersion
+		summarizeBy: none
+		sourceColumn: InvoiceStandardVersion
+
+		annotation SummarizationSetBy = Automatic
+
+	column DeliveryMonth
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: d0ed8d22-7b47-4239-bfb8-a515f0fbf8b8
+		sourceLineageTag: DeliveryMonth
+		summarizeBy: none
+		sourceColumn: DeliveryMonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column Debit/Credit
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5d784394-151d-43ff-9297-bf5fdf19762a
+		sourceLineageTag: Debit/Credit
+		summarizeBy: none
+		sourceColumn: Debit/Credit
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceAmount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 961e75fa-fc5f-4939-89f5-5aa69bcdef16
+		sourceLineageTag: InvoiceAmount
+		summarizeBy: sum
+		sourceColumn: InvoiceAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column InvoiceCurrency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0762d8c7-15cb-4ead-8d75-d38a196d75c2
+		sourceLineageTag: InvoiceCurrency
+		summarizeBy: none
+		sourceColumn: InvoiceCurrency
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceAmountSys
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 48d59ab6-b077-479f-ac00-d6270efb7955
+		sourceLineageTag: InvoiceAmountSys
+		summarizeBy: sum
+		sourceColumn: InvoiceAmountSys
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column InvoiceQuantity
+		dataType: double
+		sourceProviderType: float
+		lineageTag: f881c174-68fd-428d-a7e9-54c202310554
+		sourceLineageTag: InvoiceQuantity
+		summarizeBy: sum
+		sourceColumn: InvoiceQuantity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column InvoiceUnit
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a643e27a-ff67-4a19-95c4-c26fc8df64ec
+		sourceLineageTag: InvoiceUnit
+		summarizeBy: none
+		sourceColumn: InvoiceUnit
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceQuantitySys
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 92affbf5-a687-4c04-bd14-2ca71241706a
+		sourceLineageTag: InvoiceQuantitySys
+		summarizeBy: sum
+		sourceColumn: InvoiceQuantitySys
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ItemsCount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 89a01481-224f-4d65-a9cb-5140d6175579
+		sourceLineageTag: ItemsCount
+		summarizeBy: sum
+		sourceColumn: ItemsCount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CreationDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: c958fc0d-6d3c-427e-a0cf-39147af9c8e3
+		sourceLineageTag: CreationDate
+		summarizeBy: none
+		sourceColumn: CreationDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column InputDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 7efa1ad1-36b9-468a-8ae2-08a7ae610512
+		sourceLineageTag: InputDate
+		summarizeBy: none
+		sourceColumn: InputDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column ClosingDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 2f8b0895-9ca4-49f8-b431-8713220022ff
+		sourceLineageTag: ClosingDate
+		summarizeBy: none
+		sourceColumn: ClosingDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column BaselineDateSys
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 745febd7-f194-4245-98cc-7ae5541a5a4a
+		sourceLineageTag: BaselineDateSys
+		summarizeBy: none
+		sourceColumn: BaselineDateSys
+
+		annotation SummarizationSetBy = Automatic
+
+	column BaselineDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 21ec50b9-c5f3-4b05-a87b-352242e4eb3e
+		sourceLineageTag: BaselineDate
+		summarizeBy: none
+		sourceColumn: BaselineDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column DueDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 365b6f23-af9d-4f1e-b854-6acab156fee9
+		sourceLineageTag: DueDate
+		summarizeBy: none
+		sourceColumn: DueDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column DueInDays
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 9de1baef-2fa8-4332-a4b4-5e009904d3ff
+		sourceLineageTag: DueInDays
+		summarizeBy: sum
+		sourceColumn: DueInDays
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DueInCategory
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8889890c-e922-4744-8d8f-fab4ad2dffb9
+		sourceLineageTag: DueInCategory
+		summarizeBy: none
+		sourceColumn: DueInCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column PaymentDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 25fd1a14-77e5-4ca6-9114-0cd2394e6844
+		sourceLineageTag: PaymentDate
+		summarizeBy: none
+		sourceColumn: PaymentDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column CheckDays
+		dataType: double
+		sourceProviderType: float
+		lineageTag: abd46f8c-f705-46b1-92df-e840df01e3b1
+		sourceLineageTag: CheckDays
+		summarizeBy: sum
+		sourceColumn: CheckDays
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CheckDaysCategory
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1173ecc5-08f4-4a6e-b7d7-94e7645c37b0
+		sourceLineageTag: CheckDaysCategory
+		summarizeBy: none
+		sourceColumn: CheckDaysCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReceivingDelayDays
+		dataType: double
+		sourceProviderType: float
+		lineageTag: e2f6d241-62fe-4353-adcc-58c932da8f4d
+		sourceLineageTag: ReceivingDelayDays
+		summarizeBy: sum
+		sourceColumn: ReceivingDelayDays
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ReleaseDays
+		dataType: double
+		sourceProviderType: float
+		lineageTag: cf4030c4-ea58-4373-baf8-df0f5545a89b
+		sourceLineageTag: ReleaseDays
+		summarizeBy: sum
+		sourceColumn: ReleaseDays
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column InvoiceStillOpen
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0460380c-5ced-4674-889c-fe0aa61d3f01
+		sourceLineageTag: InvoiceStillOpen
+		summarizeBy: none
+		sourceColumn: InvoiceStillOpen
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReleasedOnTime
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 81824af7-7867-43f5-a1b9-42f16efd9b24
+		sourceLineageTag: ReleasedOnTime
+		summarizeBy: none
+		sourceColumn: ReleasedOnTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column PaymentDelayDays
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 3b745f0e-12d9-4f41-b708-5f4dc53fc4f8
+		sourceLineageTag: PaymentDelayDays
+		summarizeBy: sum
+		sourceColumn: PaymentDelayDays
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AccountingDelayDays
+		dataType: double
+		sourceProviderType: float
+		lineageTag: a2e1106e-d744-4720-bcc9-f2144ac6412b
+		sourceLineageTag: AccountingDelayDays
+		summarizeBy: sum
+		sourceColumn: AccountingDelayDays
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KPI1
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 44d9770b-1c5a-48bd-bc7b-15d08e35b046
+		sourceLineageTag: KPI1
+		summarizeBy: sum
+		sourceColumn: KPI1
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KPI2
+		dataType: double
+		sourceProviderType: float
+		lineageTag: cd4e9f96-1bf8-403e-a013-0b180d90e62f
+		sourceLineageTag: KPI2
+		summarizeBy: sum
+		sourceColumn: KPI2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KPI3
+		dataType: double
+		sourceProviderType: float
+		lineageTag: d8daa062-8ddb-4b59-82a1-376a14d67c7e
+		sourceLineageTag: KPI3
+		summarizeBy: sum
+		sourceColumn: KPI3
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KPI4
+		dataType: double
+		sourceProviderType: float
+		lineageTag: e777bf24-8aec-4dfb-a455-e9a752fcc555
+		sourceLineageTag: KPI4
+		summarizeBy: sum
+		sourceColumn: KPI4
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column KPI5
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 10a17c57-2cf6-4534-99b0-44b93819d077
+		sourceLineageTag: KPI5
+		summarizeBy: sum
+		sourceColumn: KPI5
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Fact_Invoice = entity
+		mode: directLake
+		source
+			entityName: Fact_Invoice
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

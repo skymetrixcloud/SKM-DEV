@@ -1,0 +1,116 @@
+table Dim_Customer
+	lineageTag: d01595e5-ff80-4e10-a46c-2ea9332b5819
+	sourceLineageTag: [fpx].[Dim_Customer]
+
+	column CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: be23d9a4-c1ac-418d-b941-a32cd2c91003
+		sourceLineageTag: CO_ID
+		summarizeBy: none
+		sourceColumn: CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 65a24ef4-f88e-4ce9-8004-0e759f9e9a56
+		sourceLineageTag: CustomerCode
+		summarizeBy: none
+		sourceColumn: CustomerCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerICAOCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 632cefef-64d3-40a2-8dcc-a94336d9d878
+		sourceLineageTag: CustomerICAOCode
+		summarizeBy: none
+		sourceColumn: CustomerICAOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a4809708-0168-4545-b779-30c529081681
+		sourceLineageTag: CustomerName
+		summarizeBy: none
+		sourceColumn: CustomerName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CO_GRP_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: aed18187-9e87-4090-934e-546b18594290
+		sourceLineageTag: CO_GRP_ID
+		summarizeBy: none
+		sourceColumn: CO_GRP_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column GroupCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e8c03bfb-eaf6-404f-989d-de59aad7d76d
+		sourceLineageTag: GroupCode
+		summarizeBy: none
+		sourceColumn: GroupCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column GroupName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: fdf330ea-fa34-4ce9-9a4c-c74812462e25
+		sourceLineageTag: GroupName
+		summarizeBy: none
+		sourceColumn: GroupName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLIENT_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 6834b277-9820-452e-86f1-488dee18571f
+		sourceLineageTag: CLIENT_ID
+		summarizeBy: none
+		sourceColumn: CLIENT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ClientCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 673b30fd-360c-43bc-9615-0311458253a1
+		sourceLineageTag: ClientCode
+		summarizeBy: none
+		sourceColumn: ClientCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column ClientName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ac5e9d4b-b630-4591-9b46-2b96256067ad
+		sourceLineageTag: ClientName
+		summarizeBy: none
+		sourceColumn: ClientName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Customer = entity
+		mode: directLake
+		source
+			entityName: Dim_Customer
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

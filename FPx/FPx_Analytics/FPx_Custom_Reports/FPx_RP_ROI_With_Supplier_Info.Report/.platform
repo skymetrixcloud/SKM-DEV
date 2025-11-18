@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_ROI_With_Supplier_Info"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "dcc98a28-1d0f-8fb8-4f86-5a34a962a586"
+  }
+}

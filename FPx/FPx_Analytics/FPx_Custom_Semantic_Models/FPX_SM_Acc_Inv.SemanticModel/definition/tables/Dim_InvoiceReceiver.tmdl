@@ -1,0 +1,75 @@
+table Dim_InvoiceReceiver
+	lineageTag: 91f03465-756c-49f3-9cc0-c14644591891
+	sourceLineageTag: [fpx].[Dim_InvoiceReceiver]
+
+	column InvoiceReceiverCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c848100e-09ba-482f-98af-20d5267ed042
+		sourceLineageTag: InvoiceReceiverCode
+		summarizeBy: none
+		sourceColumn: InvoiceReceiverCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceReceiverName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e60cf7ee-bfc1-430a-b231-5036bf1cf267
+		sourceLineageTag: InvoiceReceiverName
+		summarizeBy: none
+		sourceColumn: InvoiceReceiverName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLIENT_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 96d0e4c8-d0a4-41fa-ae99-50deb2949b79
+		sourceLineageTag: CLIENT_ID
+		summarizeBy: none
+		sourceColumn: CLIENT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ClientCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 555fb7f0-c08c-4313-86b2-a684509697eb
+		sourceLineageTag: ClientCode
+		summarizeBy: none
+		sourceColumn: ClientCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column ClientName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6bfaba66-b684-47ea-9d98-e7a437049d49
+		sourceLineageTag: ClientName
+		summarizeBy: none
+		sourceColumn: ClientName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 7d650ad4-7cbf-4fce-91eb-508f32c8aea4
+		sourceLineageTag: CO_ID
+		summarizeBy: none
+		sourceColumn: CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_InvoiceReceiver = entity
+		mode: directLake
+		source
+			entityName: Dim_InvoiceReceiver
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

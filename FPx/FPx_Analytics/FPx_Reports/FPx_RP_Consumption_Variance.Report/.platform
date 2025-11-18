@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Consumption_Variance"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "48055fc0-fb6c-b3e2-4a8c-84bae39ec559"
+  }
+}

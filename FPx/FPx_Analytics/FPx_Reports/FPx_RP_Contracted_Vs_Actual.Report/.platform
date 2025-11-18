@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Contracted_Vs_Actual"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "490f9edb-8ff1-a9b3-41b4-d8aebde9a1c5"
+  }
+}

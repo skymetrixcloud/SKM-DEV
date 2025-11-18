@@ -1,0 +1,600 @@
+table Report_Actual_Uplift
+	lineageTag: 888b020f-0647-46ce-99bb-8c3ef5763225
+	sourceLineageTag: [fpx].[Report_Actual_Uplift]
+
+	column PPB_DeliveryDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: e833bd89-846e-41e0-a0bb-9f948bad57e7
+		sourceLineageTag: PPB_DeliveryDate
+		summarizeBy: none
+		sourceColumn: PPB_DeliveryDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column PPB_DeliveryYear
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 96e61522-c3d8-4dd3-a4a8-674e60a2f425
+		sourceLineageTag: PPB_DeliveryYear
+		summarizeBy: sum
+		sourceColumn: PPB_DeliveryYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column PPB_SUPPL_LOC_ID
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 4acedde8-907e-4b31-9523-6545b5087b12
+		sourceLineageTag: PPB_SUPPL_LOC_ID
+		summarizeBy: count
+		sourceColumn: PPB_SUPPL_LOC_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PPB_DLVY_LOC_ID
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 53d9c539-c3cb-4d7e-aa3a-c311f44910e1
+		sourceLineageTag: PPB_DLVY_LOC_ID
+		summarizeBy: count
+		sourceColumn: PPB_DLVY_LOC_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PPB_CUST_CO_ID
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 6f60e8cd-348d-47cf-9df5-fb9ff5a6ed1a
+		sourceLineageTag: PPB_CUST_CO_ID
+		summarizeBy: count
+		sourceColumn: PPB_CUST_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PPB_DeliveredVol
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 78e7582b-3a53-479b-b8f1-4be31420c0ed
+		sourceLineageTag: PPB_DeliveredVol
+		summarizeBy: sum
+		sourceColumn: PPB_DeliveredVol
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PPB_Events
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 81dd66c6-1ede-4971-8099-eb28fd3bb560
+		sourceLineageTag: PPB_Events
+		summarizeBy: sum
+		sourceColumn: PPB_Events
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PPB_PriceSource
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e6d51388-6758-4bc0-bab6-e8bc2486ec4b
+		sourceLineageTag: PPB_PriceSource
+		summarizeBy: none
+		sourceColumn: PPB_PriceSource
+
+		annotation SummarizationSetBy = Automatic
+
+	column PPB_PriceBasis
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: af50d98a-a680-4338-af6d-0a2450302478
+		sourceLineageTag: PPB_PriceBasis
+		summarizeBy: none
+		sourceColumn: PPB_PriceBasis
+
+		annotation SummarizationSetBy = Automatic
+
+	column PPB_Index
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2d2c3d5f-0d29-4bd6-89fa-77463b05a906
+		sourceLineageTag: PPB_Index
+		summarizeBy: none
+		sourceColumn: PPB_Index
+
+		annotation SummarizationSetBy = Automatic
+
+	column PPB_AverageMethod
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6c14d0b6-4af1-458b-84b4-cd3dff77964c
+		sourceLineageTag: PPB_AverageMethod
+		summarizeBy: none
+		sourceColumn: PPB_AverageMethod
+
+		annotation SummarizationSetBy = Automatic
+
+	column PPB_IndexPeriod
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5719d572-e739-42bb-ac62-271d8b1e9d88
+		sourceLineageTag: PPB_IndexPeriod
+		summarizeBy: none
+		sourceColumn: PPB_IndexPeriod
+
+		annotation SummarizationSetBy = Automatic
+
+	column PPB_IsIPL
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d55a0451-14e7-4dc4-b9d5-5a1394e09703
+		sourceLineageTag: PPB_IsIPL
+		summarizeBy: none
+		sourceColumn: PPB_IsIPL
+
+		annotation SummarizationSetBy = Automatic
+
+	column CAL_Date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: cbc190c3-56fa-42f9-92fe-83a46ff0af26
+		sourceLineageTag: CAL_Date
+		summarizeBy: none
+		sourceColumn: CAL_Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column CAL_CRT_DT
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 796bac61-84aa-4980-ab29-525ffe3e8da2
+		sourceLineageTag: CAL_CRT_DT
+		summarizeBy: none
+		sourceColumn: CAL_CRT_DT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CAL_DOW
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 9a24d73e-496f-4729-b6de-0b7c72536d56
+		sourceLineageTag: CAL_DOW
+		summarizeBy: sum
+		sourceColumn: CAL_DOW
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CAL_YR
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 8805f3c9-3078-43dc-9322-a11706cbd682
+		sourceLineageTag: CAL_YR
+		summarizeBy: sum
+		sourceColumn: CAL_YR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CAL_QT
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 60d4c6ac-4eb8-4652-b953-c375c1f9b0b1
+		sourceLineageTag: CAL_QT
+		summarizeBy: sum
+		sourceColumn: CAL_QT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CAL_MTH
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 277d80f0-d6ea-45da-b325-1e18d42d908f
+		sourceLineageTag: CAL_MTH
+		summarizeBy: sum
+		sourceColumn: CAL_MTH
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CAL_Y2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 9ac0cab0-5afb-4904-bc0a-f88500173f93
+		sourceLineageTag: CAL_Y2D
+		summarizeBy: sum
+		sourceColumn: CAL_Y2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CAL_Q2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 120be803-99a9-499f-94a1-63d71c6cd48e
+		sourceLineageTag: CAL_Q2D
+		summarizeBy: sum
+		sourceColumn: CAL_Q2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CAL_M2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: fa1456bd-52a0-4b15-a059-520f2f4cef5b
+		sourceLineageTag: CAL_M2D
+		summarizeBy: sum
+		sourceColumn: CAL_M2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CAL_W2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: ff7f6fa9-90a8-40cc-84cf-69c17c2a5d6b
+		sourceLineageTag: CAL_W2D
+		summarizeBy: sum
+		sourceColumn: CAL_W2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CAL_ANY_Y2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: ca979d7d-ca72-493e-861d-e8c23ce82131
+		sourceLineageTag: CAL_ANY_Y2D
+		summarizeBy: sum
+		sourceColumn: CAL_ANY_Y2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CAL_ANY_Q2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 0912d32e-cec6-44d7-921e-32f6653d381e
+		sourceLineageTag: CAL_ANY_Q2D
+		summarizeBy: sum
+		sourceColumn: CAL_ANY_Q2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CAL_SAME_Q2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 99d4cf03-6b12-41e5-a48b-1f306ff80d0b
+		sourceLineageTag: CAL_SAME_Q2D
+		summarizeBy: sum
+		sourceColumn: CAL_SAME_Q2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CAL_ANY_M2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 036e7044-fd60-4142-a847-f72bf8653ef5
+		sourceLineageTag: CAL_ANY_M2D
+		summarizeBy: sum
+		sourceColumn: CAL_ANY_M2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CAL_SAME_M2D
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1caeb907-842a-42b6-80a7-455dc7bae58a
+		sourceLineageTag: CAL_SAME_M2D
+		summarizeBy: sum
+		sourceColumn: CAL_SAME_M2D
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CUS_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 510bbe2f-365d-4f8b-8963-089f936514d7
+		sourceLineageTag: CUS_CO_ID
+		summarizeBy: count
+		sourceColumn: CUS_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUS_CustomerCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3b767c5a-8f3b-435f-85ae-e4b9d515e2a1
+		sourceLineageTag: CUS_CustomerCode
+		summarizeBy: none
+		sourceColumn: CUS_CustomerCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUS_CustomerICAOCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 45951ecb-8128-47c4-9565-788ae89ab918
+		sourceLineageTag: CUS_CustomerICAOCode
+		summarizeBy: none
+		sourceColumn: CUS_CustomerICAOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUS_CustomerName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b1ea7e8e-9fb6-4fef-aafa-b02281d34c72
+		sourceLineageTag: CUS_CustomerName
+		summarizeBy: none
+		sourceColumn: CUS_CustomerName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUS_CO_GRP_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: abef0ec9-c1cb-413c-b66b-ad18642c0529
+		sourceLineageTag: CUS_CO_GRP_ID
+		summarizeBy: count
+		sourceColumn: CUS_CO_GRP_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUS_GroupCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ef5c840e-91f5-4de4-9f4b-6e9e5e305a6f
+		sourceLineageTag: CUS_GroupCode
+		summarizeBy: none
+		sourceColumn: CUS_GroupCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUS_GroupName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9645d87a-0153-4557-8859-941628fb43ed
+		sourceLineageTag: CUS_GroupName
+		summarizeBy: none
+		sourceColumn: CUS_GroupName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUS_CLIENT_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 97d9c7af-4302-410a-bb8d-05f703a41736
+		sourceLineageTag: CUS_CLIENT_ID
+		summarizeBy: count
+		sourceColumn: CUS_CLIENT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUS_ClientCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8111d668-57df-4366-9acd-b3a88180e497
+		sourceLineageTag: CUS_ClientCode
+		summarizeBy: none
+		sourceColumn: CUS_ClientCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUS_ClientName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e65a9d78-a06e-4dd5-8178-d30756c2422e
+		sourceLineageTag: CUS_ClientName
+		summarizeBy: none
+		sourceColumn: CUS_ClientName
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_LOC_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: cb958d89-8ed3-4679-96b0-a8ce9a284c04
+		sourceLineageTag: GEO_LOC_ID
+		summarizeBy: count
+		sourceColumn: GEO_LOC_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_LocationCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f847b9cc-3710-442d-bdff-f19f3b5eea06
+		sourceLineageTag: GEO_LocationCode
+		summarizeBy: none
+		sourceColumn: GEO_LocationCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_LocationName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8f55204e-9494-4cca-8859-c4e4e1ef0f23
+		sourceLineageTag: GEO_LocationName
+		summarizeBy: none
+		sourceColumn: GEO_LocationName
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_LocationIATACode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a1ab1a78-49cf-4654-9e09-b2d0601783d2
+		sourceLineageTag: GEO_LocationIATACode
+		summarizeBy: none
+		sourceColumn: GEO_LocationIATACode
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_LocationICAOCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5b9b7be3-986a-4122-a74d-d48e2545021d
+		sourceLineageTag: GEO_LocationICAOCode
+		summarizeBy: none
+		sourceColumn: GEO_LocationICAOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_IsAirport
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 27ad8402-9961-46bd-9bb1-c4167395837f
+		sourceLineageTag: GEO_IsAirport
+		summarizeBy: none
+		sourceColumn: GEO_IsAirport
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_CNTRY_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 927d5985-bb22-4f31-bd57-50e2cd13d7bf
+		sourceLineageTag: GEO_CNTRY_ID
+		summarizeBy: count
+		sourceColumn: GEO_CNTRY_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_CountryName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5b7711d1-29bd-46b1-9e82-6b5ea4e8b9e7
+		sourceLineageTag: GEO_CountryName
+		summarizeBy: none
+		sourceColumn: GEO_CountryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_CountryISOCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8309af14-18db-4caf-978e-4141664dd032
+		sourceLineageTag: GEO_CountryISOCode
+		summarizeBy: none
+		sourceColumn: GEO_CountryISOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_Continent
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: bde5535e-b005-419b-b862-415d8e269a5a
+		sourceLineageTag: GEO_Continent
+		summarizeBy: none
+		sourceColumn: GEO_Continent
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_LoginName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2fb7b590-e521-4b08-ae7f-302736af84d8
+		sourceLineageTag: CA_LoginName
+		summarizeBy: none
+		sourceColumn: CA_LoginName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: f817ea26-fe23-4f25-bcc4-366aec06eb88
+		sourceLineageTag: CA_CO_ID
+		summarizeBy: count
+		sourceColumn: CA_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_CustomerCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f8297972-8227-42a3-8647-238666c1093f
+		sourceLineageTag: CA_CustomerCode
+		summarizeBy: none
+		sourceColumn: CA_CustomerCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_CustomerName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4640fee9-b7be-4a4f-bc43-9fb0f4c2d80a
+		sourceLineageTag: CA_CustomerName
+		summarizeBy: none
+		sourceColumn: CA_CustomerName
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_CustomerICAOCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 643ef5ba-3d8c-4c73-abed-1ee78263982b
+		sourceLineageTag: CA_CustomerICAOCode
+		summarizeBy: none
+		sourceColumn: CA_CustomerICAOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column PPB_DeliveryDate_Month
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 6026ee21-3b12-4f40-b7a2-43539c002d2b
+		sourceLineageTag: PPB_DeliveryDate_Month
+		summarizeBy: none
+		sourceColumn: PPB_DeliveryDate_Month
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Report_Actual_Uplift = entity
+		mode: directLake
+		source
+			entityName: Report_Actual_Uplift
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

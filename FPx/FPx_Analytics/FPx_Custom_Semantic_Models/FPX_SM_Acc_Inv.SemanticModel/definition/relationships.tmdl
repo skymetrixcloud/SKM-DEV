@@ -1,0 +1,28 @@
+relationship 6552c38a-e229-6eb2-fe6e-f1b3d6729dd0
+	fromColumn: Fact_Invoice.LOC_ID
+	toColumn: Dim_Geography.LOC_ID
+
+relationship 983aeefb-a64c-57e6-f3d9-aef06420ea5b
+	fromColumn: Fact_Invoice.InvoiceDate
+	toColumn: Dim_Calendar_InvoiceDate.Date
+
+relationship fa06333a-3264-a8c9-d92f-ae32b9ee0d31
+	fromColumn: Fact_Invoice.INV_ISSUER_ID
+	toColumn: Dim_InvoiceIssuer.INV_ISSUER_ID
+
+relationship 46cb99ad-dc37-1ea1-8b9c-70c89dcbf0fc
+	fromColumn: Fact_Invoice.RCV_CO_ID
+	toColumn: Dim_InvoiceReceiver.CO_ID
+
+relationship 59ce67e7-8dc8-8324-328c-63ecba6e0072
+	fromColumn: Fact_Invoice.CP_CO_ID
+	toColumn: Dim_Counterparty.CO_ID
+
+relationship 0a1371a1-272e-961b-beb6-4a92af51f5a7
+	fromColumn: Fact_InvoiceItemDiscrepancy.InvoiceID
+	toColumn: Fact_Invoice.InvoiceID
+
+relationship 669f1e0b-e6f0-6749-1c63-a60eab1617ad
+	fromColumn: Fact_Invoice.CLIENT_ID
+	toColumn: Dim_ClientAccessCode.CLIENT_ID
+

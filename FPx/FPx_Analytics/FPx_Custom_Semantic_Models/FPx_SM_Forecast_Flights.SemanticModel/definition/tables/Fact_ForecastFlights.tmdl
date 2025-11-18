@@ -1,0 +1,290 @@
+table Fact_ForecastFlights
+	lineageTag: 452c6daa-9318-4371-93b6-31893fe65ec6
+	sourceLineageTag: [fpx].[Fact_ForecastFlights]
+
+	column Division
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: fa0b061d-534d-4e8a-b989-d076627e70f2
+		sourceLineageTag: Division
+		summarizeBy: none
+		sourceColumn: Division
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerICAOCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1a9be6fd-aa63-4ee4-8e83-997b83777296
+		sourceLineageTag: CustomerICAOCode
+		summarizeBy: none
+		sourceColumn: CustomerICAOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column DomInt
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: bd81291a-7e47-4454-92d1-aa704fd9c8b2
+		sourceLineageTag: DomInt
+		summarizeBy: none
+		sourceColumn: DomInt
+
+		annotation SummarizationSetBy = Automatic
+
+	column BlockHours
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 1a6bfa65-abe2-4582-948b-b0324aa78fcd
+		sourceLineageTag: BlockHours
+		summarizeBy: sum
+		sourceColumn: BlockHours
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PriceTheoreticalConsumption
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 776352f8-5719-4c37-a8c9-8b2baf903e17
+		sourceLineageTag: PriceTheoreticalConsumption
+		summarizeBy: sum
+		sourceColumn: PriceTheoreticalConsumption
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CostUplift
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 3b3717fe-b4d1-46f6-bbd1-e8b14fcc952a
+		sourceLineageTag: CostUplift
+		summarizeBy: sum
+		sourceColumn: CostUplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CostStatisticalConsumption
+		dataType: double
+		sourceProviderType: float
+		lineageTag: df777ee0-a716-4bc9-b160-576364365c11
+		sourceLineageTag: CostStatisticalConsumption
+		summarizeBy: sum
+		sourceColumn: CostStatisticalConsumption
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CostTheoreticalConsumption
+		dataType: double
+		sourceProviderType: float
+		lineageTag: d99caa5d-fd79-4719-bc5a-7601fcfc6d91
+		sourceLineageTag: CostTheoreticalConsumption
+		summarizeBy: sum
+		sourceColumn: CostTheoreticalConsumption
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column StandardConsumption
+		dataType: double
+		sourceProviderType: float
+		lineageTag: b943cde7-bff6-4c15-b7e7-6ae038abc6b7
+		sourceLineageTag: StandardConsumption
+		summarizeBy: sum
+		sourceColumn: StandardConsumption
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CO2Emission
+		dataType: double
+		sourceProviderType: float
+		lineageTag: d41260c8-5c91-4643-b974-8fa2d6cfd2af
+		sourceLineageTag: CO2Emission
+		summarizeBy: sum
+		sourceColumn: CO2Emission
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Frequency
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 3ac9fe93-42de-4f77-8e2b-7ee77daabd81
+		sourceLineageTag: Frequency
+		summarizeBy: sum
+		sourceColumn: Frequency
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column StatisticalUplift
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 771d8f84-a769-4e62-8c48-cfbe6569932d
+		sourceLineageTag: StatisticalUplift
+		summarizeBy: sum
+		sourceColumn: StatisticalUplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column StatisticalConsumption
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 771e47f6-e741-445a-bfba-c39711bcc578
+		sourceLineageTag: StatisticalConsumption
+		summarizeBy: sum
+		sourceColumn: StatisticalConsumption
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TheoreticalConsumption
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c160c2db-efe0-4ad1-b9c6-d0909b24b2d4
+		sourceLineageTag: TheoreticalConsumption
+		summarizeBy: sum
+		sourceColumn: TheoreticalConsumption
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PriceUplift
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 6c017989-fd14-49a4-b7de-db00a92e4a7c
+		sourceLineageTag: PriceUplift
+		summarizeBy: sum
+		sourceColumn: PriceUplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PriceStatisticalConsumption
+		dataType: double
+		sourceProviderType: float
+		lineageTag: fb1bdbeb-2bd0-4bcd-a661-70275c2119bf
+		sourceLineageTag: PriceStatisticalConsumption
+		summarizeBy: sum
+		sourceColumn: PriceStatisticalConsumption
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AirlineDesignator
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2d14fcb8-0ec6-4d06-b004-95ae7d2366e9
+		sourceLineageTag: AirlineDesignator
+		summarizeBy: none
+		sourceColumn: AirlineDesignator
+
+		annotation SummarizationSetBy = Automatic
+
+	column FlightNumber
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8ab69ff5-c905-4547-9ddc-1ad32de37408
+		sourceLineageTag: FlightNumber
+		summarizeBy: none
+		sourceColumn: FlightNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column Suffix
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: de805ff1-6f90-4ddb-a9fd-b1ebe125507c
+		sourceLineageTag: Suffix
+		summarizeBy: none
+		sourceColumn: Suffix
+
+		annotation SummarizationSetBy = Automatic
+
+	column AircraftType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: cca46a69-1913-4a11-b5e8-c2328ca983c3
+		sourceLineageTag: AircraftType
+		summarizeBy: none
+		sourceColumn: AircraftType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Leg
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 59906b11-182d-42cb-8ee2-785f949e67ca
+		sourceLineageTag: Leg
+		summarizeBy: none
+		sourceColumn: Leg
+
+		annotation SummarizationSetBy = Automatic
+
+	column LegAircraftType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f1ee88d1-0e6d-43ca-a64e-a26f93a4b8f7
+		sourceLineageTag: LegAircraftType
+		summarizeBy: none
+		sourceColumn: LegAircraftType
+
+		annotation SummarizationSetBy = Automatic
+
+	column FlightDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 0a95c35b-4982-4fd7-bed0-c1854b4438b0
+		sourceLineageTag: FlightDate
+		summarizeBy: none
+		sourceColumn: FlightDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Departure
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 10fa9d36-d907-490c-8e1b-ebda98c986a8
+		sourceLineageTag: Departure
+		summarizeBy: none
+		sourceColumn: Departure
+
+		annotation SummarizationSetBy = Automatic
+
+	column Destination
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 29176205-5b6a-4203-a202-3c133cfdfe85
+		sourceLineageTag: Destination
+		summarizeBy: none
+		sourceColumn: Destination
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Fact_ForecastFlights = entity
+		mode: directLake
+		source
+			entityName: Fact_ForecastFlights
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

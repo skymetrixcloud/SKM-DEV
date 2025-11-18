@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Forecast_ Costs_And_Volumes"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "85491cd9-729b-a94f-4cf4-15bf3e5bc021"
+  }
+}

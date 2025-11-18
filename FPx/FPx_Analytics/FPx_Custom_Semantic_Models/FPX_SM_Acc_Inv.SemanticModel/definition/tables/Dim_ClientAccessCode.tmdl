@@ -1,0 +1,34 @@
+table Dim_ClientAccessCode
+	lineageTag: c69c6551-7408-4d97-8ec2-906ff03164b5
+	sourceLineageTag: [fpx].[Dim_ClientAccessCode]
+
+	column CLIENT_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: c343c4b1-a51a-4c7d-a368-fb7dd99445a2
+		sourceLineageTag: CLIENT_ID
+		summarizeBy: none
+		sourceColumn: CLIENT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ClientCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1670455e-d8e7-40ac-b58d-e91c47f0f06e
+		sourceLineageTag: ClientCode
+		summarizeBy: none
+		sourceColumn: ClientCode
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_ClientAccessCode = entity
+		mode: directLake
+		source
+			entityName: Dim_ClientAccessCode
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
