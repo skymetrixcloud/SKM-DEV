@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Invoices_Approaching_Due_Date"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "165ff85a-27bd-9a67-4c20-6a2e754262d6"
+  }
+}

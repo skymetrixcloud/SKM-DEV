@@ -1,0 +1,80 @@
+relationship fafebaff-d0b4-3b3f-1e51-7df636404d58
+	fromColumn: Fact_FuelMessage.RPT_FUELER_CO_ID
+	toColumn: RPT_Fueler.CO_ID
+
+relationship 5b791d18-f443-1935-477d-9cd3b2be40cb
+	fromColumn: Fact_FuelMessage.RPT_SUPPL_CO_ID
+	toColumn: RPT_Supplier.CO_ID
+
+relationship f2637f4f-70af-0fbb-1821-4f29d01c7d91
+	fromColumn: Fact_FuelMessage.EFF_FUELER_CO_ID
+	toColumn: EFF_Fueler.CO_ID
+
+relationship fb8ca0db-37fa-9636-f0c6-e657ac98f0e5
+	fromColumn: Fact_FuelMessage.EFF_SUPPL_CO_ID
+	toColumn: EFF_Supplier.CO_ID
+
+relationship 0f3a07ec-6caa-579e-62ee-42b67bd2982f
+	fromColumn: Fact_FuelMessage.DEP_LOC_ID
+	toColumn: Dim_Geography.LOC_ID
+
+relationship 4354826b-8b52-a0e6-90f1-ea61e8025252
+	fromColumn: Fact_FuelMessage.FlightDate
+	toColumn: Dim_Calendar.Date
+
+relationship 154bccd2-ba23-cb41-5069-1e8253d77c6a
+	fromColumn: Fact_SupplierVolumes.LOC_ID
+	toColumn: Dim_Geography.LOC_ID
+
+relationship c4cc6ebc-0f76-8de4-b59d-92b4a7c8aeaa
+	fromColumn: Fact_SupplierVolumes.CUST_CO_ID
+	toColumn: Dim_Customer.CO_ID
+
+relationship f103744f-6ecc-76a4-6420-cf380ab9f0c1
+	fromColumn: Fact_SupplierVolumes.Month
+	toColumn: Dim_Calendar.Date
+
+relationship b1f699e0-87cd-7040-70c7-5234f4ab04d8
+	fromColumn: Fact_SupplierVolumes.CNTPRTY_CO_ID
+	toColumn: Dim_Supplier.CO_ID
+
+relationship e9d7664a-b291-0994-fa6c-ad55c741a407
+	fromColumn: Fact_SupplierVolumes.HLDR_CO_ID
+	toColumn: Dim_ContractHolder.CO_ID
+
+relationship 3e7c923e-3ffe-d86b-4955-2649e98ce49c
+	fromColumn: Fact_ActualFlights.Customer
+	toColumn: Dim_CustomerAccess.CustomerICAOCode
+
+relationship 5f46412c-26a6-af9c-7e9a-a04aadcdb4c9
+	fromColumn: Fact_ActualFlights.Customer
+	toColumn: Dim_Customer.CustomerICAOCode
+
+relationship a57c7fb4-ee50-50e3-b8e5-8504a82506ef
+	fromColumn: Fact_ActualFlights.DepartureDate
+	toColumn: Dim_Calendar.Date
+
+relationship 12e36cbe-5ecc-ab55-36be-f3c4affd0b8f
+	fromColumn: Fact_ActualFlights.AirlineDesignator
+	toColumn: Dim_Airline.AirlineICAOCode
+
+relationship 7622cfab-8b64-5571-90f3-2b4600746825
+	fromColumn: Fact_ActualFlights.Owner
+	toColumn: vOwner.AirlineICAOCode
+
+relationship b6778731-0f36-3e6b-81ad-f0ff9173282b
+	fromColumn: Fact_ActualFlights.Operator
+	toColumn: vOperator.AirlineICAOCode
+
+relationship 143542df-4665-9a55-1080-6ca197add8f3
+	fromColumn: Fact_ActualFlights.Destination
+	toColumn: vDestination.LocationIATACode
+
+relationship d8494386-45a0-b13b-b6ad-30c5108b7337
+	fromColumn: Fact_ActualFlights.Departure
+	toColumn: vDeparture.LocationIATACode
+
+relationship 26249f1f-12c0-2890-05c7-4e10a1c7cd4d
+	fromColumn: Fact_FuelMessage.AirlineDesignator
+	toColumn: Dim_Airline.AirlineICAOCode
+

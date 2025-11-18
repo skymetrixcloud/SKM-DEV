@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "FPx_PL_Data_and_Semantic_Refresh"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e9bbbd1e-4468-bc9f-48c1-684e307dea35"
+  }
+}

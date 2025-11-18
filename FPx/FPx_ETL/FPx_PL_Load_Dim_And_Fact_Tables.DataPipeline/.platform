@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "FPx_PL_Load_Dim_And_Fact_Tables"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f449a670-fca6-a2fe-4719-efa658b341e1"
+  }
+}

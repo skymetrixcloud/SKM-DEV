@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Overall_Operations"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a00c35f7-027f-99d7-4648-ae4314802bc0"
+  }
+}

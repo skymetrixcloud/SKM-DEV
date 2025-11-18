@@ -1,0 +1,15 @@
+model bc51a307-a375-4f78-bead-e2ed315ae7d3
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["RPT_Supplier(1)","RPT_Fueler","EFF_Supplier","EFF_Fueler","vDeparture","vDestination","vOperator","vOwner","exec_requests_history","long_running_queries","frequently_run_queries","exec_sessions_history","Dim_Departure","Dim_Destination","Report_Actual_Uplift","Dim_Supplier","Fact_FuelMessage","Report_Emissions","Report_Uplift_Consumption_Tankering","Fact_SupplierVolumes","Report_EnergyQuotPricesEU","Report_EnergyQuotPricesUS","Dim_ContractHolder","Report_Payment_Vs_Due","Fact_ActualFlights(1)","Dim_Geography","Dim_Airline","Report_Supplier_Volumes","Dim_CustomerAccess(1)","Report_AFA_Join","Dim_Customer(1)","Dim_Calendar(1)","Report_ForecastFlights","Report_ForecastCashFlow","Report_ForecastCashFlow_VoP","Report_ForecastVsActual","Report_Billback_Unbilled","Report_Actual_Flights","Report_EnergyTimeseries","Report_Billback","Dim_Owner","Report_EnergyQuotation","Dim_Operator"]
+
+annotation SourceLineageTagType = DatabaseFullyQualifiedName
+

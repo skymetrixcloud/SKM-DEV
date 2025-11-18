@@ -1,0 +1,283 @@
+table Fact_BillbackInvoice
+	lineageTag: b963ddd7-0b2f-4f7e-b928-05541c013217
+	sourceLineageTag: [fpx].[Fact_BillbackInvoice]
+
+	column InvoiceID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 93b9961c-3fe3-4c15-8834-6c80dbc93732
+		sourceLineageTag: InvoiceID
+		summarizeBy: count
+		sourceColumn: InvoiceID
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceLevel
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 61a7d801-c7b6-4e0d-9a5d-7320ae6902b4
+		sourceLineageTag: InvoiceLevel
+		summarizeBy: none
+		sourceColumn: InvoiceLevel
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLIENT_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 609ee025-a2be-4125-a83f-08c637041601
+		sourceLineageTag: CLIENT_ID
+		summarizeBy: count
+		sourceColumn: CLIENT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CNTPRTY_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: efe241aa-f09e-4a56-9736-eb65a4e8317e
+		sourceLineageTag: CNTPRTY_CO_ID
+		summarizeBy: count
+		sourceColumn: CNTPRTY_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column INV_ISSUER_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: b03b7a9b-7377-46cb-b0ed-5368e2ba4d08
+		sourceLineageTag: INV_ISSUER_ID
+		summarizeBy: count
+		sourceColumn: INV_ISSUER_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column RCV_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 8a40f1ae-9144-4268-9aab-f111906315f0
+		sourceLineageTag: RCV_CO_ID
+		summarizeBy: none
+		sourceColumn: RCV_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ApprovalDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 6fcbe8bf-58b5-4a3a-87ab-5ad733e40e72
+		sourceLineageTag: ApprovalDate
+		summarizeBy: none
+		sourceColumn: ApprovalDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceStatus
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 561868e9-125b-4610-b122-93737717f607
+		sourceLineageTag: InvoiceStatus
+		summarizeBy: none
+		sourceColumn: InvoiceStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column LOC_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: e1a797c1-e895-40b9-99be-fe04f126be40
+		sourceLineageTag: LOC_ID
+		summarizeBy: count
+		sourceColumn: LOC_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsIPL
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3bbf8b0c-a394-4351-949f-9f3a304b52be
+		sourceLineageTag: IsIPL
+		summarizeBy: none
+		sourceColumn: IsIPL
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceNo
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: dc2902b9-aac9-40f0-b888-1a737f812121
+		sourceLineageTag: InvoiceNo
+		summarizeBy: none
+		sourceColumn: InvoiceNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 236c5491-c60e-45c8-9731-bbce8ada0346
+		sourceLineageTag: InvoiceDate
+		summarizeBy: none
+		sourceColumn: InvoiceDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column InputDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 6dddfd94-6bcb-4a18-baf1-ff579a997246
+		sourceLineageTag: InputDate
+		summarizeBy: none
+		sourceColumn: InputDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column CounterpartyAgreement
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 84641472-744f-4f88-bcbf-f9a93d027b64
+		sourceLineageTag: CounterpartyAgreement
+		summarizeBy: none
+		sourceColumn: CounterpartyAgreement
+
+		annotation SummarizationSetBy = Automatic
+
+	column DueDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: a944d596-a279-4933-bd5c-c68cad2bb214
+		sourceLineageTag: DueDate
+		summarizeBy: none
+		sourceColumn: DueDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column DeliveryFrom
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 78f3ec8f-96a7-452a-85ca-11104f29e0c8
+		sourceLineageTag: DeliveryFrom
+		summarizeBy: none
+		sourceColumn: DeliveryFrom
+
+		annotation SummarizationSetBy = Automatic
+
+	column DeliveryTo
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: aaed68a1-3ca0-4438-b576-092318afc825
+		sourceLineageTag: DeliveryTo
+		summarizeBy: none
+		sourceColumn: DeliveryTo
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 860ae249-9184-49b7-957b-9cd7ae366766
+		sourceLineageTag: InvoiceType
+		summarizeBy: none
+		sourceColumn: InvoiceType
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceCategory
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 15399d0c-350e-483e-9c85-bd492efb37bc
+		sourceLineageTag: InvoiceCategory
+		summarizeBy: none
+		sourceColumn: InvoiceCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column TransactionType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f6b25c81-6e1b-458c-9f85-e0de7f55eeb1
+		sourceLineageTag: TransactionType
+		summarizeBy: none
+		sourceColumn: TransactionType
+
+		annotation SummarizationSetBy = Automatic
+
+	column ItemsCount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 7fa95777-5990-499d-9755-2d3629942526
+		sourceLineageTag: ItemsCount
+		summarizeBy: sum
+		sourceColumn: ItemsCount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column InvoiceAmount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 4e9575c2-f414-4e8f-8ee0-238d3c59f06f
+		sourceLineageTag: InvoiceAmount
+		summarizeBy: sum
+		sourceColumn: InvoiceAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column InvoiceCurrency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 376a1840-4714-433b-b04d-9aa8d6386271
+		sourceLineageTag: InvoiceCurrency
+		summarizeBy: none
+		sourceColumn: InvoiceCurrency
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceAmountSys
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 7b27f1c1-453d-4e74-98ca-1009441a6eac
+		sourceLineageTag: InvoiceAmountSys
+		summarizeBy: sum
+		sourceColumn: InvoiceAmountSys
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QuantitySys
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 95a374e6-12b1-4d1b-89a9-52f7a7cd35c5
+		sourceLineageTag: QuantitySys
+		summarizeBy: sum
+		sourceColumn: QuantitySys
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Fact_BillbackInvoice = entity
+		mode: directLake
+		source
+			entityName: Fact_BillbackInvoice
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

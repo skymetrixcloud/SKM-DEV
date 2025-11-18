@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Fuel_Tickets_Delivery_Vs_Creation_Report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "95a83594-36e1-b23f-47ac-9f41b67ae3af"
+  }
+}

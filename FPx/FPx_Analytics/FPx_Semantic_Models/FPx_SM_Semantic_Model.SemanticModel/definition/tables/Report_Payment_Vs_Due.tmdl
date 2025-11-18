@@ -1,0 +1,1258 @@
+table Report_Payment_Vs_Due
+	lineageTag: 72058696-7dd3-42f4-bcfa-24509dd246d9
+	sourceLineageTag: [fpx].[Report_Payment_Vs_Due]
+
+	column Inv_InvoiceID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: ea8e426b-789c-4b09-8037-2114c574b73a
+		sourceLineageTag: Inv_InvoiceID
+		summarizeBy: count
+		sourceColumn: Inv_InvoiceID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_CLIENT_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 3005e2e1-34fd-4d74-83bf-29ba64d3284f
+		sourceLineageTag: Inv_CLIENT_ID
+		summarizeBy: count
+		sourceColumn: Inv_CLIENT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_RCV_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 93c4dfb8-3272-4e19-8d23-2efbe0f3cbc2
+		sourceLineageTag: Inv_RCV_CO_ID
+		summarizeBy: count
+		sourceColumn: Inv_RCV_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_RCV_CO_CD
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: e9b8f272-3bb3-4d44-a0f5-c8b61459f6c8
+		sourceLineageTag: Inv_RCV_CO_CD
+		summarizeBy: none
+		sourceColumn: Inv_RCV_CO_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_LOC_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 24900826-1355-45de-a6c4-d16f49737d29
+		sourceLineageTag: Inv_LOC_ID
+		summarizeBy: count
+		sourceColumn: Inv_LOC_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_LOC_CD
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 65567b97-e152-477e-b2b9-65561f14d67c
+		sourceLineageTag: Inv_LOC_CD
+		summarizeBy: none
+		sourceColumn: Inv_LOC_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_CP_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 628df3c4-bd53-4846-a38f-534fcc19dbfd
+		sourceLineageTag: Inv_CP_CO_ID
+		summarizeBy: count
+		sourceColumn: Inv_CP_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_CP_CO_CD
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 0450659e-170e-4274-b7a6-4e6363b93067
+		sourceLineageTag: Inv_CP_CO_CD
+		summarizeBy: none
+		sourceColumn: Inv_CP_CO_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_INV_ISSUER_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 58a58a4f-0918-4a26-8039-b9add3a09dea
+		sourceLineageTag: Inv_INV_ISSUER_ID
+		summarizeBy: count
+		sourceColumn: Inv_INV_ISSUER_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_INV_ISSUER_CD
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 769a7c5c-7a2a-491c-8375-5d5a329832de
+		sourceLineageTag: Inv_INV_ISSUER_CD
+		summarizeBy: none
+		sourceColumn: Inv_INV_ISSUER_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_InvoiceNo
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: da8360b2-b9b9-4aa7-84e0-3c138bbd8f70
+		sourceLineageTag: Inv_InvoiceNo
+		summarizeBy: none
+		sourceColumn: Inv_InvoiceNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_InvoiceDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 0ca95842-f25e-4765-9f4e-3816e332dbf9
+		sourceLineageTag: Inv_InvoiceDate
+		summarizeBy: none
+		sourceColumn: Inv_InvoiceDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_InvoiceDate_Month
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 724ac2b9-5a52-4818-bb89-a1fa28ca83fd
+		sourceLineageTag: Inv_InvoiceDate_Month
+		summarizeBy: none
+		sourceColumn: Inv_InvoiceDate_Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_IsIPL
+		dataType: string
+		sourceProviderType: char
+		lineageTag: 081f36e1-bf69-4695-9f1b-bed2aea63265
+		sourceLineageTag: Inv_IsIPL
+		summarizeBy: none
+		sourceColumn: Inv_IsIPL
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_InvoiceCategory
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 2f79de38-7ff3-4616-b1bb-707b28fda418
+		sourceLineageTag: Inv_InvoiceCategory
+		summarizeBy: none
+		sourceColumn: Inv_InvoiceCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_InvoiceType
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 6218bc32-90aa-44b3-ab73-ac147b5407d5
+		sourceLineageTag: Inv_InvoiceType
+		summarizeBy: none
+		sourceColumn: Inv_InvoiceType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_InvoiceStandard
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 9a4c390b-9934-4c22-b521-6e338d0bffc3
+		sourceLineageTag: Inv_InvoiceStandard
+		summarizeBy: none
+		sourceColumn: Inv_InvoiceStandard
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_InvoiceStandardVersion
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 45fb357d-9396-40ee-8e9d-96919e6c420d
+		sourceLineageTag: Inv_InvoiceStandardVersion
+		summarizeBy: none
+		sourceColumn: Inv_InvoiceStandardVersion
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_DeliveryMonth
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 5025dcfb-87b0-4b57-947c-2bd7bbdd564e
+		sourceLineageTag: Inv_DeliveryMonth
+		summarizeBy: none
+		sourceColumn: Inv_DeliveryMonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_Debit_Credit
+		dataType: string
+		sourceProviderType: varchar(10)
+		lineageTag: 12c47724-268f-4bd7-acf0-c2e841dfb901
+		sourceLineageTag: Inv_Debit_Credit
+		summarizeBy: none
+		sourceColumn: Inv_Debit_Credit
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_InvoiceAmount
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: 238b67a2-008a-487d-b998-2edeed15f106
+		sourceLineageTag: Inv_InvoiceAmount
+		summarizeBy: sum
+		sourceColumn: Inv_InvoiceAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column Inv_InvoiceCurrency
+		dataType: string
+		sourceProviderType: varchar(10)
+		lineageTag: 993deea2-00d3-4c9a-8fbb-95593a04fb8e
+		sourceLineageTag: Inv_InvoiceCurrency
+		summarizeBy: none
+		sourceColumn: Inv_InvoiceCurrency
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_InvoiceAmountSys
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: 6c7ce856-0c52-4761-9052-d98634b2da08
+		sourceLineageTag: Inv_InvoiceAmountSys
+		summarizeBy: sum
+		sourceColumn: Inv_InvoiceAmountSys
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column Inv_ItemsCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 503621d6-ab81-4c26-b86d-e4fd5529ae80
+		sourceLineageTag: Inv_ItemsCount
+		summarizeBy: sum
+		sourceColumn: Inv_ItemsCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_CreationDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: d021b8b8-d00b-4b23-b2be-780eb8d904cc
+		sourceLineageTag: Inv_CreationDate
+		summarizeBy: none
+		sourceColumn: Inv_CreationDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_InputDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 6fe58283-bd4d-41dc-9852-17f71367c7e5
+		sourceLineageTag: Inv_InputDate
+		summarizeBy: none
+		sourceColumn: Inv_InputDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_ClosingDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 573f57bb-3cfc-42b1-a797-f17691afd1fb
+		sourceLineageTag: Inv_ClosingDate
+		summarizeBy: none
+		sourceColumn: Inv_ClosingDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_BaselineDateSys
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: e510bb1c-6103-407f-9b77-dbf8e9f204e7
+		sourceLineageTag: Inv_BaselineDateSys
+		summarizeBy: none
+		sourceColumn: Inv_BaselineDateSys
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_BaselineDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 10300905-095f-47b8-8841-db3708eaafd9
+		sourceLineageTag: Inv_BaselineDate
+		summarizeBy: none
+		sourceColumn: Inv_BaselineDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_DueDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: bd7c50bd-91be-4f95-b099-311ee1a7ed22
+		sourceLineageTag: Inv_DueDate
+		summarizeBy: none
+		sourceColumn: Inv_DueDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column INV_DueDate_QuarterNum
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: c4bbcc0c-c892-422f-89c7-b957f56d6868
+		sourceLineageTag: INV_DueDate_QuarterNum
+		summarizeBy: sum
+		sourceColumn: INV_DueDate_QuarterNum
+
+		annotation SummarizationSetBy = Automatic
+
+	column INV_DueYearNum
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: fb306a65-7a0a-4e62-8c51-9af7105c2005
+		sourceLineageTag: INV_DueYearNum
+		summarizeBy: sum
+		sourceColumn: INV_DueYearNum
+
+		annotation SummarizationSetBy = Automatic
+
+	column INV_Due_QuarterLabel
+		dataType: string
+		sourceProviderType: varchar(26)
+		lineageTag: e630afce-c935-48ef-be51-9b8037e4eadc
+		sourceLineageTag: INV_Due_QuarterLabel
+		summarizeBy: none
+		sourceColumn: INV_Due_QuarterLabel
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_DueInDays
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: 360d8bb7-4fe8-4da0-ac80-689db48f9072
+		sourceLineageTag: Inv_DueInDays
+		summarizeBy: sum
+		sourceColumn: Inv_DueInDays
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column Inv_DueInCategory
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 4001cb1f-4705-4e68-8804-d17b3048515e
+		sourceLineageTag: Inv_DueInCategory
+		summarizeBy: none
+		sourceColumn: Inv_DueInCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_PaymentDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 83c34ba1-55e9-49b4-8d2d-538f0adbb517
+		sourceLineageTag: Inv_PaymentDate
+		summarizeBy: none
+		sourceColumn: Inv_PaymentDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_CheckDays
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: ab5092ae-faf7-4cc2-936c-725d2bfda332
+		sourceLineageTag: Inv_CheckDays
+		summarizeBy: sum
+		sourceColumn: Inv_CheckDays
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column Inv_CheckDaysCategory
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 9e234490-588d-4307-96a2-024546e7fbe3
+		sourceLineageTag: Inv_CheckDaysCategory
+		summarizeBy: none
+		sourceColumn: Inv_CheckDaysCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_ReceivingDelayDays
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: 5d479003-425b-43f0-b286-5fd67701fa98
+		sourceLineageTag: Inv_ReceivingDelayDays
+		summarizeBy: sum
+		sourceColumn: Inv_ReceivingDelayDays
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column Inv_ReleaseDays
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: 2a9277b2-b419-44ca-9199-e4bd1a48e8dc
+		sourceLineageTag: Inv_ReleaseDays
+		summarizeBy: sum
+		sourceColumn: Inv_ReleaseDays
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column Inv_InvoiceStillOpen
+		dataType: string
+		sourceProviderType: varchar(10)
+		lineageTag: c950ef9b-e176-4029-b30b-3b0b856f3c81
+		sourceLineageTag: Inv_InvoiceStillOpen
+		summarizeBy: none
+		sourceColumn: Inv_InvoiceStillOpen
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_ReleasedOnTime
+		dataType: string
+		sourceProviderType: varchar(10)
+		lineageTag: f33de84a-2deb-4f96-88f0-689e0da1b243
+		sourceLineageTag: Inv_ReleasedOnTime
+		summarizeBy: none
+		sourceColumn: Inv_ReleasedOnTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_PaymentDelayDays
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 361e5077-3eb6-4986-9df0-b7e5841658dc
+		sourceLineageTag: Inv_PaymentDelayDays
+		summarizeBy: sum
+		sourceColumn: Inv_PaymentDelayDays
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_AccountingDelayDays
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: 90a00035-f1c6-4b04-9954-abba9859f997
+		sourceLineageTag: Inv_AccountingDelayDays
+		summarizeBy: sum
+		sourceColumn: Inv_AccountingDelayDays
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column Inv_KPI1
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 859425b2-0a9c-4f02-811a-795572a2599e
+		sourceLineageTag: Inv_KPI1
+		summarizeBy: sum
+		sourceColumn: Inv_KPI1
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_KPI2
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: dea441f4-9eac-4646-9aa1-38d5c68b17f7
+		sourceLineageTag: Inv_KPI2
+		summarizeBy: sum
+		sourceColumn: Inv_KPI2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_KPI3
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 1a3a0ce1-1e2f-4f0c-ac1b-dda52dfa1539
+		sourceLineageTag: Inv_KPI3
+		summarizeBy: sum
+		sourceColumn: Inv_KPI3
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_KPI4
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 520c5912-4a68-4799-acf8-6c45b594ab17
+		sourceLineageTag: Inv_KPI4
+		summarizeBy: sum
+		sourceColumn: Inv_KPI4
+
+		annotation SummarizationSetBy = Automatic
+
+	column Inv_KPI5
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 8228f8cb-1118-4f2d-bae1-df1701026f92
+		sourceLineageTag: Inv_KPI5
+		summarizeBy: sum
+		sourceColumn: Inv_KPI5
+
+		annotation SummarizationSetBy = Automatic
+
+	column Geo_LOC_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: f962a80a-e103-4e75-9b87-8f76bd727063
+		sourceLineageTag: Geo_LOC_ID
+		summarizeBy: count
+		sourceColumn: Geo_LOC_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Geo_LocationCode
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 37aaba50-c981-4d2b-8452-894af2b27dfa
+		sourceLineageTag: Geo_LocationCode
+		summarizeBy: none
+		sourceColumn: Geo_LocationCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Geo_LocationName
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 39a4439a-7e3b-4486-aea6-225ce684bdd2
+		sourceLineageTag: Geo_LocationName
+		summarizeBy: none
+		sourceColumn: Geo_LocationName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Geo_LocationIATACode
+		dataType: string
+		sourceProviderType: varchar(10)
+		lineageTag: 82a50c4b-7682-4a66-9aeb-061b0f0d7f50
+		sourceLineageTag: Geo_LocationIATACode
+		summarizeBy: none
+		sourceColumn: Geo_LocationIATACode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Geo_LocationICAOCode
+		dataType: string
+		sourceProviderType: varchar(10)
+		lineageTag: 8bfca559-fe7c-4e8b-aac4-19c7ac06a346
+		sourceLineageTag: Geo_LocationICAOCode
+		summarizeBy: none
+		sourceColumn: Geo_LocationICAOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Geo_IsAirport
+		dataType: string
+		sourceProviderType: char
+		lineageTag: 747884d4-f7f8-4f16-842f-e164c2538c07
+		sourceLineageTag: Geo_IsAirport
+		summarizeBy: none
+		sourceColumn: Geo_IsAirport
+
+		annotation SummarizationSetBy = Automatic
+
+	column Geo_IsMonopolistic
+		dataType: string
+		sourceProviderType: char
+		lineageTag: d142fd77-8c19-4990-a064-0aef805ab76c
+		sourceLineageTag: Geo_IsMonopolistic
+		summarizeBy: none
+		sourceColumn: Geo_IsMonopolistic
+
+		annotation SummarizationSetBy = Automatic
+
+	column Geo_CNTRY_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 3ee1f312-51a5-4a07-9c69-df407040658b
+		sourceLineageTag: Geo_CNTRY_ID
+		summarizeBy: count
+		sourceColumn: Geo_CNTRY_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Geo_CountryName
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 77a5e2ad-b5b9-4323-ab19-a3681bd1241e
+		sourceLineageTag: Geo_CountryName
+		summarizeBy: none
+		sourceColumn: Geo_CountryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Geo_CountryISOCode
+		dataType: string
+		sourceProviderType: varchar(10)
+		lineageTag: fac0c18a-bf37-41a0-8e84-fb47935b15a9
+		sourceLineageTag: Geo_CountryISOCode
+		summarizeBy: none
+		sourceColumn: Geo_CountryISOCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Geo_Continent
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: b92bdbfc-e9bb-4b2f-bff2-2246dab8198a
+		sourceLineageTag: Geo_Continent
+		summarizeBy: none
+		sourceColumn: Geo_Continent
+
+		annotation SummarizationSetBy = Automatic
+
+	column Geo_StateCode
+		dataType: string
+		sourceProviderType: varchar(10)
+		lineageTag: 39c16ace-d7ca-45a3-981d-66acab5ed0ae
+		sourceLineageTag: Geo_StateCode
+		summarizeBy: none
+		sourceColumn: Geo_StateCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column Geo_StateName
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: a079a415-72bb-4594-af96-f1aa75be1f27
+		sourceLineageTag: Geo_StateName
+		summarizeBy: none
+		sourceColumn: Geo_StateName
+
+		annotation SummarizationSetBy = Automatic
+
+	column IID_InvoiceItemID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 20e0d1b3-62fc-46e5-849d-017efcee1987
+		sourceLineageTag: IID_InvoiceItemID
+		summarizeBy: count
+		sourceColumn: IID_InvoiceItemID
+
+		annotation SummarizationSetBy = Automatic
+
+	column IID_InvoiceID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 53cc80ee-a22c-49f9-a4bb-c7876c743014
+		sourceLineageTag: IID_InvoiceID
+		summarizeBy: count
+		sourceColumn: IID_InvoiceID
+
+		annotation SummarizationSetBy = Automatic
+
+	column IID_QuantityDiscrepancyCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: f83e73e6-d2df-42e6-9863-480603201f4c
+		sourceLineageTag: IID_QuantityDiscrepancyCount
+		summarizeBy: sum
+		sourceColumn: IID_QuantityDiscrepancyCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column IID_AmountDiscrepancyCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: ab3e19d3-5c28-4a6f-b918-57b527b2d1e4
+		sourceLineageTag: IID_AmountDiscrepancyCount
+		summarizeBy: sum
+		sourceColumn: IID_AmountDiscrepancyCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column IID_VATDiscrepancyCount
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 00356083-e471-432e-8481-112b49c9f4b9
+		sourceLineageTag: IID_VATDiscrepancyCount
+		summarizeBy: sum
+		sourceColumn: IID_VATDiscrepancyCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column IID_QuantityInvoiced
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: 650f4315-80f8-4175-8a2e-db84fc62b501
+		sourceLineageTag: IID_QuantityInvoiced
+		summarizeBy: sum
+		sourceColumn: IID_QuantityInvoiced
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column IID_QuantityExpected
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: 0d6544aa-f6de-4dad-ba1a-aba84a2d5d68
+		sourceLineageTag: IID_QuantityExpected
+		summarizeBy: sum
+		sourceColumn: IID_QuantityExpected
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column IID_QuantityDifference
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: ee4f906a-f97d-4d79-b710-d073a7681b2b
+		sourceLineageTag: IID_QuantityDifference
+		summarizeBy: sum
+		sourceColumn: IID_QuantityDifference
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column IID_QuantityDifferenceAsAmount
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: 202d0556-9565-490b-b9ab-120f33717dcc
+		sourceLineageTag: IID_QuantityDifferenceAsAmount
+		summarizeBy: sum
+		sourceColumn: IID_QuantityDifferenceAsAmount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column IID_AmountInvoiced
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: e70dceba-0aad-4f5d-b5e1-3c4a5b25fa0c
+		sourceLineageTag: IID_AmountInvoiced
+		summarizeBy: sum
+		sourceColumn: IID_AmountInvoiced
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column IID_AmountExpected
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: 9ea016fd-d373-4649-ba9e-e0a0496ef2a0
+		sourceLineageTag: IID_AmountExpected
+		summarizeBy: sum
+		sourceColumn: IID_AmountExpected
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column IID_AmountDifference
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: 391ca712-8068-4c29-8063-0794dfc93508
+		sourceLineageTag: IID_AmountDifference
+		summarizeBy: sum
+		sourceColumn: IID_AmountDifference
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column IID_VATInvoiced
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: c511de3c-8534-4c64-9c1b-7d566b46069c
+		sourceLineageTag: IID_VATInvoiced
+		summarizeBy: sum
+		sourceColumn: IID_VATInvoiced
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column IID_VATExpected
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: 1094dd90-1b6e-4c51-8fe8-ec670c0fb895
+		sourceLineageTag: IID_VATExpected
+		summarizeBy: sum
+		sourceColumn: IID_VATExpected
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column IID_VATDifference
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(10, 2)
+		lineageTag: ab691b1c-d379-4153-9330-8e184d49496d
+		sourceLineageTag: IID_VATDifference
+		summarizeBy: sum
+		sourceColumn: IID_VATDifference
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column Cal_Date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 3b65444a-b30c-4e0f-9a3a-fe4ae076bc90
+		sourceLineageTag: Cal_Date
+		summarizeBy: none
+		sourceColumn: Cal_Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cal_CRT_DT
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: f1f3e3fd-d1c3-476e-bad6-3f847654981d
+		sourceLineageTag: Cal_CRT_DT
+		summarizeBy: none
+		sourceColumn: Cal_CRT_DT
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cal_DOW
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 635e3fcd-9709-4cc4-8b17-ec1b00885a3f
+		sourceLineageTag: Cal_DOW
+		summarizeBy: sum
+		sourceColumn: Cal_DOW
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cal_YR
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 70b4b087-74d2-4970-816c-4bd8e1809b0e
+		sourceLineageTag: Cal_YR
+		summarizeBy: sum
+		sourceColumn: Cal_YR
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cal_QT
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 23443720-df4f-4dc7-9686-fb988fab312c
+		sourceLineageTag: Cal_QT
+		summarizeBy: sum
+		sourceColumn: Cal_QT
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cal_MTH
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: febe1525-362c-4e64-a218-2fde04565347
+		sourceLineageTag: Cal_MTH
+		summarizeBy: sum
+		sourceColumn: Cal_MTH
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cal_Y2D
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 250d32ae-4091-4e35-90a2-da6aadc1e2da
+		sourceLineageTag: Cal_Y2D
+		summarizeBy: sum
+		sourceColumn: Cal_Y2D
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cal_Q2D
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: e8b1c888-6c90-4a93-8a27-56be59b9a936
+		sourceLineageTag: Cal_Q2D
+		summarizeBy: sum
+		sourceColumn: Cal_Q2D
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cal_M2D
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 0a3a71e3-8670-4b0f-b856-743c5f7a116a
+		sourceLineageTag: Cal_M2D
+		summarizeBy: sum
+		sourceColumn: Cal_M2D
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cal_W2D
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: ad31d5f1-9a58-40f9-8091-5280d8a5f150
+		sourceLineageTag: Cal_W2D
+		summarizeBy: sum
+		sourceColumn: Cal_W2D
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cal_ANY_Y2D
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: a065c03f-56ab-4875-a97f-1c824d85884f
+		sourceLineageTag: Cal_ANY_Y2D
+		summarizeBy: sum
+		sourceColumn: Cal_ANY_Y2D
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cal_ANY_Q2D
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: a1c77b14-51f5-4adb-834e-0dfe090d2f1d
+		sourceLineageTag: Cal_ANY_Q2D
+		summarizeBy: sum
+		sourceColumn: Cal_ANY_Q2D
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cal_SAME_Q2D
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 9ae3e3ec-f062-4981-b23a-787b45e812e9
+		sourceLineageTag: Cal_SAME_Q2D
+		summarizeBy: sum
+		sourceColumn: Cal_SAME_Q2D
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cal_ANY_M2D
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: e170534e-a321-49b7-b010-ce8ff8358a95
+		sourceLineageTag: Cal_ANY_M2D
+		summarizeBy: sum
+		sourceColumn: Cal_ANY_M2D
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cal_SAME_M2D
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 2b9f8276-1872-4f05-af08-a7126a597145
+		sourceLineageTag: Cal_SAME_M2D
+		summarizeBy: sum
+		sourceColumn: Cal_SAME_M2D
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvIssuer_INV_ISSUER_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: d0095f3e-348d-41c8-9bd6-01c1c5afe775
+		sourceLineageTag: InvIssuer_INV_ISSUER_ID
+		summarizeBy: count
+		sourceColumn: InvIssuer_INV_ISSUER_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvIssuer_InvoiceIssuerCode
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 1ad27e00-1f61-4bd0-ad82-f64e0d60bf90
+		sourceLineageTag: InvIssuer_InvoiceIssuerCode
+		summarizeBy: none
+		sourceColumn: InvIssuer_InvoiceIssuerCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvIssuer_InvoiceIssuerName
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: f3de4b6d-bbe8-4271-b765-933dea26dff3
+		sourceLineageTag: InvIssuer_InvoiceIssuerName
+		summarizeBy: none
+		sourceColumn: InvIssuer_InvoiceIssuerName
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvIssuer_CLIENT_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 993544ac-b91c-432f-8466-43262d9d192d
+		sourceLineageTag: InvIssuer_CLIENT_ID
+		summarizeBy: count
+		sourceColumn: InvIssuer_CLIENT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvIssuer_ClientCode
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: ec8c0a81-291d-46f1-a2e8-692a03d54da6
+		sourceLineageTag: InvIssuer_ClientCode
+		summarizeBy: none
+		sourceColumn: InvIssuer_ClientCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvIssuer_ClientName
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 6882776d-3c8c-40b0-88f7-49e899acae6a
+		sourceLineageTag: InvIssuer_ClientName
+		summarizeBy: none
+		sourceColumn: InvIssuer_ClientName
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvIssuer_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 8be84582-d9b7-4cb7-95a8-2d58c07d31fb
+		sourceLineageTag: InvIssuer_CO_ID
+		summarizeBy: count
+		sourceColumn: InvIssuer_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvIssuer_CounterpartyCode
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 7779eafa-1bc0-4ca9-83d3-86ab2846031e
+		sourceLineageTag: InvIssuer_CounterpartyCode
+		summarizeBy: none
+		sourceColumn: InvIssuer_CounterpartyCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvIssuer_CounterpartyName
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: e9425bd7-6d90-43de-85a4-0fe17fa4ef2f
+		sourceLineageTag: InvIssuer_CounterpartyName
+		summarizeBy: none
+		sourceColumn: InvIssuer_CounterpartyName
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvRec_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 51a1d8ef-42e8-4e2b-8a5f-b81f38a8b576
+		sourceLineageTag: InvRec_CO_ID
+		summarizeBy: count
+		sourceColumn: InvRec_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvRec_InvoiceReceiverCode
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 708b8f5b-f291-4910-9abf-cde8702e1f04
+		sourceLineageTag: InvRec_InvoiceReceiverCode
+		summarizeBy: none
+		sourceColumn: InvRec_InvoiceReceiverCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvRec_InvoiceReceiverName
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 87d00bff-a2b5-4fa9-8047-8a00dba27778
+		sourceLineageTag: InvRec_InvoiceReceiverName
+		summarizeBy: none
+		sourceColumn: InvRec_InvoiceReceiverName
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvRec_CLIENT_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 318d942f-872b-4461-84f1-f0800226ac7f
+		sourceLineageTag: InvRec_CLIENT_ID
+		summarizeBy: count
+		sourceColumn: InvRec_CLIENT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvRec_ClientCode
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: efe1fccc-1368-4655-8aac-ca53150b8ec4
+		sourceLineageTag: InvRec_ClientCode
+		summarizeBy: none
+		sourceColumn: InvRec_ClientCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvRec_ClientName
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 0a85edf0-6cd3-41ad-b907-89a82bbad61e
+		sourceLineageTag: InvRec_ClientName
+		summarizeBy: none
+		sourceColumn: InvRec_ClientName
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvCP_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: bcc4face-59f6-4039-aa38-9abe091faa45
+		sourceLineageTag: InvCP_CO_ID
+		summarizeBy: count
+		sourceColumn: InvCP_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvCP_CounterpartyCode
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: f1d37ceb-b5ae-4396-ab96-d20b9e11664e
+		sourceLineageTag: InvCP_CounterpartyCode
+		summarizeBy: none
+		sourceColumn: InvCP_CounterpartyCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvCP_CounterpartyName
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: a202ba61-8ae6-4084-bc77-6e648161ca4e
+		sourceLineageTag: InvCP_CounterpartyName
+		summarizeBy: none
+		sourceColumn: InvCP_CounterpartyName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ClAccess_LoginName
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 3cd1a0f9-e178-4cc4-b380-b3c4b6523a91
+		sourceLineageTag: ClAccess_LoginName
+		summarizeBy: none
+		sourceColumn: ClAccess_LoginName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ClAccess_CLIENT_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: c771029f-86fb-4f9c-b94d-bdc119b6234f
+		sourceLineageTag: ClAccess_CLIENT_ID
+		summarizeBy: count
+		sourceColumn: ClAccess_CLIENT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ClAccess_ClientCode
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: de390684-f82b-412a-aa7f-d4809a76bdc9
+		sourceLineageTag: ClAccess_ClientCode
+		summarizeBy: none
+		sourceColumn: ClAccess_ClientCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column ClAccess_ClientName
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: c1379c01-8253-4979-938e-4f33d57e1c30
+		sourceLineageTag: ClAccess_ClientName
+		summarizeBy: none
+		sourceColumn: ClAccess_ClientName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Report_Payment_Vs_Due = entity
+		mode: directLake
+		source
+			entityName: Report_Payment_Vs_Due
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "Dim and Fact load to WH",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "storedProcedureName": "[fpx].[usp_Load_Dim_Fact_tables]"
+        },
+        "linkedService": {
+          "name": "WH_GTI",
+          "properties": {
+            "annotations": [],
+            "type": "DataWarehouse",
+            "typeProperties": {
+              "endpoint": "k54es2zgas5ebigksxm2mzngyy-hyzmym6i6gaebosf3fwepg4vzy.datawarehouse.fabric.microsoft.com",
+              "artifactId": "f933d039-adf3-47e7-acbb-ad9b8c0c85a4",
+              "workspaceId": "33cc323e-f1c8-4080-ba45-d96c479b95ce"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

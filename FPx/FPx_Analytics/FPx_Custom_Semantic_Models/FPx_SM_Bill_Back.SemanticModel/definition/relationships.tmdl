@@ -1,0 +1,12 @@
+relationship 27f4b426-22d5-85da-8988-1599f1747b50
+	fromColumn: Fact_BillbackInvoice.RCV_CO_ID
+	toColumn: Dim_Counterparty_RCV.CO_ID
+
+relationship 93e3e74a-d9e0-d31e-b5ee-ecdfbbb130bd
+	fromColumn: Fact_BillbackInvoice.DeliveryFrom
+	toColumn: Dim_Calendar_DeliveryFrom.Date
+
+relationship 4b4a9bba-0e65-02cf-3f2d-0ba41a0ccdee
+	fromColumn: Fact_BillbackInvoice.DeliveryTo
+	toColumn: Dim_Calendar_DeliveryTo.Date
+

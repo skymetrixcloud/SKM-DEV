@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Variance_(Days)_Between_Invoice_And_Input_Date"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ab04f3b1-202a-a4f3-41bc-48643b11a3b0"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "config": "{\"version\":\"5.67\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU10\",\"type\":2,\"version\":{\"visual\":\"2.1.0\",\"report\":\"3.0.0\",\"page\":\"2.3.0\"}}},\"activeSectionIndex\":0,\"modelExtensions\":[{\"name\":\"extension\",\"entities\":[{\"name\":\"Fact_ActualFlights\",\"extends\":\"Fact_ActualFlights\",\"measures\":[{\"name\":\"TotalUpliftVol\",\"dataType\":3,\"expression\":\"SUMX(Fact_ActualFlights[UpliftVol])\",\"errorMessage\":null,\"hidden\":false,\"references\":{\"unrecognizedReferences\":true},\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"G\",\"format\":\"General\",\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}}]},{\"name\":\"Dim_Calendar\",\"extends\":\"Dim_Calendar\",\"measures\":[{\"name\":\"month_year\",\"dataType\":3,\"expression\":\"Dim_Calendar[MTH] & \\\"/\\\" & Dim_Calender[YR]\",\"errorMessage\":null,\"hidden\":false,\"references\":{\"unrecognizedReferences\":true},\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"G\",\"format\":\"General\",\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}}]}]}],\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU10",
+            "path": "BaseThemes/CY25SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "image__1_-removebg-preview125107372131418988093.png",
+            "path": "image__1_-removebg-preview125107372131418988093.png",
+            "type": 100
+          },
+          {
+            "name": "powerbi_layout_(2)986757030722048274496590148375.png",
+            "path": "powerbi_layout_(2)986757030722048274496590148375.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"420L\"}}}}}],\"background\":[{\"properties\":{\"image\":{\"image\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'powerbi_layout_(2)9867570307223056.png'\"}}},\"url\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"powerbi_layout_(2)986757030722048274496590148375.png\"}}},\"scaling\":{\"expr\":{\"Literal\":{\"Value\":\"'Fit'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Overall Operations",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "9d9802409a5057e705b1",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"00281d282267607a630d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":29.197080291970803,\"y\":226.56934306569343,\"z\":6000,\"width\":141.31386861313868,\"height\":87.59124087591242,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact_ActualFlights.Destination\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Destination\"},\"Name\":\"Fact_ActualFlights.Destination\",\"NativeReferenceName\":\"Destination\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Destination'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 87.59,
+          "width": 141.31,
+          "x": 29.20,
+          "y": 226.57,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"108b34980cdcb22ee0ac\",\"layouts\":[{\"id\":0,\"position\":{\"x\":587.4452554744526,\"y\":427.44525547445255,\"z\":9000,\"width\":327.007299270073,\"height\":251.09489051094891,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact_ActualFlights.Departure\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Fact_ActualFlights.TankeredFuelVol)\"}],\"Series\":[{\"queryRef\":\"Fact_ActualFlights.Destination\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Departure\"},\"Name\":\"Fact_ActualFlights.Departure\",\"NativeReferenceName\":\"Departure\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Destination\"},\"Name\":\"Fact_ActualFlights.Destination\",\"NativeReferenceName\":\"Destination\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"TankeredFuelVol\"}},\"Function\":0},\"Name\":\"Sum(Fact_ActualFlights.TankeredFuelVol)\",\"NativeReferenceName\":\"Total TankeredFuelVol\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Departure\"}}}]},\"columnProperties\":{\"Sum(Fact_ActualFlights.TotalConsumptionMass)\":{\"displayName\":\"TotalConsumptionMass\"},\"Sum(Fact_ActualFlights.TankeredFuelVol)\":{\"displayName\":\"Total TankeredFuelVol\"}},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 10 Tankering legs'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact_ActualFlights\"}},\"Property\":\"Departure\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Departure\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"TankeredFuelVol\"}},\"Function\":0}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Departure\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 251.09,
+          "width": 327.01,
+          "x": 587.45,
+          "y": 427.45,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"43c7d1b558bea9617644\",\"layouts\":[{\"id\":0,\"position\":{\"x\":928.4671532846716,\"y\":133.13868613138686,\"z\":7000,\"width\":302.48175182481754,\"height\":273.28467153284674,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact_ActualFlights.Departure\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Fact_ActualFlights.TotalConsumptionMass)\"}],\"Series\":[{\"queryRef\":\"Fact_ActualFlights.Destination\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Departure\"},\"Name\":\"Fact_ActualFlights.Departure\",\"NativeReferenceName\":\"Departure\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"TotalConsumptionMass\"}},\"Function\":0},\"Name\":\"Sum(Fact_ActualFlights.TotalConsumptionMass)\",\"NativeReferenceName\":\"TotalConsumptionMass\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Destination\"},\"Name\":\"Fact_ActualFlights.Destination\",\"NativeReferenceName\":\"Destination\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Departure\"}}}]},\"columnProperties\":{\"Sum(Fact_ActualFlights.TotalConsumptionMass)\":{\"displayName\":\"TotalConsumptionMass\"}},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 10 consumption legs'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact_ActualFlights\"}},\"Property\":\"Departure\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Departure\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"TotalConsumptionMass\"}},\"Function\":0}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Departure\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 273.28,
+          "width": 302.48,
+          "x": 928.47,
+          "y": 133.14,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"5c866b959704b6601a1d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":928.4671532846716,\"y\":427.44525547445255,\"z\":8000,\"width\":302.48175182481754,\"height\":251.09489051094891,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact_ActualFlights.AircraftType\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Fact_ActualFlights.TankeredFuelVol)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"AircraftType\"},\"Name\":\"Fact_ActualFlights.AircraftType\",\"NativeReferenceName\":\"AircraftType\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"TankeredFuelVol\"}},\"Function\":0},\"Name\":\"Sum(Fact_ActualFlights.TankeredFuelVol)\",\"NativeReferenceName\":\"Total TankeredFuelVol\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"TankeredFuelVol\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(Fact_ActualFlights.TankeredFuelVol)\":{\"displayName\":\"Total TankeredFuelVol\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Tankered fuel by Aircraft type'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 251.09,
+          "width": 302.48,
+          "x": 928.47,
+          "y": 427.45,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"695dcf011acea8e671d7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30.364963503649637,\"y\":341.021897810219,\"z\":3000,\"width\":141.31386861313868,\"height\":86.42335766423358,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact_ActualFlights.Leg\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Leg\"},\"Name\":\"Fact_ActualFlights.Leg\",\"NativeReferenceName\":\"Leg\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Leg'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 86.42,
+          "width": 141.31,
+          "x": 30.36,
+          "y": 341.02,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"79e96eaead97e0559d51\",\"layouts\":[{\"id\":0,\"position\":{\"x\":29.261083743842367,\"y\":566.6009852216749,\"z\":5000,\"width\":140.98522167487684,\"height\":86.89655172413794,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Calendar.YR\",\"active\":true},{\"queryRef\":\"Dim_Calendar.MTH\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"YR\"},\"Name\":\"Dim_Calendar.YR\",\"NativeReferenceName\":\"YR\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MTH\"},\"Name\":\"Dim_Calendar.MTH\",\"NativeReferenceName\":\"MTH\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"Dim_Calendar.YR\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Dim_Calendar\"}},\"Property\":\"YR\"}}],\"isPinned\":true},{\"queryRefs\":[\"Dim_Calendar.MTH\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Months in Flight Date'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Dim_Calendar\"}},\"Property\":\"MTH\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"MTH\"}},\"Right\":{\"Literal\":{\"Value\":\"null\"}}}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 86.90,
+          "width": 140.99,
+          "x": 29.26,
+          "y": 566.60,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"89893ff64a5846280897\",\"layouts\":[{\"id\":0,\"position\":{\"x\":227.7372262773723,\"y\":33.868613138686136,\"z\":11000,\"width\":1003.2116788321168,\"height\":50.21897810218978,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Overall Operations\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"20pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 50.22,
+          "width": 1003.21,
+          "x": 227.74,
+          "y": 33.87,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"8caf7d760250c92014ea\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30.364963503649637,\"y\":11.678832116788321,\"z\":12000,\"width\":130.8029197080292,\"height\":95.76642335766424,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"image__1_-removebg-preview125107372131418988093.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 95.77,
+          "width": 130.80,
+          "x": 30.36,
+          "y": 11.68,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"9babdec502c3c00e8e31\",\"layouts\":[{\"id\":0,\"position\":{\"x\":29.197080291970803,\"y\":115.62043795620438,\"z\":0,\"width\":141.31386861313868,\"height\":87.59124087591242,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Dim_Departure.LocationCode\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Dim_Departure\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"LocationCode\"},\"Name\":\"Dim_Departure.LocationCode\",\"NativeReferenceName\":\"Departure\"}]},\"columnProperties\":{\"Dim_Departure.LocationCode\":{\"displayName\":\"Departure\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Departure'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 87.59,
+          "width": 141.31,
+          "x": 29.20,
+          "y": 115.62,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"9f3ecde019be6702aa30\",\"layouts\":[{\"id\":0,\"position\":{\"x\":227.7372262773723,\"y\":427.44525547445255,\"z\":10000,\"width\":345.6934306569343,\"height\":251.09489051094891,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(Fact_ActualFlights.TotalConsumptionVol)\"}],\"Category\":[{\"queryRef\":\"Fact_ActualFlights.Leg\",\"active\":true}],\"Series\":[{\"queryRef\":\"Fact_ActualFlights.AircraftType\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"TotalConsumptionVol\"}},\"Function\":0},\"Name\":\"Sum(Fact_ActualFlights.TotalConsumptionVol)\",\"NativeReferenceName\":\"TotalConsumptionVol\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Leg\"},\"Name\":\"Fact_ActualFlights.Leg\",\"NativeReferenceName\":\"Leg\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"AircraftType\"},\"Name\":\"Fact_ActualFlights.AircraftType\",\"NativeReferenceName\":\"AircraftType\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"TotalConsumptionVol\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(Fact_ActualFlights.TotalConsumptionVol)\":{\"displayName\":\"TotalConsumptionVol\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 50 Consumption per leg and aircraft type'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact_ActualFlights\"}},\"Property\":\"Leg\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Leg\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"TotalConsumptionVol\"}},\"Function\":0}}}],\"Top\":50}}},\"Type\":2},{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Leg\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 251.09,
+          "width": 345.69,
+          "x": 227.74,
+          "y": 427.45,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"a65bc6ee00b344773a5e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":586.9822485207101,\"y\":132.54437869822485,\"z\":2000,\"width\":326.9428007889546,\"height\":272.6627218934911,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact_ActualFlights.AircraftType\",\"active\":true},{\"queryRef\":\"Fact_ActualFlights.Leg\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Fact_ActualFlights.UpliftVol)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"UpliftVol\"}},\"Function\":0},\"Name\":\"Sum(Fact_ActualFlights.UpliftVol)\",\"NativeReferenceName\":\"Total UpliftVol\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"AircraftType\"},\"Name\":\"Fact_ActualFlights.AircraftType\",\"NativeReferenceName\":\"AircraftType\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Leg\"},\"Name\":\"Fact_ActualFlights.Leg\",\"NativeReferenceName\":\"Leg\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"UpliftVol\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(Fact_ActualFlights.UpliftVol)\":{\"displayName\":\"Total UpliftVol\"}},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 50 Uplifts per leg and Aircraft type'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 272.66,
+          "width": 326.94,
+          "x": 586.98,
+          "y": 132.54,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"eafb7c12a059091a6654\",\"layouts\":[{\"id\":0,\"position\":{\"x\":227.7372262773723,\"y\":133.13868613138686,\"z\":1000,\"width\":346,\"height\":273.28467153284674,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Fact_ActualFlights.Departure\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(Fact_ActualFlights.UpliftVol)\"}],\"Series\":[{\"queryRef\":\"Fact_ActualFlights.Destination\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Departure\"},\"Name\":\"Fact_ActualFlights.Departure\",\"NativeReferenceName\":\"Departure\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"UpliftVol\"}},\"Function\":0},\"Name\":\"Sum(Fact_ActualFlights.UpliftVol)\",\"NativeReferenceName\":\"Total UpliftVol\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Destination\"},\"Name\":\"Fact_ActualFlights.Destination\",\"NativeReferenceName\":\"Destination\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"UpliftVol\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(Fact_ActualFlights.UpliftVol)\":{\"displayName\":\"Total UpliftVol\"}},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Top 10 Uplifted fuel by leg'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Fact_ActualFlights\"}},\"Property\":\"Departure\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Departure\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"UpliftVol\"}},\"Function\":0}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Departure\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 273.28,
+          "width": 346.00,
+          "x": 227.74,
+          "y": 133.14,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"ff50c44d72b2822e0482\",\"layouts\":[{\"id\":0,\"position\":{\"x\":30.147783251231527,\"y\":453.1034482758621,\"z\":4000,\"width\":141.87192118226602,\"height\":86.89655172413794,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Fact_ActualFlights.AircraftType\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Fact_ActualFlights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"AircraftType\"},\"Name\":\"Fact_ActualFlights.AircraftType\",\"NativeReferenceName\":\"AircraftType\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"13D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Aircraft Type'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 86.90,
+          "width": 141.87,
+          "x": 30.15,
+          "y": 453.10,
+          "z": 4000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

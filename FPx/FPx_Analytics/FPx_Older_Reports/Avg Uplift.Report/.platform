@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Avg Uplift"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4744dbff-5120-83bd-4024-807b2b18a4d4"
+  }
+}

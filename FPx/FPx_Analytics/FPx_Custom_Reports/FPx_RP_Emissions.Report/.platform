@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Emissions"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a66790fa-1b9c-81a4-4a8f-e64f565f69c7"
+  }
+}

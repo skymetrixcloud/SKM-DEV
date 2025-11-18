@@ -1,0 +1,76 @@
+table RPT_Supplier
+	lineageTag: 7941fb5b-3726-4690-a94d-e72b7c8321ab
+	sourceLineageTag: [fpx].[RPT_Supplier]
+
+	column CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: cdb77c64-e6a2-4518-8e9b-6f21f7c0b191
+		sourceLineageTag: CO_ID
+		summarizeBy: none
+		sourceColumn: CO_ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierCode
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: bdd522eb-ddf5-45d6-b18c-90360494e43e
+		sourceLineageTag: SupplierCode
+		summarizeBy: none
+		sourceColumn: SupplierCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c30fb431-9baf-4ad6-9350-05e4c9ac1ecb
+		sourceLineageTag: SupplierName
+		summarizeBy: none
+		sourceColumn: SupplierName
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierCode2
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5629c16b-9b91-4daa-9eef-fdfc7edd28a5
+		sourceLineageTag: SupplierCode2
+		summarizeBy: none
+		sourceColumn: SupplierCode2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SupplierCode3
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f07c4bf8-2203-44fc-9527-5d1269e5a1e0
+		sourceLineageTag: SupplierCode3
+		summarizeBy: none
+		sourceColumn: SupplierCode3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition RPT_Supplier = entity
+		mode: directLake
+		source
+			entityName: RPT_Supplier
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

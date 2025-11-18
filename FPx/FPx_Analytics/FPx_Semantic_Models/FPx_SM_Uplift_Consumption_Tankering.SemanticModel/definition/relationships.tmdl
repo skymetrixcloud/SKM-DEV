@@ -1,0 +1,32 @@
+relationship f247db4d-e5a3-6c79-400c-3c5b22065d4d
+	fromColumn: Fact_ActualFlights.Operator
+	toColumn: Dim_Operator.AirlineICAOCode
+
+relationship d961a5c5-a9f9-ee54-596e-3c8bf22cf89d
+	fromColumn: Fact_ActualFlights.Operator
+	toColumn: Dim_Owner.AirlineICAOCode
+
+relationship b115e0b3-4207-24e0-f0a6-c8e53c619ceb
+	fromColumn: Fact_ActualFlights.AirlineDesignator
+	toColumn: Dim_Airline.AirlineICAOCode
+
+relationship 2886d662-cee3-3486-1c30-3e6aaf3d1ebd
+	fromColumn: Fact_ActualFlights.DepartureDate
+	toColumn: Dim_Calendar.Date
+
+relationship 54f0b7d9-3737-9fc8-373c-6a84d57bae9a
+	fromColumn: Fact_ActualFlights.Destination
+	toColumn: Dim_Destination.LocationIATACode
+
+relationship c3a8b7b0-0477-e185-aa2e-337b6a958f3b
+	fromColumn: Fact_ActualFlights.Departure
+	toColumn: Dim_Departure.LocationIATACode
+
+relationship 64db56e2-911d-9c56-161d-ad888fac912d
+	fromColumn: Fact_ActualFlights.Customer
+	toColumn: Dim_CustomerAccess.CustomerICAOCode
+
+relationship 55e436f9-9c70-114d-2a7f-265b32ed1617
+	fromColumn: Fact_ActualFlights.Customer
+	toColumn: Dim_Customer.CustomerICAOCode
+

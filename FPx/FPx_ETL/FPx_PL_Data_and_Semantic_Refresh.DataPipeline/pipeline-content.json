@@ -1,0 +1,116 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "Stored procedure Reports Refresh",
+        "description": "This calls master stored proc that in turn creates reporting layer in WH_GTI from LH_GTI tables",
+        "type": "SqlServerStoredProcedure",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "storedProcedureName": {
+            "value": "@pipeline().libraryVariables.VariablesSet_USPMainName",
+            "type": "Expression"
+          }
+        },
+        "linkedService": {
+          "name": "47602879_0fdf_4742_a941_d81397c73d11",
+          "properties": {
+            "annotations": [],
+            "type": "DataWarehouse",
+            "typeProperties": {
+              "endpoint": "@pipeline().libraryVariables.VariablesSet_WareHouseSQLConnection",
+              "artifactId": "@pipeline().libraryVariables.VariablesSet_WareHouseID",
+              "workspaceId": "@pipeline().libraryVariables.VariablesSet_WorkspaceID"
+            }
+          }
+        }
+      },
+      {
+        "name": "Semantic model Refresh",
+        "type": "PBISemanticModelRefresh",
+        "dependsOn": [
+          {
+            "activity": "Wait10s",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "method": "post",
+          "groupId": {
+            "value": "@pipeline().libraryVariables.VariablesSet_WorkspaceID",
+            "type": "Expression"
+          },
+          "waitOnCompletion": true,
+          "commitMode": "Transactional",
+          "operationType": "SemanticModelRefresh",
+          "datasetId": {
+            "value": "@pipeline().libraryVariables.VariablesSet_SemanticModelIDfpx",
+            "type": "Expression"
+          }
+        },
+        "externalReferences": {
+          "connection": "af02c7b9-7b77-48ac-9bbe-3985508a5ae9"
+        }
+      },
+      {
+        "name": "Wait10s",
+        "description": "10s wait",
+        "type": "Wait",
+        "dependsOn": [
+          {
+            "activity": "Stored procedure Reports Refresh",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "typeProperties": {
+          "waitTimeInSeconds": 10
+        }
+      }
+    ],
+    "libraryVariables": {
+      "VariablesSet_WareHouseID": {
+        "type": "String",
+        "variableName": "WareHouseID",
+        "libraryName": "VariablesSet"
+      },
+      "VariablesSet_WareHouseSQLConnection": {
+        "type": "String",
+        "variableName": "WareHouseSQLConnection",
+        "libraryName": "VariablesSet"
+      },
+      "VariablesSet_SemanticModelIDfpx": {
+        "type": "String",
+        "variableName": "SemanticModelID-fpx",
+        "libraryName": "VariablesSet"
+      },
+      "VariablesSet_USPMainName": {
+        "type": "String",
+        "variableName": "USPMainName",
+        "libraryName": "VariablesSet"
+      },
+      "VariablesSet_WorkspaceID": {
+        "type": "String",
+        "variableName": "WorkspaceID",
+        "libraryName": "VariablesSet"
+      }
+    }
+  }
+}

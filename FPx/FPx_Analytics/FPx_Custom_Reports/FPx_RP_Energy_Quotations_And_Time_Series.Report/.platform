@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Energy_Quotations_And_Time_Series"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "891cd54f-ef6d-9929-4ca4-c07a0a7c406b"
+  }
+}

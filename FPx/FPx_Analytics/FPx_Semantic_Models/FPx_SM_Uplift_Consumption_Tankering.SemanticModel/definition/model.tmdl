@@ -1,0 +1,25 @@
+model Model
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["DatabaseQuery"]
+
+annotation PBI_ProTooling = ["WebModelingEdit"]
+
+ref table Fact_ActualFlights
+ref table Dim_Airline
+ref table Dim_CustomerAccess
+ref table Dim_Customer
+ref table Dim_Calendar
+ref table Dim_Destination
+ref table Dim_Owner
+ref table Dim_Operator
+ref table Dim_Departure
+

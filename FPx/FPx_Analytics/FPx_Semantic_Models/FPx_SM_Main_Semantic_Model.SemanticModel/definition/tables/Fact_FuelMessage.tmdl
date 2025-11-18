@@ -1,0 +1,390 @@
+table Fact_FuelMessage
+	lineageTag: 234d2272-2e89-4867-b7ad-3c049f071e41
+	sourceLineageTag: [fpx].[Fact_FuelMessage]
+
+	column FlightID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: e79b572d-5fd2-44ea-9dcd-87db357c7c94
+		sourceLineageTag: FlightID
+		summarizeBy: count
+		sourceColumn: FlightID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActualSuffix
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b639269e-d7e3-44c7-a951-cf74f80d715a
+		sourceLineageTag: ActualSuffix
+		summarizeBy: none
+		sourceColumn: ActualSuffix
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActualDepartureDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: c9f0aa9b-6ffb-4c20-bdd8-5937e491d47a
+		sourceLineageTag: ActualDepartureDate
+		summarizeBy: none
+		sourceColumn: ActualDepartureDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUST_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: ceab7a9b-8914-4ed4-b726-be361301d931
+		sourceLineageTag: CUST_CO_ID
+		summarizeBy: count
+		sourceColumn: CUST_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CUST_CO_CD3
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ae370f5f-9286-4bb9-a283-ca68dbb6ce37
+		sourceLineageTag: CUST_CO_CD3
+		summarizeBy: none
+		sourceColumn: CUST_CO_CD3
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReceivingDelayDays
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 3924cc23-44db-4122-a3e0-f08e84b3b4df
+		sourceLineageTag: ReceivingDelayDays
+		summarizeBy: sum
+		sourceColumn: ReceivingDelayDays
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Suffix
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 540fc761-6518-4392-bbcf-c02e1a9a25bd
+		sourceLineageTag: Suffix
+		summarizeBy: none
+		sourceColumn: Suffix
+
+		annotation SummarizationSetBy = Automatic
+
+	column FuelMessageID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: bc3809b1-3928-43e7-a337-bed726604ab4
+		sourceLineageTag: FuelMessageID
+		summarizeBy: count
+		sourceColumn: FuelMessageID
+
+		annotation SummarizationSetBy = Automatic
+
+	column MessageType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6029b740-22aa-4049-894d-8fc5dfe1a47f
+		sourceLineageTag: MessageType
+		summarizeBy: none
+		sourceColumn: MessageType
+
+		annotation SummarizationSetBy = Automatic
+
+	column MessageSource
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1ef694eb-42cb-461a-87b8-bc94a35a63a6
+		sourceLineageTag: MessageSource
+		summarizeBy: none
+		sourceColumn: MessageSource
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEP_LOC_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: b242d61c-8c91-4313-89ed-270b4d660e4d
+		sourceLineageTag: DEP_LOC_ID
+		summarizeBy: none
+		sourceColumn: DEP_LOC_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTURE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 64b1a4af-9509-42c8-a91a-d53eb25c6e82
+		sourceLineageTag: DEPARTURE
+		summarizeBy: none
+		sourceColumn: DEPARTURE
+
+		annotation SummarizationSetBy = Automatic
+
+	column EFF_SUPPL_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 7734e8e7-68ff-480a-abe1-03b3ad81c52d
+		sourceLineageTag: EFF_SUPPL_CO_ID
+		summarizeBy: none
+		sourceColumn: EFF_SUPPL_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column DeliveryDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: b47cce71-82da-4bb4-80cb-b9f7830e6f16
+		sourceLineageTag: DeliveryDate
+		summarizeBy: none
+		sourceColumn: DeliveryDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreationDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 0c226543-d595-4598-aeef-c13d7ecac5e9
+		sourceLineageTag: CreationDate
+		summarizeBy: none
+		sourceColumn: CreationDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Registration
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 05efefcf-494a-4460-a92c-1c6f52eda5ff
+		sourceLineageTag: Registration
+		summarizeBy: none
+		sourceColumn: Registration
+
+		annotation SummarizationSetBy = Automatic
+
+	column AirlineDesignator
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f1dcbf20-88a1-499a-92bf-f37793005d32
+		sourceLineageTag: AirlineDesignator
+		summarizeBy: none
+		sourceColumn: AirlineDesignator
+
+		annotation SummarizationSetBy = Automatic
+
+	column FlightNumber
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e7415a71-2cb6-4c56-bddf-0c71ad832c78
+		sourceLineageTag: FlightNumber
+		summarizeBy: none
+		sourceColumn: FlightNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column UsedForUplift
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ef1e53ef-2d07-4bd5-985e-015d15c20a76
+		sourceLineageTag: UsedForUplift
+		summarizeBy: none
+		sourceColumn: UsedForUplift
+
+		annotation SummarizationSetBy = Automatic
+
+	column Destination
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: db223c46-e4a2-4ac7-8add-b2453c3e271f
+		sourceLineageTag: Destination
+		summarizeBy: none
+		sourceColumn: Destination
+
+		annotation SummarizationSetBy = Automatic
+
+	column FuelTicketNo
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 889c2eda-a692-4258-8cd2-af7dba7533f5
+		sourceLineageTag: FuelTicketNo
+		summarizeBy: none
+		sourceColumn: FuelTicketNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column FlightDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: d0cc9a28-8896-4e22-86ff-65aeb69f03cb
+		sourceLineageTag: FlightDate
+		summarizeBy: none
+		sourceColumn: FlightDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column RPT_SUPPL_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 2920402f-fcfa-4882-bb2d-c56a918771a0
+		sourceLineageTag: RPT_SUPPL_CO_ID
+		summarizeBy: none
+		sourceColumn: RPT_SUPPL_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column RPT_FUELER_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 5cb11449-68a6-412f-8dc2-c131ed5e287a
+		sourceLineageTag: RPT_FUELER_CO_ID
+		summarizeBy: none
+		sourceColumn: RPT_FUELER_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActualFlightNumber
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d2cd8189-0a2f-4b3a-9f71-40a1a1004e15
+		sourceLineageTag: ActualFlightNumber
+		summarizeBy: none
+		sourceColumn: ActualFlightNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column EFF_FUELER_CO_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 7b20d606-07b8-4fbb-be90-e34fa8fecd2b
+		sourceLineageTag: EFF_FUELER_CO_ID
+		summarizeBy: none
+		sourceColumn: EFF_FUELER_CO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column RPT_SUPPL_CD3
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ada2f383-1d58-4a26-b479-2632d98a557f
+		sourceLineageTag: RPT_SUPPL_CD3
+		summarizeBy: none
+		sourceColumn: RPT_SUPPL_CD3
+
+		annotation SummarizationSetBy = Automatic
+
+	column RPT_FUELER_CD3
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 61d63d9e-4731-4363-9f1e-0202f3cb1dd3
+		sourceLineageTag: RPT_FUELER_CD3
+		summarizeBy: none
+		sourceColumn: RPT_FUELER_CD3
+
+		annotation SummarizationSetBy = Automatic
+
+	column EFF_SUPPL_CD3
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8ab7c28c-5817-4ff8-b2a9-688ad460327e
+		sourceLineageTag: EFF_SUPPL_CD3
+		summarizeBy: none
+		sourceColumn: EFF_SUPPL_CD3
+
+		annotation SummarizationSetBy = Automatic
+
+	column EFF_FUELER_CD
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6c3b9380-92dd-4a7f-b053-2cf5deae9d0d
+		sourceLineageTag: EFF_FUELER_CD
+		summarizeBy: none
+		sourceColumn: EFF_FUELER_CD
+
+		annotation SummarizationSetBy = Automatic
+
+	column KPI1
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e25e021e-6d06-482a-a544-f482dda25aad
+		sourceLineageTag: KPI1
+		summarizeBy: none
+		sourceColumn: KPI1
+
+		annotation SummarizationSetBy = Automatic
+
+	column UpliftedFuelCost
+		dataType: double
+		sourceProviderType: decimal(18, 3)
+		lineageTag: 2550c70e-60d9-487c-a04e-4c27c193a97b
+		sourceLineageTag: UpliftedFuelCost
+		summarizeBy: sum
+		sourceColumn: UpliftedFuelCost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ActualFlightDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 9b2970e4-c907-459b-8f69-156221f8ac6a
+		sourceLineageTag: ActualFlightDate
+		summarizeBy: none
+		sourceColumn: ActualFlightDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActualRegistration
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 247fe801-1a2d-4954-91c9-a53a6154fd70
+		sourceLineageTag: ActualRegistration
+		summarizeBy: none
+		sourceColumn: ActualRegistration
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActualDestination
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5b53ff90-0bfd-46b8-b9af-21fabab7452b
+		sourceLineageTag: ActualDestination
+		summarizeBy: none
+		sourceColumn: ActualDestination
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActualAirlineDesignator
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f3aa9edb-48c8-4972-8869-a62dee06b51b
+		sourceLineageTag: ActualAirlineDesignator
+		summarizeBy: none
+		sourceColumn: ActualAirlineDesignator
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Fact_FuelMessage = entity
+		mode: directLake
+		source
+			entityName: Fact_FuelMessage
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

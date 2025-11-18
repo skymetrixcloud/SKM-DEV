@@ -1,0 +1,317 @@
+table Fact_BillbackUnbilledEvents
+	lineageTag: bc05793f-4235-433c-9800-fb1095634960
+	sourceLineageTag: [fpx].[Fact_BillbackUnbilledEvents]
+
+	column ObjectType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 586f534a-7ad2-45bf-ab8b-6711fb533964
+		sourceLineageTag: ObjectType
+		summarizeBy: none
+		sourceColumn: ObjectType
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ObjectId
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: a08c952d-2fbf-4b5b-bf8e-e71111c9b944
+		sourceLineageTag: ObjectId
+		summarizeBy: count
+		sourceColumn: ObjectId
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column FlightType
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 09970e31-e846-4528-b868-53e708388d64
+		sourceLineageTag: FlightType
+		summarizeBy: none
+		sourceColumn: FlightType
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column FinalCustomer
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b79e5540-7f12-400c-aad4-b3cd715df0fc
+		sourceLineageTag: FinalCustomer
+		summarizeBy: none
+		sourceColumn: FinalCustomer
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Reseller
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3bf2b0a1-20ae-4310-97ad-849197c581c3
+		sourceLineageTag: Reseller
+		summarizeBy: none
+		sourceColumn: Reseller
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Supplier
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2c988b80-a21a-4911-8d2b-31490ca102c2
+		sourceLineageTag: Supplier
+		summarizeBy: none
+		sourceColumn: Supplier
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 304588d5-97f2-4933-b6a2-b693d3abfcab
+		sourceLineageTag: Quantity
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Unit
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a05a0287-3bd6-4001-89f2-2a75b68503ee
+		sourceLineageTag: Unit
+		summarizeBy: none
+		sourceColumn: Unit
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column NetAmount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: ce19bf68-3d5b-40e2-a3a4-a27192f96f3f
+		sourceLineageTag: NetAmount
+		summarizeBy: sum
+		sourceColumn: NetAmount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VatAmount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 6745cfa1-b3da-463a-97dc-84141e56462d
+		sourceLineageTag: VatAmount
+		summarizeBy: sum
+		sourceColumn: VatAmount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Destination
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3f5370fb-d08e-4796-ab9d-b7529a9336bc
+		sourceLineageTag: Destination
+		summarizeBy: none
+		sourceColumn: Destination
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Registration
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f406f435-9944-4ffe-a300-5dd4971a7762
+		sourceLineageTag: Registration
+		summarizeBy: none
+		sourceColumn: Registration
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLIENT_ID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: decimal(10, 0)
+		lineageTag: 3ab2bca9-da5e-4b16-bfaa-d03b3475fcd5
+		sourceLineageTag: CLIENT_ID
+		summarizeBy: count
+		sourceColumn: CLIENT_ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column GlDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 1c8e5a45-f99a-4805-b901-3bc035803381
+		sourceLineageTag: GlDate
+		summarizeBy: none
+		sourceColumn: GlDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReleaseDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: a17d968e-f31e-49bb-882b-ac3b1732cd3a
+		sourceLineageTag: ReleaseDate
+		summarizeBy: none
+		sourceColumn: ReleaseDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 58b2304c-d956-4c50-81f3-4953f8b9fe31
+		sourceLineageTag: InvoiceDate
+		summarizeBy: none
+		sourceColumn: InvoiceDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceNo
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1f8df1df-b2f2-463e-8eb5-b09a9c44a3bc
+		sourceLineageTag: InvoiceNo
+		summarizeBy: none
+		sourceColumn: InvoiceNo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column TicketNo
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 69811ae6-e319-4429-b4c8-e7afc728ac6a
+		sourceLineageTag: TicketNo
+		summarizeBy: none
+		sourceColumn: TicketNo
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoiceCategory
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5ef927bc-6f23-40d9-8ba6-807cedc96e15
+		sourceLineageTag: InvoiceCategory
+		summarizeBy: none
+		sourceColumn: InvoiceCategory
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsClosed
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e36c6516-2f06-4e6a-bd04-9fa94d6d1109
+		sourceLineageTag: IsClosed
+		summarizeBy: none
+		sourceColumn: IsClosed
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DeliveryDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 24967b85-c0f5-4c73-9f19-91fa0e682341
+		sourceLineageTag: DeliveryDate
+		summarizeBy: none
+		sourceColumn: DeliveryDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Departure
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 221f556b-bb91-4793-bf69-2396c1385a6b
+		sourceLineageTag: Departure
+		summarizeBy: none
+		sourceColumn: Departure
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Currency
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a49d1fa0-e58f-4ddc-8b81-2b1a8d94d306
+		sourceLineageTag: Currency
+		summarizeBy: none
+		sourceColumn: Currency
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column InvoicedAmount
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c614b607-a86b-4006-87e4-7c246179c0e2
+		sourceLineageTag: InvoicedAmount
+		summarizeBy: sum
+		sourceColumn: InvoicedAmount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Fact_BillbackUnbilledEvents = entity
+		mode: directLake
+		source
+			entityName: Fact_BillbackUnbilledEvents
+			schemaName: fpx
+			expressionSource: DatabaseQuery
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

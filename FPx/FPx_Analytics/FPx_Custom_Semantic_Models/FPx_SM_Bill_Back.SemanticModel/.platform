@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "FPx_SM_Bill_Back"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "05e68e3a-46d9-b286-46c8-647e0ee79382"
+  }
+}

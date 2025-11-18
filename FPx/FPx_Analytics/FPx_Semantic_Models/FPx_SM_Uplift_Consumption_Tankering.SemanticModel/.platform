@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "FPx_SM_Uplift_Consumption_Tankering"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4fdea62a-c05a-8e95-452f-b113690956f6"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/variableLibrary/definition/variables/1.0.0/schema.json",
+  "variables": [
+    {
+      "name": "LakeHouseID",
+      "note": "",
+      "type": "String",
+      "value": ""
+    },
+    {
+      "name": "WareHouseID",
+      "note": "",
+      "type": "String",
+      "value": ""
+    },
+    {
+      "name": "WorkspaceID",
+      "note": "",
+      "type": "String",
+      "value": ""
+    },
+    {
+      "name": "CentralLakeHouseID",
+      "note": "",
+      "type": "String",
+      "value": "b5249a5c-b4b3-4e1f-8883-50d49457cb1e"
+    },
+    {
+      "name": "WareHouseSQLConnection",
+      "note": "",
+      "type": "String",
+      "value": ""
+    },
+    {
+      "name": "USPMainName",
+      "note": "",
+      "type": "String",
+      "value": "[WH_ATGIQ].[fpx].[usp_main_fpx]"
+    },
+    {
+      "name": "SemanticModelID-fpx",
+      "note": "",
+      "type": "String",
+      "value": ""
+    }
+  ]
+}

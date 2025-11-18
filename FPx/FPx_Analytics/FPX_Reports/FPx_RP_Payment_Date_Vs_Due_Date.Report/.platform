@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Payment_Date_Vs_Due_Date"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c1d1872a-b0e2-a498-4059-2d50b6cfbbc5"
+  }
+}

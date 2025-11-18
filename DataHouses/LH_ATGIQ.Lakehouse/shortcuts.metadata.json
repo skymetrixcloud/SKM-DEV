@@ -1,0 +1,14 @@
+[
+  {
+    "name": "fpx_raw",
+    "path": "/Tables",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/fpx_raw",
+        "itemId": "b5249a5c-b4b3-4e1f-8883-50d49457cb1e",
+        "workspaceId": "d3c45c1c-e1e4-4845-8813-b19db6b6a878"
+      }
+    }
+  }
+]

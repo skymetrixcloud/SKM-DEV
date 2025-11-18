@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "FPx_RP_Bill_Back_New"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "cd19af1d-38e1-a45b-4171-5f50e86bf769"
+  }
+}
